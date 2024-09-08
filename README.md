@@ -1,1 +1,1 @@
-# eightart-docs
+# eightart documentation
