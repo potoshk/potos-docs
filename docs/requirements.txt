@@ -2,30 +2,29 @@ sphinx
 pydata-sphinx-theme
 sphinx-design
 myst_parser
-
-  numpydoc
-  linkify-it-py         # for link shortening
-  rich
-  sphinxext-rediraffe
-  sphinx-sitemap
-  #sphinx-autoapi>=3.0.0
-  # For examples section
-  ablog>=0.11.8
-  jupyter_sphinx
-  pandas
-  plotly
-  matplotlib
-  numpy
-  xarray
-  sphinx-copybutton
-  sphinx-design
-  sphinx-togglebutton
-  jupyterlite-sphinx
-  sphinxcontrib-youtube>=1.4.1
-  sphinx-favicon>=1.0.1
-  ipykernel
-  nbsphinx
-  ipyleaflet
-  colorama
-  ipywidgets
-  graphviz
+numpydoc
+linkify-it-py         # for link shortening
+rich
+sphinxext-rediraffe
+sphinx-sitemap
+#sphinx-autoapi>=3.0.0
+# For examples section
+ablog>=0.11.8
+jupyter_sphinx
+pandas
+plotly
+matplotlib
+numpy
+xarray
+sphinx-copybutton
+sphinx-design
+sphinx-togglebutton
+jupyterlite-sphinx
+sphinxcontrib-youtube>=1.4.1
+sphinx-favicon>=1.0.1
+ipykernel
+nbsphinx
+ipyleaflet
+colorama
+ipywidgets
+graphviz
