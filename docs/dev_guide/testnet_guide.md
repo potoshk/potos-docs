@@ -12,19 +12,22 @@ To access the Testnet, follow steps below to configure MetaMask:
 
 1. Open the "Network" setting, click "Add a network":
 ![image](../imgs/connect_1.png)
+
 2. Click "Add a network manually":
 ![image](../imgs/connect_2.png)
+
 3. Fill in required information(name, url, chain ID, and currency symbol) for the Testnet and click "Save": 
 
-| Name            	| Eightart Testnet                	|
-|-----------------	|---------------------------------	|
-| Network name    	| hkchain_testnet                 	|
-| New RPC URL     	| https://rpc-testnet.eightart.hk 	|
-| Chain ID        	| Chain ID                        	|
-| Currency symbol 	| FBC                             	|
+| Name            	| Eightart Testnet                	 |
+|-----------------	|-----------------------------------|
+| Network name    	| hkchain_testnet                 	 |
+| New RPC URL     	| https://rpc-testnet.eightart.hk 	 |
+| Chain ID        	| 20200                        	    |
+| Currency symbol 	| FBC                             	 |
 
 ![image](../imgs/connect_3.png)
-4. You will see the Testnet network added to the list:
+
+4. You will see the Testnet network added to the list.
 
 
 ### 3. Receive Testnet Tokens
