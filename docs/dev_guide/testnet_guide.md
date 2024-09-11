@@ -64,13 +64,16 @@ Once balance is updated, you can start trading on the Testnet.
 
  <img src="../imgs/transaction_info.png" width="600" />
 
+## Explorer
+
+Check activities taking place on the Testnet [here](https://scan-testnet.eightart.hk/weco/).
+ 
+
 ## Advanced Topics
 
-### Guide to Remix Online IDE
+### Interact with Remix
 
-Find more information on Remix Online IDE [here](https://remix-ide.readthedocs.io/en/latest/).
-
-#### Configure Remix Access to Testnet
+#### Configure Remix to Access Testnet
 
 Configure environment information in `Deployment & Run Transactions` tab [here](https://remix.ethereum.org/). 
 
@@ -78,4 +81,34 @@ Select `Injected Provider - MetaMask` for `Environment`:
 
 <img src="../imgs/remix_config.png" width="600" />
 
+#### Send Transactions via Remix
 
+When initiating a deployment or calling on a contract, Remix will send the contract content to MetaMask.
+You will need to confirm transaction on MetaMask. 
+
+Find more information on Remix Online IDE [here](https://remix-ide.readthedocs.io/en/latest/).
+
+
+### Interact with Hardhat
+
+#### Configure Hardhat to Access Testnet
+
+Set the `IP port` and `ChainID` for the Testnet in `hardhat.config.js` configuration file.
+
+| Entry            	| Eightart Testnet               	 |
+|-----------------	|-----------------------------------|
+| New RPC URL     	| https://rpc-testnet.eightart.hk 	 |
+| Chain ID        	| 20200                        	    |
+
+
+Send balance to the address shown in below.
+
+#### Perform Tests Using Hardhat
+
+To run all tests in terminal, execute the following command:
+
+```bash
+hardhat test --network localhost
+```
+
+For more information on Hardhat, please refer [here](https://hardhat.org/tutorial).
