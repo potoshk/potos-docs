@@ -31,8 +31,13 @@ To access the Testnet, follow steps below to configure MetaMask:
 
 
 ### 3. Receive Testnet Tokens
-Supply your wallet address [here](faucet_site.com) to get free testnet faucet funds.
-[a certain number] of testnet tokens will be issued to your wallet for testing. 
+Supply your wallet address [here](faucet_site.com) to get free testnet faucet funds. 
+Testnet tokens will be issued to your wallet for testing. 
+
+Testnet tokens are crypto assets created on a parallel test network to the Mainnet. 
+Developers use the Testnet to test smart contracts and transactions without risking real-world implications on the Mainnet. 
+These Testnet tokens work like Mainnet coins, covering gas fees during testing. 
+However, as they are issued in the parallel environment, Testnet tokens have no real-world value on the Mainnet.
 
 You may find your wallet address here:
 ![image](../imgs/wallet_address.png)
@@ -58,6 +63,8 @@ Find more information on Remix Online IDE [here](https://remix-ide.readthedocs.i
 Configure environment information in the "Deployment & Run Transactions" tab [here](https://remix.ethereum.org/). 
 Select "Injected Provider - MetaMask" for "Environment". 
 ![image](../imgs/remix_config.png)
+
+
 
 
 
