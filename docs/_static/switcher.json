@@ -1,5 +1,9 @@
 [
   {
+    "version": "latest",
+    "url": "https://eightarthk.readthedocs.io/en/latest/"
+  },
+  {
     "version": "develop",
     "url": "https://eightarthk.readthedocs.io/en/develop/"
   }
