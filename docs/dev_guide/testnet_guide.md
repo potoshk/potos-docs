@@ -12,11 +12,11 @@ To access the Testnet, follow steps below to configure MetaMask:
 
 1. Open the "Network" setting, click "Add a network":
 
- <img src="../imgs/connect_1.png" width="600" />
+ <img src="../_static/dev_guide/connect_1.png" width="600" />
 
 2. Click "Add a network manually":
 
- <img src="../imgs/connect_2.png" width="600" />
+ <img src="../_static/dev_guide/connect_2.png" width="600" />
 
 3. Fill in required information for the Testnet and click "Save": 
 
@@ -27,7 +27,7 @@ To access the Testnet, follow steps below to configure MetaMask:
 	| Chain ID        	| 20200                        	    |
 	| Currency symbol 	| FBC                             	 |
 
- <img src="../imgs/connect_3.png" width="600" />
+ <img src="../_static/dev_guide/connect_3.png" width="600" />
 
 4. You will see the Testnet network added to the list.
 
@@ -43,26 +43,26 @@ However, as they are issued in the parallel environment, Testnet tokens have no 
 
 You may find your wallet address here:
 
- <img src="../imgs/wallet_address.png" width="600" />
+ <img src="../_static/dev_guide/wallet_address.png" width="600" />
 
 
 ## Trading with MetaMask Wallet
 
 Once balance is updated, you can start trading on the Testnet.
 
- <img src="../imgs/updated_balance.png" width="600" />
+ <img src="../_static/dev_guide/updated_balance.png" width="600" />
 
 * To transfer tokens to another wallet address, make sure that you set a gas limit >= 210,000 WEI.
 
- <img src="../imgs/transfer.png" width="600" />
+ <img src="../_static/dev_guide/transfer.png" width="600" />
  
 * Confirm the transaction:
 
- <img src="../imgs/transfer_confirm.png" width="600" />
+ <img src="../_static/dev_guide/transfer_confirm.png" width="600" />
  
 * Details will be displayed confirmation: 
 
- <img src="../imgs/transaction_info.png" width="600" />
+ <img src="../_static/dev_guide/transaction_info.png" width="600" />
 
 ## Explorer
 
@@ -79,7 +79,7 @@ Configure environment information in `Deployment & Run Transactions` tab [here](
 
 Select `Injected Provider - MetaMask` for `Environment`:
 
-<img src="../imgs/remix_config.png" width="600" />
+<img src="../_static/dev_guide/remix_config.png" width="600" />
 
 #### Send Transactions via Remix
 
