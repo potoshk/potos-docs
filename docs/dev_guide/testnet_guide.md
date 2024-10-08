@@ -6,7 +6,7 @@
 If you do not have a wallet yet, create an account using MetaMask (choose any Ethereum-compatible account type) [here](https://metamask.io/download/). 
 For more information on MetaMask, please refer [here](https://docs.metamask.io/). 
 
-### 2. Connect MetaMask to POTOS Testnet
+### 2. Connect MetaMask to the Testnet
 
 To access the Testnet, follow steps below to configure MetaMask:
 
@@ -20,11 +20,11 @@ To access the Testnet, follow steps below to configure MetaMask:
 
 3. Fill in required information for the Testnet and click "Save": 
 
-	| Entry            	| POTOS Testnet               	     |
-	|-----------------	|-----------------------------------|
+	| Entry            	| Testnet               	     |
+	|-----------------	|-----------------------------|
 	| Network name    	| hkchain_testnet                 	 |
-	| New RPC URL     	| https://rpc-testnet.potos.hk 	    |
-	| Chain ID        	| 20200                        	    |
+	| New RPC URL     	| https://rpc-testnet.eightart.hk 	 |
+	| Chain ID        	| 20200                        	 |
 	| Currency symbol 	| FBC                             	 |
 
  <img src="../_static/dev_guide/connect_3.png" width="600" />
@@ -66,7 +66,7 @@ Once balance is updated, you can start trading on the Testnet.
 
 ## Explorer
 
-Check activities taking place on the Testnet [here](https://scan-testnet.potos.hk/weco/).
+Check activities taking place on the Testnet [here](https://scan-testnet.eightart.hk/weco/).
  
 
 ## Advanced Topics
@@ -95,9 +95,9 @@ Find more information on Remix Online IDE [here](https://remix-ide.readthedocs.i
 
 Set the `IP port` and `ChainID` for the Testnet in `hardhat.config.js` configuration file.
 
-| Entry            	| POTOS Testnet               	  |
-|-----------------	|--------------------------------|
-| New RPC URL     	| https://rpc-testnet.potos.hk 	 |
+| Entry            	| Testnet               	       |
+|-----------------	|-------------------------------|
+| New RPC URL     	| https://rpc-testnet.eightart.hk 	 |
 | Chain ID        	| 20200                        	 |
 
 
