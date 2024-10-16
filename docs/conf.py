@@ -116,7 +116,7 @@ html_sourcelink_suffix = ""
 html_last_updated_fmt = ""  # to reveal the build date in the pages meta
 
 # Define the json_url for our version switcher.
-json_url = "https://docs.eightart.hk/en/latest/_static/switcher.json"
+json_url = "https://docs.potos.hk/en/latest/_static/switcher.json"
 
 # Define the version we use for matching in the version switcher.
 version_match = os.environ.get("READTHEDOCS_VERSION")
