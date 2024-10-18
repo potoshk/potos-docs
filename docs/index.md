@@ -2,12 +2,12 @@
 myst:
   html_meta:
     "description lang=en": |
-      Eightart level 1 blockchain documentation for testnet and mainnet connectivity.
+      POTOS level 1 blockchain documentation for testnet and mainnet connectivity.
 html_theme.sidebar_secondary.remove: true
 ---
-# Eightart Blockchain
+# POTOS Blockchain
 
-Eightart is a public layer 1 blockchain built on an open, robust, and scalable architecture, providing a secure and reliable foundation for enterprise Web3 ecosystems. The layer 1 chain is designed with compliance and regulation in mind, incorporating supervision tools and access control mechanisms to ensure secure, transparent, and regulatory-compliant transactions.
+POTOS is a public layer 1 blockchain built on an open, robust, and scalable architecture, providing a secure and reliable foundation for enterprise Web3 ecosystems. The layer 1 chain is designed with compliance and regulation in mind, incorporating supervision tools and access control mechanisms to ensure secure, transparent, and regulatory-compliant transactions.
 
 ::::::{grid} 1 1 2 2
 :gutter: 1
