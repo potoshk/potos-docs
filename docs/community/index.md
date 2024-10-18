@@ -1,7 +1,7 @@
 ---
 myst:
   html_meta:
-    "description lang=en": "Joining part of Eightart community and as a validator or observator node"
+    "description lang=en": "Joining part of POTOS community and as a validator or observator node"
 ---
 
 # Community Guide
