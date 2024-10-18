@@ -1,1 +1,1 @@
-# eightart documentation
+# POTOS documentation
