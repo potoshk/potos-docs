@@ -10,5 +10,6 @@ myst:
 ```{toctree}
 :caption: Get started
 
-testnet_guide
+quickstart_metamask.md
+blockscout_guide.md
 ```

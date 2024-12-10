@@ -6,7 +6,7 @@ myst:
 
 # Community Guide
 
-This page contains informatino on how to become a validator or observator node.
+This page contains information on how to become a validator or observator node.
 
 ```{toctree}
 :maxdepth: 2
