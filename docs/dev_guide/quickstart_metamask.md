@@ -10,14 +10,15 @@ This is a necessary step for developers who want to interact with Dapps or smart
 - Connect to the Testnet
 - Get Testnet tokens
 
-### Step 1: Install MetaMask(Chrome Extension)
-1. Google "MetaMask Chrome Extension" or go to the [MetaMask download page](https://metamask.io/download/) and click "Install MetaMask for Chrome". ![[image]](../_static/dev_guide/download_metamask.png)
+### Step 1: Install MetaMask
+1. Google "MetaMask" or go to the [MetaMask download page](https://metamask.io/download/) and click "Install MetaMask for Chrome". ![[image]](../_static/dev_guide/download_metamask.png)
+   Alternatively, choose the mobile app for iOS or Android.
 2. Click **"Add to Chrome"**. ![[image]](../_static/dev_guide/add_to_chrome.png)
 3. A popup will appear. Click **"Add Extension"** to confirm.
 4. Once installed, the MetaMask fox icon will appear in your browser toolbar. ![[image]](../_static/dev_guide/metamask_toolbar.png)
 
 ### Step 2: Create a MetaMask Account
-1. Click on the MetaMask fox icon in the toolbar to open the extension.
+1. For Chrome extension, click on the MetaMask fox icon in the toolbar to open the extension; for mobile app, open the app.
 2. Check Terms of Use agreement & Select **"Create a new wallet"**. ![[image]](../_static/dev_guide/create_wallet.png)
 3. Agree or disagree to the MetaMask data collection option (this is optional and won't affect functionality).
 4. Set a strong password for your wallet and click **"Create a new wallet"**. ![[image]](../_static/dev_guide/set_password.png)
