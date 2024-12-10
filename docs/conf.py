@@ -20,9 +20,9 @@ sys.path.append(str(Path(".").resolve()))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Eightart'
-copyright = '2024, Eightart Community'
-author = 'Eightart Community'
+project = "POTOS"
+copyright = "2024, POTOS Community"
+author = "POTOS Community"
 
 # -- General configuration ---------------------------------------------------
 
@@ -37,13 +37,13 @@ extensions = [
     "sphinxext.rediraffe",
     "sphinx_design",
     "sphinx_copybutton",
-    #"autoapi.extension",
+    # "autoapi.extension",
     # custom extentions
-    #"_extension.gallery_directive",
-    #"_extension.component_directive",
+    # "_extension.gallery_directive",
+    # "_extension.component_directive",
     # For extension examples and demos
     "myst_parser",
-    #"ablog",
+    # "ablog",
     "jupyter_sphinx",
     "sphinxcontrib.youtube",
     "nbsphinx",
@@ -116,7 +116,7 @@ html_sourcelink_suffix = ""
 html_last_updated_fmt = ""  # to reveal the build date in the pages meta
 
 # Define the json_url for our version switcher.
-json_url = "https://docs.eightart.hk/en/latest/_static/switcher.json"
+json_url = "https://docs.potos.hk/en/latest/_static/switcher.json"
 
 # Define the version we use for matching in the version switcher.
 version_match = os.environ.get("READTHEDOCS_VERSION")
@@ -137,13 +137,12 @@ elif version_match == "stable":
     version_match = f"v{release}"
 
 html_theme_options = {
-    "external_links": [
-    ],
+    "external_links": [],
     "header_links_before_dropdown": 4,
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/eightarthk/eightart-docs",
+            "url": "https://github.com/potoshk/potos-docs",
             "icon": "fa-brands fa-github",
         },
     ],
@@ -151,14 +150,14 @@ html_theme_options = {
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
     # "twitter_url": "https://twitter.com/PyData",
     "logo": {
-        "text": "Eightart",
+        "text": "POTOS",
         "image_dark": "_static/logo-dark.svg",
     },
     "use_edit_page_button": True,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     # "show_nav_level": 2,
-    "announcement": "https://raw.githubusercontent.com/eightarthk/eightart-docs/main/docs/_templates/custom-template.html",
+    "announcement": "https://raw.githubusercontent.com/potoshk/potos-docs/main/docs/_templates/custom-template.html",
     "show_version_warning_banner": True,
     "navbar_center": ["version-switcher", "navbar-nav"],
     # "navbar_start": ["navbar-logo"],
@@ -181,14 +180,13 @@ html_theme_options = {
 }
 
 html_context = {
-    "github_user": "eightarthk",
-    "github_repo": "eightart-docs",
+    "github_user": "potoshk",
+    "github_repo": "potos-docs",
     "github_version": "main",
     "doc_path": "docs",
 }
 
-rediraffe_redirects = {
-}
+rediraffe_redirects = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
