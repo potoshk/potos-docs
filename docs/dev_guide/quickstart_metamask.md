@@ -43,6 +43,7 @@ This is a necessary step for developers who want to interact with Dapps or smart
    | Chain ID           	| 20200                       	| blockchain's chain ID        	|
    | Currency symbol    	| HKC                         	| token symbol                 	|
    | Block explorer URL 	| https://scan.eight-art.com/ 	| URL of blockchain's explorer 	|
+   
    ![[image]](./imgs/network_detail.png)
 
 
