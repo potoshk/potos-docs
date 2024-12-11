@@ -12,13 +12,13 @@ This is a necessary step for developers who want to interact with Dapps or smart
 
 ### Step 1: Install MetaMask
 1. Google "MetaMask" or go to the [MetaMask download page](https://metamask.io/download/) and click "Install MetaMask for Chrome". ![[image]](../_static/dev_guide/download_metamask.png)
-   Alternatively, choose the mobile app for iOS or Android.
+   Alternatively, get the mobile app for iOS or Android accordingly. ![[image]](../_static/dev_guide/download_metamask_mobile.png)
 2. Click **"Add to Chrome"**. ![[image]](../_static/dev_guide/add_to_chrome.png)
 3. A popup will appear. Click **"Add Extension"** to confirm.
 4. Once installed, the MetaMask fox icon will appear in your browser toolbar. ![[image]](../_static/dev_guide/metamask_toolbar.png)
 
 ### Step 2: Create a MetaMask Account
-1. For Chrome extension, click on the MetaMask fox icon in the toolbar to open the extension; for mobile app, open the app.
+1. For Chrome extension, click on the MetaMask fox icon in the toolbar to open the extension; for mobile app, open the app and follow instructions.
 2. Check Terms of Use agreement & Select **"Create a new wallet"**. ![[image]](../_static/dev_guide/create_wallet.png)
 3. Agree or disagree to the MetaMask data collection option (this is optional and won't affect functionality).
 4. Set a strong password for your wallet and click **"Create a new wallet"**. ![[image]](../_static/dev_guide/set_password.png)
@@ -28,7 +28,7 @@ This is a necessary step for developers who want to interact with Dapps or smart
 6. MetaMask will display a group 12 words as **Secret Recovery Phrase**:
    - **Write down the phrase in order** and keep it safe.
    - Never share this phrase with anyone. ![[image]](../_static/dev_guide/secret_recovery_phrase.png)
-7. Confirm your Secret Recovery Phrase by fill the missing words in the correct order. ![[image]](../_static/dev_guide/confirm_phrase.png) 
+7. Confirm your Secret Recovery Phrase by filling the missing words in the correct order. ![[image]](../_static/dev_guide/confirm_phrase.png) 
 8. Click **"Done"** to complete account creation. ![[image]](../_static/dev_guide/done.png)
 
 ### Step 3: Connect to the Testnet
