@@ -14,8 +14,6 @@ from typing import Any, Dict
 from sphinx.application import Sphinx
 from sphinx.locale import _
 
-import pydata_sphinx_theme
-
 sys.path.append(str(Path(".").resolve()))
 
 # -- Project information -----------------------------------------------------
@@ -116,11 +114,11 @@ html_sourcelink_suffix = ""
 html_last_updated_fmt = ""  # to reveal the build date in the pages meta
 
 # Define the json_url for our version switcher.
-json_url = "https://docs.potos.hk/en/latest/_static/switcher.json"
+json_url = "_static/switcher.json"
 
 # Define the version we use for matching in the version switcher.
 version_match = os.environ.get("READTHEDOCS_VERSION")
-release = pydata_sphinx_theme.__version__
+release = "0.0.1"
 # If READTHEDOCS_VERSION doesn't exist, we're not on RTD
 # If it is an integer, we're in a PR build and the version isn't correct.
 # If it's "latest" → change to "dev" (that's what we want the switcher to call it)

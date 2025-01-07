@@ -4,8 +4,8 @@
     "url": "https://docs.potos.hk/en/latest/"
   },
   {
-    "version": "develop",
-    "url": "https://docs.potos.hk/en/develop/"
+    "version": "v0.0.1",
+    "url": "https://docs.potos.hk/en/stable/"
   },
   {
     "version": "dev-alpha",
