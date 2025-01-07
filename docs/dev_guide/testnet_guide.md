@@ -1,105 +1,100 @@
-# Guide to POTOS Testnet
+# Guide to POTOS Network
 
-## Apply for Testnet "Balance"
+## Apply for POTOS "Balance"
 
-### 1. Create A Wallet
-If you do not have a wallet yet, create an account using MetaMask (choose any Ethereum-compatible account type) [here](https://metamask.io/download/). 
-For more information on MetaMask, please refer [here](https://docs.metamask.io/). 
+### 1\. Create A Wallet
 
-### 2. Connect MetaMask to the Testnet
+If you do not have a wallet yet, create an account using MetaMask (choose any Ethereum-compatible account type) [here](https://metamask.io/download/). For more information on MetaMask, please refer [here](https://docs.metamask.io/).
 
-To access the Testnet, follow steps below to configure MetaMask:
+### 2\. Connect MetaMask to the POTOS Network
 
-1. Open the "Network" setting, click "Add a network":
+To access the POTOS Network, follow steps below to configure MetaMask:
 
- <img src="../_static/dev_guide/connect_1.png" width="600" />
+1. Open the Home page, click dropdown menu in the top-left corner:
 
-2. Click "Add a network manually":
+  ![](../_static/dev_guide/connect_1.png)
 
- <img src="../_static/dev_guide/connect_2.png" width="600" />
+2. Click "Add a custom network":
 
-3. Fill in required information for the Testnet and click "Save": 
+  ![](../_static/dev_guide/connect_2.png)
 
-	| Entry            	| Testnet               	     |
-	|-----------------	|-----------------------------|
-	| Network name    	| hkchain_testnet                 	 |
-	| New RPC URL     	| https://rpc-testnet.eightart.hk 	 |
-	| Chain ID        	| 20200                        	 |
-	| Currency symbol 	| FBC                             	 |
+3. Fill in required information for the POTOS Network and click "Save":
 
- <img src="../_static/dev_guide/connect_3.png" width="600" />
+| Entry           | Testnet                   | Mainnet                |
+| --------------- | ------------------------- | ---------------------- |
+| Network name    | POTOS Testnet             | POTOS Maintest         |
+| New RPC URL     | <https://rpc.eightart.hk> | <https://rpc.potos.hk> |
+| Chain ID        | 20200                     | 20201                  |
+| Currency symbol | FBC                       | FBC                    |
 
-4. You will see the Testnet network added to the list.
+![](../_static/dev_guide/connect_3.png)
 
+4. You will see the POTOS Network added to the list.
 
-### 3. Receive Testnet Tokens
-Supply your wallet address [here](faucet_site.com) to get free Testnet faucet funds. 
+![](../_static/dev_guide/connect_4.png)
 
-Testnet tokens are crypto assets created on a parallel test network to the Mainnet. 
-Developers use the Testnet to test smart contracts and transactions without risking real-world implications on the Mainnet. 
+### 3\. Receive POTOS Testnet Tokens
 
-These Testnet tokens work like Mainnet coins, covering gas fees during testing. 
-However, as they are issued in the parallel environment, Testnet tokens have no real-world value on the Mainnet.
+Supply your wallet address [here](https://faucet.eightart.hk/) to get free Testnet faucet funds.
+
+Testnet tokens are crypto assets created on a parallel test network to the Mainnet. Developers use the Testnet to test smart contracts and transactions without risking real-world implications on the Mainnet.
+
+These Testnet tokens work like Mainnet coins, covering gas fees during testing. However, as they are issued in the parallel environment, Testnet tokens have no real-world value on the Mainnet.
 
 You may find your wallet address here:
 
- <img src="../_static/dev_guide/wallet_address.png" width="600" />
-
+![](../_static/dev_guide/wallet_address.png)
 
 ## Trading with MetaMask Wallet
 
 Once balance is updated, you can start trading on the Testnet.
 
- <img src="../_static/dev_guide/updated_balance.png" width="600" />
+![](../_static/dev_guide/updated_balance.png)
 
-* To transfer tokens to another wallet address, make sure that you set a gas limit >= 210,000 WEI.
+- To transfer tokens to another wallet address.
 
- <img src="../_static/dev_guide/transfer.png" width="600" />
- 
-* Confirm the transaction:
+  ![](../_static/dev_guide/transfer.png)
 
- <img src="../_static/dev_guide/transfer_confirm.png" width="600" />
- 
-* Details will be displayed confirmation: 
+- Confirm the transaction:
 
- <img src="../_static/dev_guide/transaction_info.png" width="600" />
+  ![](../_static/dev_guide/transfer_confirm.png)
+
+- Details will be displayed confirmation:
+
+  ![](../_static/dev_guide/transaction_info.png)
 
 ## Explorer
 
-Check activities taking place on the Testnet [here](https://scan-testnet.eightart.hk/weco/).
- 
+Check activities taking place on the Testnet [here](https://scan.eightart.hk/weco/).
 
 ## Advanced Topics
 
 ### Interact with Remix
 
-#### Configure Remix to Access Testnet
+#### Configure Remix to Access POTOS Network
 
-Configure environment information in `Deployment & Run Transactions` tab [here](https://remix.ethereum.org/). 
+Configure environment information in `Deployment & Run Transactions` tab [here](https://remix.ethereum.org/).
 
 Select `Injected Provider - MetaMask` for `Environment`:
 
-<img src="../_static/dev_guide/remix_config.png" width="600" />
+![](../_static/dev_guide/remix_config.png)
 
 #### Send Transactions via Remix
 
-When initiating a deployment or calling on a contract, Remix will send the contract content to MetaMask.
-You will need to confirm transaction on MetaMask. 
+When initiating a deployment or calling on a contract, Remix will send the contract content to MetaMask. You will need to confirm transaction on MetaMask.
 
 Find more information on Remix Online IDE [here](https://remix-ide.readthedocs.io/en/latest/).
 
-
 ### Interact with Hardhat
 
-#### Configure Hardhat to Access Testnet
+#### Configure Hardhat to Access POTOS Network
 
-Set the `IP port` and `ChainID` for the Testnet in `hardhat.config.js` configuration file.
+Set the `IP port` and `ChainID` for the POTOS in `hardhat.config.js` configuration file.
 
-| Entry            	| Testnet               	       |
-|-----------------	|-------------------------------|
-| New RPC URL     	| https://rpc-testnet.eightart.hk 	 |
-| Chain ID        	| 20200                        	 |
-
+| Entry       | Testnet                   | Mainnet                |
+| ----------- | ------------------------- | ---------------------- |
+| New RPC URL | <https://rpc.eightart.hk> | <https://rpc.potos.hk> |
+| Chain ID    | 20200                     | 20201                  |
 
 Send balance to the address shown in below.
 
