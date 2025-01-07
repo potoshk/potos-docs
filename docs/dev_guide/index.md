@@ -10,5 +10,5 @@ myst:
 ```{toctree}
 :caption: Get started
 
-install
+testnet_guide
 ```
