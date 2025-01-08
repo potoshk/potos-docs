@@ -1,0 +1,1 @@
+# Guide to claim your NFT award in your personal Web3 wallet

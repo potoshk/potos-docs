@@ -12,4 +12,5 @@ myst:
 
 connect_guide
 create_guide
+claim_guide
 ```
