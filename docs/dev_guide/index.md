@@ -10,5 +10,6 @@ myst:
 ```{toctree}
 :caption: Get started
 
-testnet_guide
+connect_guide
+create_guide
 ```

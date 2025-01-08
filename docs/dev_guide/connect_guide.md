@@ -1,4 +1,4 @@
-# Guide to POTOS Network
+# Guide to connect POTOS Network
 
 ## Apply for POTOS "Balance"
 
