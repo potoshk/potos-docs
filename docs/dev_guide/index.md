@@ -13,4 +13,5 @@ myst:
 connect_guide
 create_guide
 claim_guide
+import_nft_guide
 ```
