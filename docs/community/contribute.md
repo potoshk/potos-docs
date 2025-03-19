@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing to Universal BCOS! Your efforts to improve the project are highly valued and appreciated. This guide will help you navigate the contribution process effectively.
+Thank you for your interest in contributing to FISCO BCOS! Your efforts to improve the project are highly valued and appreciated. This guide will help you navigate the contribution process effectively.
 
 ## If You Want To
 
@@ -8,9 +8,9 @@ Thank you for your interest in contributing to Universal BCOS! Your efforts to i
 
 If you encounter a technical issue or have questions, please submit an issue on our [GitHub Issues page](https://github.com/WeTechHK/Universal-BCOS/issues). You can also join the community discussion on our designated platforms.
 
-**Propose Ideas to Improve Universal BCOS**
+**Propose Ideas to Improve FISCO BCOS**
 
-Have an idea to enhance Universal BCOS? Submit a proposal in the [RFC repository](https://github.com/WeTechHK/Universal-BCOS-RFCs) following the RFC process. Once your proposal reaches the **Accepted** status, it can be implemented by the community.
+Have an idea to enhance FISCO BCOS? Submit a proposal in the [RFC repository](https://github.com/WeTechHK/Universal-BCOS-RFCs) following the RFC process. Once your proposal reaches the **Accepted** status, it can be implemented by the community.
 
 **Participate in Development**
 

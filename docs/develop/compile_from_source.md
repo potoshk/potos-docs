@@ -1,6 +1,6 @@
-# Build UBCOS from source
+# Build FISCO BCOS from source
 
-Universal BCOS uses the `CMake` build system to generate platform-specific build files, which means the
+FISCO BCOS uses the `CMake` build system to generate platform-specific build files, which means the
 workflow is very similar no matter what operating system you use:
 
 - Install build tools and dependencies (platform dependent)
@@ -50,7 +50,7 @@ source $HOME/.cargo/env
 
 ## Compile
 
-Compile Universal BCOS with the following steps:
+Compile FISCO BCOS with the following steps:
 
 ```bash
 # Into the Universal-BCOS directory

@@ -7,7 +7,7 @@ Precompiled contracts provide a way to use C++The method of writing contracts, w
 Precompiled contracts advantages:
 
 - Access more: Based on this framework, users can access the local DB storage state and implement any logic they need。
-- Better performance: Since the precompiled contract implemented on C++, the code will be compiled in Universal BCOS, and the underlying layer without entering the EVM for execution, which can have better performance.
+- Better performance: Since the precompiled contract implemented on C++, the code will be compiled in FISCO BCOS, and the underlying layer without entering the EVM for execution, which can have better performance.
 - Easy to start: Developers can use C++ to develop your own precompiled contracts to quickly implement the required business logic without learning the Solidity language.
 
 | Table Name    | Precompiled Contracts                                                                  | Solidity Contract                                      |
@@ -39,13 +39,13 @@ The block validator determines the type based on the address of the called contr
         op2 --> End(Return execution result)
 ```
 
-## Precompiled contracts in UBCOS
+## Precompiled contracts in FISCO BCOS
 
-UBCOS provides several useful precompiled contracts. These contracts are implemented in the platform itself as a native implementation, which means they are part of the Universal BCOS node.
+FISCO BCOS provides several useful precompiled contracts. These contracts are implemented in the platform itself as a native implementation, which means they are part of the FISCO BCOS node.
 
-For embracing EVM ecology, the precompiled contracts from address 0x01 through 0x0A are the same as those in any EVM compatible blockchain. The precompiled contracts from address 0x1000 through 0xfffff are C++ precompiled contracts, which are implemented in the Universal BCOS node.
+For embracing EVM ecology, the precompiled contracts from address 0x01 through 0x0A are the same as those in any EVM compatible blockchain. The precompiled contracts from address 0x1000 through 0xfffff are C++ precompiled contracts, which are implemented in the FISCO BCOS node.
 
-The following table lists the precompiled contracts provided by Universal BCOS.
+The following table lists the precompiled contracts provided by FISCO BCOS.
 
 | Address | Name              | Description                                                                                                                                            |
 |:--------|:------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|

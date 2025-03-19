@@ -1,12 +1,12 @@
-# UBCOS accounts
+# FISCO BCOS accounts
 
-## What is UBCOS account?
+## What is FISCO BCOS account?
 
-An account in Universal BCOS is an entity interacting with the blockchain network. These include initiating transactions, deploying smart contracts, and transferring funds to other accounts, among others.
+An account in FISCO BCOS is an entity interacting with the blockchain network. These include initiating transactions, deploying smart contracts, and transferring funds to other accounts, among others.
 
 ## Account data structure
 
-Accounts within the Universal BCOS ecosystem are structured with specific fields designed to maintain the integrity and functionality of the network:
+Accounts within the FISCO BCOS ecosystem are structured with specific fields designed to maintain the integrity and functionality of the network:
 
 - **nonce:** This is a sequential counter that records the number of transactions created by an externally-owned account or  the number of contracts created by a contract account. The nonce is crucial for preventing replay attacks, ensuring that each transaction is unique and can only be executed once per account.
 - **balance:** The number of native utility token owned by this address.
@@ -15,7 +15,7 @@ Accounts within the Universal BCOS ecosystem are structured with specific fields
 
 ## Types of Accounts
 
-The Universal BCOS platform distinguishes between two primary types of accounts:
+The FISCO BCOS platform distinguishes between two primary types of accounts:
 
 - **Externally-Owned Account (EOA):** These accounts are controlled by individuals holding the corresponding private keys.
 - **Contract Account:** A smart contract deployed to the network, controlled by code.
@@ -25,7 +25,7 @@ Both account types have the ability to:
 - Receive, hold and send tokens
 - Interact with deployed smart contracts
 
-Here's a concise table summarizing the differences between Externally-Owned Accounts (EOAs) and Contract Accounts within the Universal BCOS framework:
+Here's a concise table summarizing the differences between Externally-Owned Accounts (EOAs) and Contract Accounts within the FISCO BCOS framework:
 
 |                            | EOA                                                  | Contract Account                                          |
 |----------------------------|------------------------------------------------------|-----------------------------------------------------------|
@@ -39,7 +39,7 @@ Here's a concise table summarizing the differences between Externally-Owned Acco
 
 An EOA account is constituted by a pair of cryptographic keys, which are public key and private key.
 
-The private key is used to sign transactions, so it grants you custody over the funds associated with your account. It is important to note that you do not own cryptocurrency; instead, you own private keys, with the funds residing on the Universal BCOS's ledger.
+The private key is used to sign transactions, so it grants you custody over the funds associated with your account. It is important to note that you do not own cryptocurrency; instead, you own private keys, with the funds residing on the FISCO BCOS's ledger.
 
 The public key is generated from the private key using the [Elliptic Curve Digital Signature Algorithm (ECDSA)](https://wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm).
 
@@ -91,7 +91,7 @@ You can check this [link](../develop/wallet_usage.md) to use MetaMask to create 
 
 Contract accounts also have a 42 character hexadecimal address:
 
-The contract address is usually given when a contract is deployed to the Universal BCOS Blockchain. It is generated from the creator's address and the number of transactions initiated from that address (the "nonce").
+The contract address is usually given when a contract is deployed to the FISCO BCOS Blockchain. It is generated from the creator's address and the number of transactions initiated from that address (the "nonce").
 
 ## Accout usage
 

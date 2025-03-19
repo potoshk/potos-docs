@@ -2,7 +2,7 @@
 myst:
   html_meta:
     "description lang=en": |
-      Community resources of Universal BCOS.
+      Community resources of FISCO BCOS.
 ---
 
 # Community

@@ -2,7 +2,7 @@
 myst:
   html_meta:
     "description lang=en": |
-      Basic concepts of Universal BCOS.
+      Basic concepts of FISCO BCOS.
 ---
 
 # Basics

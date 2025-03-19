@@ -136,7 +136,7 @@ elif version_match == "stable":
 
 html_theme_options = {
     "external_links": [],
-    "header_links_before_dropdown": 4,
+    "header_links_before_dropdown": 6,
     "icon_links": [
         {
             "name": "GitHub",

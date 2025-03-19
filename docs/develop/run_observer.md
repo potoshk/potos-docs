@@ -31,19 +31,19 @@ To address storage expansion, the requirement is determined by both the block si
 
 ## Run a observer node manually
 
-### Step 1. Download UBCOS binaries
+### Step 1. Download FISCO BCOS binaries
 
-Download the UBCOS binaries from the [github release](https://github.com/WeTechHK/Universal-BCOS/releases).
+Download the FISCO BCOS binaries from the [github release](https://github.com/WeTechHK/Universal-BCOS/releases).
 
 ### Step 2. Build an empty node directory
 
-Create a directory to store the UBCOS binaries and configuration files, and build an empty node directory.
+Create a directory to store the FISCO BCOS binaries and configuration files, and build an empty node directory.
 
 ```bash
-mkdir -p ~/path/to/ubcos
-cd ~/path/to/ubcos
+mkdir -p ~/path/to/FISCO BCOS
+cd ~/path/to/FISCO BCOS
 
-# Copy the downloaded UBCOS binaries to the node directory
+# Copy the downloaded FISCO BCOS binaries to the node directory
 cp ~/path/to/downloaded/universal-bcos-linux-x86_64.tar.gz .
 tar -xvf universal-bcos-linux-x86_64.tar.gz
 
@@ -69,10 +69,10 @@ To connect to the network, you need to obtain a certificate from the network ope
 
 #### For network operator
 
-If you are the network operator, you can generate a certificate using the `ubcos` command line tool.
+If you are the network operator, you can generate a certificate using the `FISCO BCOS` command line tool.
 
 ```bash
-cd ~/path/to/ubcos
+cd ~/path/to/FISCO BCOS
 bash build_chain.sh -C expand -c nodes/127.0.0.1/node0 -d nodes/ca -o expand_node
 tar -czvf expand_node.tar.gz expand_node
 ```
@@ -84,19 +84,19 @@ This command generates a certificate and saves it to the `certs` directory in th
 If you are a user, you need to obtain a certificate from the network operator. The operator will provide you with a certificate file that you can use to connect to the network.
 
 ```bash
-cp ~/expand_node.tar.gz ~/path/to/ubcos
-cd ~/path/to/ubcos
+cp ~/expand_node.tar.gz ~/path/to/FISCO BCOS
+cd ~/path/to/FISCO BCOS
 tar -xvf expand_node.tar.gz
-cp -r ~/path/to/ubcos/expand_node/conf ~/path/to/ubcos/nodes/127.0.0.1/node0/
+cp -r ~/path/to/FISCO BCOS/expand_node/conf ~/path/to/FISCO BCOS/nodes/127.0.0.1/node0/
 ```
 
 And then, touch `nodes.json` file in the node directory.
 
 ```bash
-touch ~/path/to/ubcos/nodes/127.0.0.1/node0/nodes.json
+touch ~/path/to/FISCO BCOS/nodes/127.0.0.1/node0/nodes.json
 
 # You can specify the IP address and port of the consensus node in the nodes.json file
-echo '{"nodes":["127.0.0.1:30300"]}' > ~/path/to/ubcos/nodes/127.0.0.1/node0/nodes.json
+echo '{"nodes":["127.0.0.1:30300"]}' > ~/path/to/FISCO BCOS/nodes/127.0.0.1/node0/nodes.json
 ```
 
 ### Step 4. Obtain genesis block
@@ -108,13 +108,13 @@ To sync block from main blockchain, you need to obtain the genesis block from th
 Just provide the genesis block file to the user.
 
 ```bash
-cp ~/path/to/ubcos/nodes/127.0.0.1/node0/config.genesis ~/path/to/ubcos
+cp ~/path/to/FISCO BCOS/nodes/127.0.0.1/node0/config.genesis ~/path/to/FISCO BCOS
 ```
 
 #### For user
 
 ```bash
-cp ~/config.genesis ~/path/to/ubcos/nodes/127.0.0.1/node0/
+cp ~/config.genesis ~/path/to/FISCO BCOS/nodes/127.0.0.1/node0/
 ```
 
 ### Step 5. Everything is ready?
@@ -122,7 +122,7 @@ cp ~/config.genesis ~/path/to/ubcos/nodes/127.0.0.1/node0/
 After completing the above steps, you should have the following files in the node directory, please check it twice :)
 
 ```bash
-cd ~/path/to/ubcos/nodes/
+cd ~/path/to/FISCO BCOS/nodes/
 tree ./nodes
 ./nodes
 └─── 127.0.0.1
@@ -185,7 +185,7 @@ After starting the console tool, you can use the console tool to interact with t
 
 ```bash
 =============================================================================================
-Welcome to Universal BCOS console(3.7.0)!
+Welcome to FISCO BCOS console(3.7.0)!
 Type 'help' or 'h' for help. Type 'quit' or 'q' to quit console.
 =============================================================================================
 [group0]: /apps> getSyncStatus
@@ -227,7 +227,7 @@ To access the observer node network, follow steps below to configure MetaMask:
     ![](../_static/develop/connect_2.png)
 
 - Fill in required information for the local observer node network and click “Save”.
-  - The default chain ID for UBCOS is `20200` and the default RPC URL is `http://127.0.0.1:8545`. The `Network name` and `Currency symbol` are not required, you can fill in any name you like.
+  - The default chain ID for FISCO BCOS is `20200` and the default RPC URL is `http://127.0.0.1:8545`. The `Network name` and `Currency symbol` are not required, you can fill in any name you like.
 
     ![](../_static/develop/connect_3.png)
 
@@ -236,7 +236,7 @@ To access the observer node network, follow steps below to configure MetaMask:
 ### Step 9. Stop observer node
 
 ```bash
-cd ~/path/to/ubcos/nodes/
+cd ~/path/to/FISCO BCOS/nodes/
 bash stop_all.sh
 ```
 
@@ -248,7 +248,7 @@ Comming soon.
 
 You can configure the observer node by editing the `config.ini` file in the node directory. The `config.ini` file contains the configuration settings for the observer node, such as the network settings, logging settings.
 
-For more details about the configuration settings, see the [Configuration of UBCOS](./config.md).
+For more details about the configuration settings, see the [Configuration of FISCO BCOS](./config.md).
 
 ### Network settings
 
@@ -258,7 +258,7 @@ The network settings in the `config.ini` file specify the IP address and port of
 [p2p] ; p2p network configuration
     listen_ip=0.0.0.0
     listen_port=30300
-[rpc] ; ubcos rpc configuration, used in console
+[rpc] ; FISCO BCOS rpc configuration, used in console
     listen_ip=0.0.0.0
     listen_port=20200
 [web3_rpc] ; web3 standard rpc configuration, used in MetaMask
@@ -270,7 +270,7 @@ The network settings in the `config.ini` file specify the IP address and port of
 
 ### Logging settings
 
-The logging settings in the `config.ini` file specify the log level and log file location. The file location is in `~/path/to/ubcos/nodes/config.ini`.
+The logging settings in the `config.ini` file specify the log level and log file location. The file location is in `~/path/to/FISCO BCOS/nodes/config.ini`.
 
 ```ini
 [log]
@@ -292,7 +292,7 @@ The logging settings in the `config.ini` file specify the log level and log file
 The `start.sh` and `stop.sh` scripts in the node directory are used to start and stop the observer node. You can run the `start.sh` script to start the observer node and the `stop.sh` script to stop the observer node.
 
 ```bash
-cd ~/path/to/ubcos/nodes/
+cd ~/path/to/FISCO BCOS/nodes/
 # Start observer node
 bash start_all.sh
 # Stop observer node

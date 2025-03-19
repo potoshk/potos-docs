@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This guide walks you through the process of instantiating a configurable local Universal BCOS blockchain network, deploying a smart contract to it.
+This guide walks you through the process of instantiating a configurable local FISCO BCOS blockchain network, deploying a smart contract to it.
 
 ## Step 1. Install dependencies
 
@@ -43,7 +43,7 @@ curl -#LO https://raw.githubusercontent.com/WeTechHK/Universal-BCOS/refs/heads/i
 
 ## Step 3. Build a 4-node private chain
 
-Run the following command in the `bcos` directory to generate a Universal BCOS chain of 4 nodes:
+Run the following command in the `bcos` directory to generate a FISCO BCOS chain of 4 nodes:
 
 ```bash
 bash build_chain.sh -l 127.0.0.1:4 -p 30300,20200
@@ -89,7 +89,7 @@ writing RSA key
 [INFO] All completed. Files in ./nodes
 ```
 
-## Step 4. Start the Universal BCOS chain
+## Step 4. Start the FISCO BCOS chain
 
 Start all nodes：
 

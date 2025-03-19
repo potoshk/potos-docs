@@ -1,6 +1,6 @@
-# UBCOS Configuration Guide
+# FISCO BCOS Configuration Guide
 
-UBCOS configuration encompasses both on-chain and off-chain settings.
+FISCO BCOS configuration encompasses both on-chain and off-chain settings.
 
 - **On-chain configuration** requires administrators to send transactions to the chain, where all consensus nodes reach an agreement, unifying the network's configuration.
 - **Off-chain configuration** refers to individual node configuration options that can be modified by operators without sending transactions by simply updating the configuration files.
@@ -10,7 +10,7 @@ UBCOS configuration encompasses both on-chain and off-chain settings.
 On-chain configuration includes the genesis block and system settings.
 
 - `config.genesis`: The genesis block configuration file must be **consistent across all nodes within the group** and **cannot be altered after the chain is initialized**. Even if the genesis block configuration is changed after the chain initialization, the new settings will not take effect; the system will continue to use the genesis configuration from the time of chain initialization.
-- System configurations in UBCOS are managed within the built-in precompiled contracts, including system parameter management, consensus node management, permission management, and balance management.
+- System configurations in FISCO BCOS are managed within the built-in precompiled contracts, including system parameter management, consensus node management, permission management, and balance management.
 
 ### 1.1 Genesis Block Configuration
 
@@ -93,7 +93,7 @@ The `[executor]` configuration items involve executor-related genesis block conf
 
 ### 1.2 On-Chain System Configuration
 
-On-Chain System Configuration includes system parameter management, consensus node management, permission management, and balance management. These management features are implemented through built-in precompiled contracts in Universal BCOS. For more information on the principles of precompiled contracts, please refer to: [Precompiled C++ engine — Universal BCOS documentation](https://universal-bcos.readthedocs.io/en/latest/advance/precompiled.html).
+On-Chain System Configuration includes system parameter management, consensus node management, permission management, and balance management. These management features are implemented through built-in precompiled contracts in FISCO BCOS. For more information on the principles of precompiled contracts, please refer to: [Precompiled C++ engine — FISCO BCOS documentation](https://universal-bcos.readthedocs.io/en/latest/advance/precompiled.html).
 
 #### 1.2.1 System Parameter Management
 
@@ -168,7 +168,7 @@ After enabling permission control, all write interfaces of consensus node manage
 
 #### 1.2.3 Permission Management
 
-The on-chain governance committee contract is a pre-deployed Solidity contract in Universal BCOS. Its main functions include governance of the governance committee, governance of on-chain configuration management, governance of consensus node management, account management, deployment permission management, and contract permission management.
+The on-chain governance committee contract is a pre-deployed Solidity contract in FISCO BCOS. Its main functions include governance of the governance committee, governance of on-chain configuration management, governance of consensus node management, account management, deployment permission management, and contract permission management.
 
 For detailed design, please see the link: [Committee Design](./committee.md); for specific operational steps, please see the link: [Committee Usage](./committee.md).
 
@@ -278,7 +278,7 @@ A sample RPC configuration is as follows:
 
 #### 2.1.3 Configuring Certificate Information
 
-For security considerations, Universal BCOS nodes use SSL encrypted communication. The `[cert]` configuration sets the SSL connection certificate information:
+For security considerations, FISCO BCOS nodes use SSL encrypted communication. The `[cert]` configuration sets the SSL connection certificate information:
 
 - `[cert].ca_path`: The certificate path, default is `conf`;
 - `[cert].ca_cert`: The CA certificate name, default is `ca.crt`;
@@ -308,7 +308,7 @@ The `[security]` configuration sets the private key path, which is mainly used f
 
 #### 2.1.4 Configuring Consensus Information
 
-Considering that PBFT module packaging too quickly can result in some blocks containing only 1 to 2 very few transactions, wasting storage space, Universal BCOS introduces the `min_seal_time` configuration item under the variable configuration `config.ini` of `[consensus]` to control the minimum time for PBFT consensus packaging. That is: The consensus node will start the consensus process only if the packaging time exceeds `min_seal_time` and the number of packaged transactions is greater than 0, processing the newly packaged block.
+Considering that PBFT module packaging too quickly can result in some blocks containing only 1 to 2 very few transactions, wasting storage space, FISCO BCOS introduces the `min_seal_time` configuration item under the variable configuration `config.ini` of `[consensus]` to control the minimum time for PBFT consensus packaging. That is: The consensus node will start the consensus process only if the packaging time exceeds `min_seal_time` and the number of packaged transactions is greater than 0, processing the newly packaged block.
 
 - ``min_seal_time`` defaults to 500ms
 - ``min_seal_time`` should not exceed the empty block time of 1000ms. If the set value exceeds 1000ms, the system defaults min_seal_time to 500ms

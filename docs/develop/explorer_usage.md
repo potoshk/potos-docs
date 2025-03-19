@@ -1,6 +1,6 @@
 # Explorer usage
 
-Explorer is blockchain explorer for Universal BCOS. Explorer gives you an insight about the blockchain network by monitoring the network health and providing various statistics. You can also explore the block and transaction data and the list of smart contracts on the Universal BCOS blockchain network.
+Explorer is blockchain explorer for FISCO BCOS. Explorer gives you an insight about the blockchain network by monitoring the network health and providing various statistics. You can also explore the block and transaction data and the list of smart contracts on the FISCO BCOS blockchain network.
 
 ![](../_static/develop/WeCoScan-main.png)
 

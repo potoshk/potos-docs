@@ -2,7 +2,7 @@
 
 Decentralized application, or DApp, is an application designed to operate on a decentralized network, combining smart contracts and a user interface. Dapps are part of the broader movement towards decentralized systems, aiming to reduce the control wielded by centralized authorities and increase user autonomy.
 
-Universal BCOS fully supports Dapp integration, enabling developers to harness the power of financial-grade decentralized networks.
+FISCO BCOS fully supports Dapp integration, enabling developers to harness the power of financial-grade decentralized networks.
 
 ## Definition of a DApp
 

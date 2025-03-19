@@ -32,6 +32,6 @@ The actual gas used is determined post-execution and can be retrieved from the t
 
 The gas limit is the maximum gas units one is willing to spend on a transaction. If you set a limit of 50,000 for a transfer that uses 21,000 gas, you get 29,000 gas back. However, if the limit is too low (e.g., 20,000 for a transfer), the transaction will not complete, and the gas is still consumed, resulting in no state change but a deduction in the sender's balance.
 
-## UBCOS specific configuration on gas
+## FISCO BCOS specific configuration on gas
 
-The gas price is controlled by UBCOS system configuration, and it can be adjusted by the system administrator.  For more details on UBCOS system configuration, refer to the [UBCOS System Config](./evm.md).
+The gas price is controlled by FISCO BCOS system configuration, and it can be adjusted by the system administrator.  For more details on FISCO BCOS system configuration, refer to the [FISCO BCOS System Config](./evm.md).

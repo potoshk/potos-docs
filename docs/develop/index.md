@@ -2,64 +2,64 @@
 myst:
   html_meta:
     "description lang=en": |
-      Development steps on Universal BCOS.
+      Development steps on FISCO BCOS.
 ---
 
 # Development
 
 ## Before you start
 
-This guide will help you get started with developing on the UBCOS.
+This guide will help you get started with developing on the FISCO BCOS.
 
 It will guide you through the process of setting up your development environment, creating a new project, and deploying it to the BCOS.
 
-And more，you can also learn how to participate in consensus and governance on the UBCOS.
+And more，you can also learn how to participate in consensus and governance on the FISCO BCOS.
 
 ## Prerequisites
 
-Before you start developing on the UBCOS, you need to have the following prerequisites:
+Before you start developing on the FISCO BCOS, you need to have the following prerequisites:
 
 - Basic knowledge of blockchain technology, see more in [Intro to blockchain](../basic/blockchain.md), [Intro to wallet](../basic/wallet.md).
-- Understanding advanced concepts of the UBCOS, see more in [](../advance/index.md).
+- Understanding advanced concepts of the FISCO BCOS, see more in [](../advance/index.md).
 - Learning Solidity smart contract language, see more in [Solidity](./solidity.md) chapter.
 
 ## For Web3 developers
 
-If you are new to the UBCOS, you can start with the following steps, which will help you get started with developing on the UBCOS.
+If you are new to the FISCO BCOS, you can start with the following steps, which will help you get started with developing on the FISCO BCOS.
 
 ### Step 1: Set up your smart contract environment
 
 [Remix](https://remix.ethereum.org) is one of the most famous browser-based IDE (Integrated Development Environment) for developing `Solidity` contracts. It provides a lot of features to help you write, test, and deploy your smart contracts.
 
-For more details: [Connecting Remix to UBCOS](./remix_usage.md)
+For more details: [Connecting Remix to FISCO BCOS](./remix_usage.md)
 
-### Step 2: Connect to the UBCOS
+### Step 2: Connect to the FISCO BCOS
 
 Crypto wallet is the bridge between reality and the blockchain. It allows you to interact with the blockchain, such as sending transactions, deploying smart contracts, and so on.
 
-[MetaMask](https://metamask.io/) is a popular crypto wallet in Web3. And it is also compatible with the UBCOS.
+[MetaMask](https://metamask.io/) is a popular crypto wallet in Web3. And it is also compatible with the FISCO BCOS.
 
-For more details: [Connecting MetaMask to UBCOS](./wallet_usage.md)
+For more details: [Connecting MetaMask to FISCO BCOS](./wallet_usage.md)
 
 ### Step 3: Deploy your smart contract
 
-After you have set up your smart contract environment, implemented your smart contract, and connected to the UBCOS, you can deploy your smart contract to the UBCOS.
+After you have set up your smart contract environment, implemented your smart contract, and connected to the FISCO BCOS, you can deploy your smart contract to the FISCO BCOS.
 
-During Step 2, you have connected to the UBCOS using MetaMask. Now you can deploy your smart contract to the UBCOS using Remix.
+During Step 2, you have connected to the FISCO BCOS using MetaMask. Now you can deploy your smart contract to the FISCO BCOS using Remix.
 
 Here is another simple example to deploy a smart contract using [Hardhat](https://hardhat.org/), which is a smart-contract development environment. [Deploy a smart contract using Hardhat](./hardhat_usage.md).
 
-After you have deployed your smart contract to the UBCOS, you can check the transaction on the UBCOS explorer. Check the usage of explorer: [UBCOS Explorer](./explorer_usage.md)
+After you have deployed your smart contract to the FISCO BCOS, you can check the transaction on the FISCO BCOS explorer. Check the usage of explorer: [FISCO BCOS Explorer](./explorer_usage.md)
 
 ### Step 4: Develop your DApp
 
-After you have deployed your smart contract to the UBCOS, you can develop your [DApp](../basic/dapp.md) to interact with the smart contract.
+After you have deployed your smart contract to the FISCO BCOS, you can develop your [DApp](../basic/dapp.md) to interact with the smart contract.
 
 Here is a tutorial of build a first DApp: [Build a first DApp](./dapp_guide.md).
 
 ## For nodes maintainers
 
-If you want to build a blockchain instance of UBCOS in your own environment, or run a node of UBCOS, to be a observator, or to participate in consensus and governance, you can start with the following steps.
+If you want to build a blockchain instance of FISCO BCOS in your own environment, or run a node of FISCO BCOS, to be a observator, or to participate in consensus and governance, you can start with the following steps.
 
 ### Step 1: Build a chain
 
@@ -80,13 +80,13 @@ After you have built a chain and run a node, you can follow the [Configuration](
 
 And you can also follow the [Management of chain](./management.md) guide to manage your node.
 
-## For UBCOS contributors
+## For FISCO BCOS contributors
 
-Thank you for considering making Universal BCOS even better! Your contributions are most welcome and appreciated.
+Thank you for considering making FISCO BCOS even better! Your contributions are most welcome and appreciated.
 
 To get started, refer to our [CONTRIBUTING](https://github.com/WeTechHK/Universal-BCOS/blob/i18n/CONTRIBUTING.md) guide for a detailed walk-through of the contribution process.
 
-For any contributors interested in developing new features for UBCOS, your participation is highly welcome. You can refer to this document for compiling the source code: [Compile UBCOS from source code](./compile_from_source.md).
+For any contributors interested in developing new features for FISCO BCOS, your participation is highly welcome. You can refer to this document for compiling the source code: [Compile FISCO BCOS from source code](./compile_from_source.md).
 
 ```{toctree}
 :maxdepth: 1

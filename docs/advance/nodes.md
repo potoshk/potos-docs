@@ -1,6 +1,6 @@
 # Nodes
 
-Universal BCOS is a distributed network of computers (known as nodes) running software that can verify blocks and transaction data. The software must be run on your own environment to turn it into an Universal BCOS node.
+FISCO BCOS is a distributed network of computers (known as nodes) running software that can verify blocks and transaction data. The software must be run on your own environment to turn it into an FISCO BCOS node.
 
 ## Node types
 
@@ -28,7 +28,7 @@ Observer nodes are full nodes that verify every block from genesis but do not ha
 
 ### Light node
 
-The light node can then independently verify the data they receive against the state roots in the block headers. Light nodes enable users to participate in the Universal BCOS network without the powerful hardware or high bandwidth required to run full nodes.
+The light node can then independently verify the data they receive against the state roots in the block headers. Light nodes enable users to participate in the FISCO BCOS network without the powerful hardware or high bandwidth required to run full nodes.
 
 - Stores block headers only
 - Sync block headers from Consensus node and verifies merkle proof
@@ -36,6 +36,6 @@ The light node can then independently verify the data they receive against the s
 
 ## Running your own node
 
-Interested in running your own Universal BCOS node?
+Interested in running your own FISCO BCOS node?
 
 For a beginner-friendly introduction visit our [run a node](../develop/run_node.md) page to learn more.
