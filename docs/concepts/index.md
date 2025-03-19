@@ -5,7 +5,7 @@ myst:
       Basic concepts of FISCO BCOS.
 ---
 
-# Basics
+# Concepts
 
 This chapter introduce a punch of basic concepts of decentralized tech.
 

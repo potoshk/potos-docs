@@ -1,18 +1,23 @@
 # What is POTOS?
 
 https://potos.hk/#/potos
+
 POTOS(Portal of the Orient Symposium) is a cutting-edge Layer 1 blockchain platform built for the Web3 era.
-![](../_static/basic/potos.png)
+![](../_static/concepts/potos.png)
 
 
-We focus on:
+## We focus on:
+
 **Verifiable Data**: Ensuring every transaction is auditable and secure, ideal for applications like finance and supply chain management.
+
 **Asset Transparency**: Providing full visibility into tokenized assets, enhancing traceability and accountability.
+
 **Support for Stablecoins and Virtual Assets**: Offering tools to manage and transact stablecoins, fostering innovation in DeFi and digital payments.
 Built on the FISCO BCOS framework, POTOS is Solidity-compatible, integrating seamlessly with Ethereum ecosystems. Designed for regulatory compliance, our platform stands out as a secure, transparent, and versatile solution for modern enterprises and regulatory needs.
 Join us in transforming the digital economy with POTOS!
 
 ## Core Pillars
+
 **Verifiable Data**:
 POTOS is committed to making data truly verifiable. With every transaction designed for easy auditing and traceability, we ensure top-notch trust and reliability. Using cutting-edge cryptographic techniques, POTOS protects data integrity and minimizes tampering risks. This focus on transparency makes us the perfect fit for applications needing strict validation, like finance, supply chain management, and regulatory compliance.
 

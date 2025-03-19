@@ -1,4 +1,4 @@
-# FISCO BCOS Configuration Guide
+# Configuration
 
 FISCO BCOS configuration encompasses both on-chain and off-chain settings.
 

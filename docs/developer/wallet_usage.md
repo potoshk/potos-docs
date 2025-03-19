@@ -1,4 +1,4 @@
-# Connecting MetaMask to FISCO BCOS
+# Wallet
 
 This section will provide an example of connecting to local FISCO BCOS network using MetaMask. Local FISCO BCOS private chain is a private chain that you can deploy on your local machine. If you are using a local FISCO BCOS private chain, please make sure you have the chain ID and RPC URL. The chain ID is the ID of the chain you are connecting to, default chain ID for FISCO BCOS is 20200. The RPC URL is the URL of the node you are connecting to, default URL is http://127.0.0.1:8545.
 

@@ -1,4 +1,4 @@
-# Explorer usage
+# Explorer
 
 Explorer is blockchain explorer for FISCO BCOS. Explorer gives you an insight about the blockchain network by monitoring the network health and providing various statistics. You can also explore the block and transaction data and the list of smart contracts on the FISCO BCOS blockchain network.
 

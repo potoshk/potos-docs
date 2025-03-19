@@ -1,4 +1,4 @@
-# Participating
+# Participate
 
 Welcome to our open-source community! We are excited to have you here. This guide will help you understand how to participate effectively and respectfully.
 

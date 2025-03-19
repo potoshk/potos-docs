@@ -1,10 +1,11 @@
 # What is FISCO BCOS?
 
 https://potos.hk/#/fisco-bcos
+
 FISCO BCOS is a next-generation ope-source blockchain infrastructure optimized for the Web3 economy. Built to financial-grade standards, FISCO BCOS features a highly open network with robust Web3 capabilities and seamless user experience, all of which are engineered for laying a solid foundation for the development of Hong Kong's Web3 ecosystem.
 FISCO BCOS offers several key advantages:
 
-![](../_static/basic/fisco-bcos.png)
+![](../_static/concepts/fisco-bcos.png)
 
 
 **High Performance**: FISCO BCOS utilizes an advanced Block-Level Pipelining (BLP) architecture and Deterministic Multi-Contract (DMC) technologies, which enables secure block production and transaction validation within a second. Such performance and security makes FISCO BCOS perfectly suited for business settings that entail large transaction volumes, such as online payments.

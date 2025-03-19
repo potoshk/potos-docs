@@ -10,43 +10,33 @@ html_theme.sidebar_secondary.remove: true
 POTOS is a public layer 1 blockchain built on an open, robust, and scalable architecture, providing a secure and reliable foundation for enterprise Web3 ecosystems. The layer 1 chain is designed with compliance and regulation in mind, incorporating supervision tools and access control mechanisms to ensure secure, transparent, and regulatory-compliant transactions.
 
 
-## Basics
+## Concepts
 
 Understand the fundamentals of FISCO BCOS.
 ```{toctree}
 :maxdepth: 2
 
-basic/index
+concepts/index
 ```
 
-##  Advanced
+##  Glossary
 
 Advanced concepts and operations of FISCO BCOS.
 
 ```{toctree}
 :maxdepth: 2
 
-advance/index
+glossary/index
 ```
 
-## Development
+## Developer
 
 Information about connecting, configuration, and developing on FISCO BCOS.
 
 ```{toctree}
 :maxdepth: 2
 
-develop/index
-```
-
-## Research
-
-Deep dive into FISCO BCOS.
-
-```{toctree}
-:maxdepth: 2
-
-research/index
+developer/index
 ```
 
 ## Community

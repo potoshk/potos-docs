@@ -5,7 +5,7 @@ myst:
       Advanced concepts and operations of FISCO BCOS.
 ---
 
-# Advanced
+# Glossary
 
 This chapter provides a comprehensive advanced consensus of the FISCO BCOS (FISCO BCOS) blockchain ecosystem.
 
@@ -17,15 +17,12 @@ Additionally, it explores transaction fees, including gas prices, gas usage, gas
 
 The roles and operation of nodes within the network are discussed, along with consensus algorithms like PBFT and PoS-rPBFT.
 
-Finally, the article examines the execution engines, focusing on the EVM and the precompiled C++ engine.
-
 ```{toctree}
 :maxdepth: 1
 
 accounts
 transactions
-gas
+transaction-fees
 nodes
 consensus
-execution
 ```

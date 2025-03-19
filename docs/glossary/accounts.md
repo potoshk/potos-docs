@@ -1,6 +1,6 @@
-# FISCO BCOS accounts
+# Accounts
 
-## What is FISCO BCOS account?
+## What is account?
 
 An account in FISCO BCOS is an entity interacting with the blockchain network. These include initiating transactions, deploying smart contracts, and transferring funds to other accounts, among others.
 

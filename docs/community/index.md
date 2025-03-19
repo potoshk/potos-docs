@@ -12,7 +12,5 @@ myst:
 :maxdepth: 1
 
 participate
-contribute
-happenings
 ```
 

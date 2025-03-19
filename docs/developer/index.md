@@ -5,7 +5,7 @@ myst:
       Development steps on FISCO BCOS.
 ---
 
-# Development
+# Developer
 
 ## Before you start
 
@@ -91,17 +91,9 @@ For any contributors interested in developing new features for FISCO BCOS, your 
 ```{toctree}
 :maxdepth: 1
 
-solidity
-remix_usage
-wallet_usage
-hardhat_usage
-explorer_usage
-dapp_guide
-build_chain
-run_node
 config
-management
-committee
-committee_usage
-compile_from_source
+explorer_usage
+wallet_usage
+remix_usage
+hardhat_usage
 ```
