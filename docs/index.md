@@ -19,19 +19,39 @@ Understand the fundamentals of FISCO BCOS.
 basic/index
 ```
 
-## Developer Guide
+##  Advanced
 
-For accessing testnet and connecting wallet to the ecosystem
+Advanced concepts and operations of FISCO BCOS.
 
 ```{toctree}
 :maxdepth: 2
 
-dev_guide/index
+advance/index
 ```
 
-## Community Guide
+## Development
 
-Information on connecting to our blockchain as a validator node or observator node
+Information about connecting, configuration, and developing on FISCO BCOS.
+
+```{toctree}
+:maxdepth: 2
+
+develop/index
+```
+
+## Research
+
+Deep dive into FISCO BCOS.
+
+```{toctree}
+:maxdepth: 2
+
+research/index
+```
+
+## Community
+
+Community resources of FISCO BCOS.
 
 ```{toctree}
 :maxdepth: 2

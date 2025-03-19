@@ -1,8 +1,13 @@
-# Run a Observer Node of POTOS Mainnet
+# Run an observer node
 
-This guide provides a step-by-step guide to running an observer node on your computer or server.
+This section provides a step-by-step guide to running an observer node on your own environment.
 
-## System Requirements
+Here are three ways to run an observer node, choose the one that best suits your needs:
+
+1. [Run a observer node manually](#run-a-observer-node-manually)
+2. [Run observer node in Docker](#optional-run-observer-node-in-docker)
+
+## System requirements
 
 Running an observer node requires the following system requirements:
 
@@ -24,51 +29,123 @@ To address storage expansion, the requirement is determined by both the block si
 - CentOS 7/8 in x86_64 ir arm 64.
 - macOS 13.0 or later in  x86_64 or arm64.
 
-## Install and Run Observer Node
+## Run a observer node manually
 
-### Step 1. Download Observer Package
+### Step 1. Download UBCOS binaries
 
-Download the observer package from the [POTOS official website](https://docs.potos.hk/en/latest/).
+Download the UBCOS binaries from the [github release](https://github.com/WeTechHK/Universal-BCOS/releases).
+
+### Step 2. Build an empty node directory
+
+Create a directory to store the UBCOS binaries and configuration files, and build an empty node directory.
 
 ```bash
-# Create a directory to store the observer package
-mkdir -p ~/path/to/observer
-cd ~/path/to/observer
+mkdir -p ~/path/to/ubcos
+cd ~/path/to/ubcos
 
-wget <download_link>
-# Unzip the observer package
-unzip <zip_file_name>.zip
-cd observer_node
+# Copy the downloaded UBCOS binaries to the node directory
+cp ~/path/to/downloaded/universal-bcos-linux-x86_64.tar.gz .
+tar -xvf universal-bcos-linux-x86_64.tar.gz
 
-# List the files in the observer package
-tree .
-.
-├── console             # Console directory
-│   ├── apps
-│   ├── conf            # Configuration directory
-│   ├── contracts       # Contracts demo directory
-│   ├── lib
-│   └── start.sh        # Start script of console
-├── node0               # Node directory
-│   ├── conf            # Configuration directory
-│   │   ├── ca.crt      # CA Certificate file
-│   │   ├── cert.cnf    # Certificate configuration file
-│   │   ├── node.nodeid # Node ID file, used to identify the node, which is public key of the node
-│   │   ├── node.pem    # Node private key file
-│   │   ├── ssl.crt     # SSL certificate file, which issued by CA
-│   │   ├── ssl.key     # SSL private key file, which is used to encrypt the communication package
-│   │   └── ssl.nodeid  # SSL ID file, which is used to identify in p2p network, and it is the public key of the node
-│   ├── config.genesis  # Genesis block configuration file
-│   ├── config.ini      # Node configuration file
-│   ├── nodes.json      # Node list file
-│   ├── start.sh        # Start script
-│   └── stop.sh         # Stop script
-├── start_all.sh        # Start all nodes script
-├── stop_all.sh         # Stop all nodes script
-└── universal-bcos      # Universal BCOS binary file
+# Build an empty node directory
+bash build_chain.sh -C expand -o nodes/127.0.0.1/node4 -e ./universal-bcos
+
+tree ./nodes
+./nodes
+└─── 127.0.0.1
+    ├── universal-bcos
+    ├── node0
+    │   ├── conf
+    │   ├── config.ini
+    │   ├── start.sh
+    │   └── stop.sh
+    ├── start_all.sh
+    └── stop_all.sh
 ```
 
-### Step 2. Start Observer Node
+### Step 3. Obtain certificate of connection
+
+To connect to the network, you need to obtain a certificate from the network operator. The certificate is used to authenticate your node and establish a secure connection to the network.
+
+#### For network operator
+
+If you are the network operator, you can generate a certificate using the `ubcos` command line tool.
+
+```bash
+cd ~/path/to/ubcos
+bash build_chain.sh -C expand -c nodes/127.0.0.1/node0 -d nodes/ca -o expand_node
+tar -czvf expand_node.tar.gz expand_node
+```
+
+This command generates a certificate and saves it to the `certs` directory in the current working directory.
+
+#### For user to connect
+
+If you are a user, you need to obtain a certificate from the network operator. The operator will provide you with a certificate file that you can use to connect to the network.
+
+```bash
+cp ~/expand_node.tar.gz ~/path/to/ubcos
+cd ~/path/to/ubcos
+tar -xvf expand_node.tar.gz
+cp -r ~/path/to/ubcos/expand_node/conf ~/path/to/ubcos/nodes/127.0.0.1/node0/
+```
+
+And then, touch `nodes.json` file in the node directory.
+
+```bash
+touch ~/path/to/ubcos/nodes/127.0.0.1/node0/nodes.json
+
+# You can specify the IP address and port of the consensus node in the nodes.json file
+echo '{"nodes":["127.0.0.1:30300"]}' > ~/path/to/ubcos/nodes/127.0.0.1/node0/nodes.json
+```
+
+### Step 4. Obtain genesis block
+
+To sync block from main blockchain, you need to obtain the genesis block from the blockchain operator. The genesis block is the first block in the blockchain and contains the initial state of the network.
+
+#### For blockchain operator
+
+Just provide the genesis block file to the user.
+
+```bash
+cp ~/path/to/ubcos/nodes/127.0.0.1/node0/config.genesis ~/path/to/ubcos
+```
+
+#### For user
+
+```bash
+cp ~/config.genesis ~/path/to/ubcos/nodes/127.0.0.1/node0/
+```
+
+### Step 5. Everything is ready?
+
+After completing the above steps, you should have the following files in the node directory, please check it twice :)
+
+```bash
+cd ~/path/to/ubcos/nodes/
+tree ./nodes
+./nodes
+└─── 127.0.0.1
+    ├── universal-bcos
+    ├── node0
+    │   ├── conf
+    │   │   ├── ca.crt
+    │   │   ├── cert.cnf
+    │   │   ├── node.nodeid
+    │   │   ├── node.pem
+    │   │   ├── ssl.crt
+    │   │   ├── ssl.key
+    │   │   └── ssl.nodeid
+    │   ├── config.genesis
+    │   ├── config.ini
+    │   ├── nodes.json
+    │   ├── start.sh
+    │   └── stop.sh
+    ├── start_all.sh
+    └── stop_all.sh
+```
+
+### Step 6. Start observer node
 
 Before starting the observer node, you need to ensure that port `30300`, `20200` and `8545` are not occupied by other services. If you want to edit the configuration of the observer node, you can edit the `config.ini` file in the node directory, check more details in the [Configure observer node](#configure-observer-node) section.
 
@@ -94,7 +171,7 @@ tail -f node0/log/* | grep Report
 info|2024-10-15 22:36:31.415281|[CONSENSUS][PBFT][METRIC]^^^^^^^^Report,sealer=2,txs=1,committedIndex=203,consNum=204
 ```
 
-### Step 3. Using Console to Interact with Observer Node
+### Step 7. Using Console to Interact with Observer Node
 
 The observer node provides a console tool to interact with the observer node. You can use the console tool to query the block information, transaction information, and other information of the observer node.
 
@@ -133,7 +210,7 @@ SyncStatusInfo{
 }
 ```
 
-### Step 4. Connecting MetaMask to Observer Node
+### Step 8. Connecting MetaMask to Observer Node
 
 After the observer node is started, it will start a JSON-RPC service on port `8545`. You can connect MetaMask to the observer node by adding a custom RPC.
 
@@ -143,24 +220,37 @@ To access the observer node network, follow steps below to configure MetaMask:
 
 - Open the “Network” setting, click “Add a network”:
 
-    ![](https://universal-bcos.readthedocs.io/en/latest/_images/connect_1.png)
+    ![](../_static/develop/connect_1.png)
 
 - Click “Add a network manually”:
 
-    ![](https://universal-bcos.readthedocs.io/en/latest/_images/connect_2.png)
+    ![](../_static/develop/connect_2.png)
 
 - Fill in required information for the local observer node network and click “Save”.
   - The default chain ID for UBCOS is `20200` and the default RPC URL is `http://127.0.0.1:8545`. The `Network name` and `Currency symbol` are not required, you can fill in any name you like.
 
-    ![](https://universal-bcos.readthedocs.io/en/latest/_images/connect_3.png)
+    ![](../_static/develop/connect_3.png)
 
 - You will see the observer node network added to the list.
 
-## Configure Observer Node
+### Step 9. Stop observer node
+
+```bash
+cd ~/path/to/ubcos/nodes/
+bash stop_all.sh
+```
+
+## (Optional) Run observer node in Docker
+
+Comming soon.
+
+## Configure observer node
 
 You can configure the observer node by editing the `config.ini` file in the node directory. The `config.ini` file contains the configuration settings for the observer node, such as the network settings, logging settings.
 
-### Network Settings
+For more details about the configuration settings, see the [Configuration of UBCOS](./config.md).
+
+### Network settings
 
 The network settings in the `config.ini` file specify the IP address and port of the observer node. The file location is in `~/path/to/observer/observer_node/node0/config.ini`.
 
@@ -178,9 +268,9 @@ The network settings in the `config.ini` file specify the IP address and port of
     thread_count=8
 ```
 
-### Logging Settings
+### Logging settings
 
-The logging settings in the `config.ini` file specify the log level and log file location. The file location is in `~/path/to/observer/observer_node/node0/config.ini`.
+The logging settings in the `config.ini` file specify the log level and log file location. The file location is in `~/path/to/ubcos/nodes/config.ini`.
 
 ```ini
 [log]
@@ -197,12 +287,12 @@ The logging settings in the `config.ini` file specify the log level and log file
     enable_rate_collector=false
 ```
 
-### Node Starting and Stopping
+### Node starting and stopping
 
 The `start.sh` and `stop.sh` scripts in the node directory are used to start and stop the observer node. You can run the `start.sh` script to start the observer node and the `stop.sh` script to stop the observer node.
 
 ```bash
-cd ~/path/to/observer/observer_node
+cd ~/path/to/ubcos/nodes/
 # Start observer node
 bash start_all.sh
 # Stop observer node
