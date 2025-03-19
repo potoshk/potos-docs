@@ -20,8 +20,6 @@ Finally, we'll cover crypto wallets—what they are, how they work, and the diff
 ```{toctree}
 :maxdepth: 1
 
-blockchain
-web3
-dapp
-wallet
+potos
+fisco-bcos
 ```
