@@ -34,7 +34,7 @@ contract MyToken is ERC20, ERC20Permit {
 }
 ```
 
-![](../_static/develop/remix-create-new-file.png)
+![](../_static/developer/remix-create-new-file.png)
 
 ## Compile smart contract
 
@@ -46,14 +46,14 @@ To compile your contract, do the following:
 * Cliick on the Compile MyToken.sol  button to compile `MyToken.sol` contract.
 * After successful compilation, it will show a green tick mark on the Compiler tab button
 
-![](../_static/develop/remix-compile-contract.png)
+![](../_static/developer/remix-compile-contract.png)
 
 ## Setting up deployment environment
 
 * Select the appropriate [Environment].
 * You can select Injected Provider - MetaMask
 
-![](../_static/develop/remix-deploy-env.png)
+![](../_static/developer/remix-deploy-env.png)
 
 ## Import account in Metamask
 
@@ -71,7 +71,7 @@ In this section, we will deploy the MyToken.sol contract using Metamask. Having 
 * Select the contract you want to deploy in the CONTRACT field.
 * Click on the Deploy button. This would generate a Metamask popup that requires transaction confirmation. Simply confirm the transaction!
 
-![](../_static/develop/remix-deploy-contract.png)
+![](../_static/developer/remix-deploy-contract.png)
 
 ## Interacting with the smart contract
 
@@ -85,4 +85,4 @@ After deploying the contract, you can interact with the contract by calling the 
 * Confirm the transaction in Metamask.
 * You can click on the "Terminal" tab below the page to see the transaction details.
 
-![](../_static/develop/remix-transact.png)
+![](../_static/developer/remix-transact.png)

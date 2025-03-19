@@ -85,7 +85,7 @@ For more details, you can refer to the [Generating the EC private key](https://k
 
 You can also create an account using crypto wallets like MetaMask. These wallets generate a private key for you, which you can use to access your account.
 
-You can check this [link](../develop/wallet_usage.md) to use MetaMask to create an account.
+You can check this [link](../developer/wallet_usage.md) to use MetaMask to create an account.
 
 ## Contract accounts creation
 

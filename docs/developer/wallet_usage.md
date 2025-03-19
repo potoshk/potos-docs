@@ -12,16 +12,16 @@ To access the FISCO BCOS network, follow steps below to configure MetaMask:
 
 - Open the “Network” setting, click “Add a network”:
 
-    ![](../_static/develop/connect_1.png)
+    ![](../_static/developer/connect_1.png)
 
 - Click “Add a network manually”:
 
-    ![](../_static/develop/connect_2.png)
+    ![](../_static/developer/connect_2.png)
 
 - Fill in required information for the FISCO BCOS network and click “Save”. If you are connecting to your local FISCO BCOS private chain, fill in the RPC URL with http://[IP]:[PORT] and Chain ID with the chain ID of your local FISCO BCOS private chain.
   - The default chain ID for FISCO BCOS is `20200` and the default RPC URL is `http://127.0.0.1:8545`. The `Network name` and `Currency symbol` are not required, you can fill in any name you like.
 
-    ![](../_static/develop/connect_3.png)
+    ![](../_static/developer/connect_3.png)
 
 - You will see the FISCO BCOS network added to the list.
 
@@ -35,25 +35,25 @@ Supply your wallet address to your local FISCO BCOS network operator to get free
 
 You may find your wallet address here:
 
-![](../_static/develop/wallet_address.png)
+![](../_static/developer/wallet_address.png)
 
 ## Step 4. Trading with MetaMask Wallet
 
 Once balance is updated, you can start trading on the FISCO BCOS network.
 
-![](../_static/develop/updated_balance.png)
+![](../_static/developer/updated_balance.png)
 
 - To transfer tokens to another wallet address, make sure that you set a gas limit >= 210,000 WEI.
 
-![](../_static/develop/transfer.png)
+![](../_static/developer/transfer.png)
 
 - Confirm the transaction:
 
-![](../_static/develop/transfer_confirm.png)
+![](../_static/developer/transfer_confirm.png)
 
 - Details will be displayed confirmation:
 
-![](../_static/develop/transaction_info.png)
+![](../_static/developer/transaction_info.png)
 
 ## Explorer
 
@@ -67,7 +67,7 @@ Configure environment information in Deployment & Run Transactions tab [here](ht
 
 Select `Injected Provider - MetaMask` for `Environment`:
 
-![](../_static/develop/remix_config.png)
+![](../_static/developer/remix_config.png)
 
 When initiating a deployment or calling on a contract, Remix will send the contract content to MetaMask. You will need to confirm transaction on MetaMask.
 

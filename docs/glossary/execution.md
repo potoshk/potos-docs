@@ -6,7 +6,7 @@ With technological advancements, attention has turned to the performance and usa
 
 EVMC (Ethereum Client-VM Connector API) is the executor interface abstracted by Ethereum, aimed at interfacing with various types of executors. FISCO BCOS currently adopts mainstream smart contract language of Web3, Solidity, and therefore continues to use EVMC abstraction of the executor interface."
 
-![](../_static/advance/evmc_frame.png)
+![](../_static/glossary/evmc_frame.png)
 
 Within the node, the consensus module hands over the packaged blocks to the executor for execution. When the virtual machine operates, any read and write operations on the state are managed through EVMC callbacks, which in turn manipulate the state data on the node.
 

@@ -21,7 +21,7 @@ Precompiled contracts advantages:
 The architecture of Precompiled is shown in the following figure.
 The block validator determines the type based on the address of the called contract when executing the transaction。Addresses 1-4 represent Ethereum precompiled contracts, addresses 0x1000-0x10000 are C++Precompiled contracts, other addresses are EVM contracts。
 
-![](../_static/advance/architecture2.png)
+![](../_static/glossary/architecture2.png)
 
 ## Key Processes
 

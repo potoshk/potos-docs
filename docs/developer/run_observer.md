@@ -220,16 +220,16 @@ To access the observer node network, follow steps below to configure MetaMask:
 
 - Open the “Network” setting, click “Add a network”:
 
-    ![](../_static/develop/connect_1.png)
+    ![](../_static/developer/connect_1.png)
 
 - Click “Add a network manually”:
 
-    ![](../_static/develop/connect_2.png)
+    ![](../_static/developer/connect_2.png)
 
 - Fill in required information for the local observer node network and click “Save”.
   - The default chain ID for FISCO BCOS is `20200` and the default RPC URL is `http://127.0.0.1:8545`. The `Network name` and `Currency symbol` are not required, you can fill in any name you like.
 
-    ![](../_static/develop/connect_3.png)
+    ![](../_static/developer/connect_3.png)
 
 - You will see the observer node network added to the list.
 

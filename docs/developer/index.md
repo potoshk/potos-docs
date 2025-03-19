@@ -19,8 +19,8 @@ And more，you can also learn how to participate in consensus and governance on 
 
 Before you start developing on the FISCO BCOS, you need to have the following prerequisites:
 
-- Basic knowledge of blockchain technology, see more in [Intro to blockchain](../basic/blockchain.md), [Intro to wallet](../basic/wallet.md).
-- Understanding advanced concepts of the FISCO BCOS, see more in [](../advance/index.md).
+- Basic knowledge of blockchain technology, see more in [Intro to blockchain](../concepts/blockchain.md), [Intro to wallet](../concepts/wallet.md).
+- Understanding advanced concepts of the FISCO BCOS, see more in [](../glossary/index.md).
 - Learning Solidity smart contract language, see more in [Solidity](./solidity.md) chapter.
 
 ## For Web3 developers
@@ -53,7 +53,7 @@ After you have deployed your smart contract to the FISCO BCOS, you can check the
 
 ### Step 4: Develop your DApp
 
-After you have deployed your smart contract to the FISCO BCOS, you can develop your [DApp](../basic/dapp.md) to interact with the smart contract.
+After you have deployed your smart contract to the FISCO BCOS, you can develop your [DApp](../concepts/dapp.md) to interact with the smart contract.
 
 Here is a tutorial of build a first DApp: [Build a first DApp](./dapp_guide.md).
 
@@ -72,7 +72,7 @@ For you to run a node, you can follow the [guide](./run_node.md).
 - If you want to participate in consensus and governance, you can follow the [Run a consensus node](./run_consensus.md) guide.
 - If you want to be a observer, you can follow the [Run a observer node](./run_observer.md) guide.
 
-More information of node types instructions in [Node types](../advance/nodes.md).
+More information of node types instructions in [Node types](../glossary/nodes.md).
 
 ### Step 3: Configuration and management
 

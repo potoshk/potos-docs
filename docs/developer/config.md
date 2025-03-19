@@ -93,7 +93,7 @@ The `[executor]` configuration items involve executor-related genesis block conf
 
 ### 1.2 On-Chain System Configuration
 
-On-Chain System Configuration includes system parameter management, consensus node management, permission management, and balance management. These management features are implemented through built-in precompiled contracts in FISCO BCOS. For more information on the principles of precompiled contracts, please refer to: [Precompiled C++ engine — FISCO BCOS documentation](https://universal-bcos.readthedocs.io/en/latest/advance/precompiled.html).
+On-Chain System Configuration includes system parameter management, consensus node management, permission management, and balance management. These management features are implemented through built-in precompiled contracts in FISCO BCOS. For more information on the principles of precompiled contracts, please refer to: [Precompiled C++ engine — FISCO BCOS documentation](https://universal-bcos.readthedocs.io/en/latest/glossary/precompiled.html).
 
 #### 1.2.1 System Parameter Management
 

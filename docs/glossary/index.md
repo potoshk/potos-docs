@@ -7,7 +7,7 @@ myst:
 
 # Glossary
 
-This chapter provides a comprehensive advanced consensus of the FISCO BCOS (FISCO BCOS) blockchain ecosystem.
+This chapter provides a comprehensive advanced consensus of the FISCO BCOS blockchain ecosystem.
 
 We'll start with the fundamentals of FISCO BCOS accounts, including their data structure, types, key pairs, and creation processes for both externally-owned accounts (EOAs) and contract accounts.
 

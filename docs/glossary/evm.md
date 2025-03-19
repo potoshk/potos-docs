@@ -17,7 +17,7 @@ EVMC defines two main types of invocation interfaces:
 
 The EVM itself does not save state data. The node operates the EVM through the instance interface. The EVM, in turn, adjusts the Callback interface to operate the state of the node.
 
-![](../_static/advance/evmc.png)
+![](../_static/glossary/evmc.png)
 
 ## EVM execution process
 

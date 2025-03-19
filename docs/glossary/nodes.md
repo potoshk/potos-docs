@@ -38,4 +38,4 @@ The light node can then independently verify the data they receive against the s
 
 Interested in running your own FISCO BCOS node?
 
-For a beginner-friendly introduction visit our [run a node](../develop/run_node.md) page to learn more.
+For a beginner-friendly introduction visit our [run a node](../developer/run_node.md) page to learn more.

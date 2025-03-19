@@ -660,24 +660,24 @@ Initiate a proposal to upgrade the voting calculation logic. The process of upgr
 
    Open Remix and use the git feature to pull the `bcos-auth` repository.
 
-   ![](../_static/develop/remix-import-bcos-auth.png)
+   ![](../_static/developer/remix-import-bcos-auth.png)
 
    Select CommitteeManager.sol, compile, and point to the contract address `0x0000000000000000000000000000000000010001`
 
-   ![](../_static/develop/remix-at-bcos-auth.png)
+   ![](../_static/developer/remix-at-bcos-auth.png)
 
    View the committee contract address and the proposal manager's contract address
 
-   ![](../_static/develop/remix-committee-address.png)
+   ![](../_static/developer/remix-committee-address.png)
 
    Select PrposalManager.sol, compile, and point to the contract address obtained earlier
 
-   ![](../_static/develop/remix-proposal-contract.png)
+   ![](../_static/developer/remix-proposal-contract.png)
 
    Call the ProposalManager interface to view the specific information of the proposal
 
-   ![](../_static/develop/remix-get-proposal-info.png)
+   ![](../_static/developer/remix-get-proposal-info.png)
 
    Call the CommitteeManager interface to vote on the proposal
 
-   ![](../_static/develop/remix-vote-proposal.png)
+   ![](../_static/developer/remix-vote-proposal.png)

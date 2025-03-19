@@ -162,7 +162,7 @@ The steps for permission governance execution are as follows:
 8. `CommitteeManager` confirms the status of the proposal, and after reaching an executable state, initiates a call to `SystemConfigPrecompiled` or `ConsensusPrecompiled`.
 9. The system precompiled contract will first confirm whether the caller of the call starts with /sys/, and if confirmed, execute. (CommitteeManager is a contract built into the chain and has a fixed address /sys/10001)
 
-![](../_static/develop/bcos-auth.png)
+![](../_static/developer/bcos-auth.png)
 
 ## 3. Permission Management Design
 
@@ -225,7 +225,7 @@ From Section 2, it is known that all on-chain system configurations can be chang
 
 From the above, permission control contains three levels: governance committee members can control every contract administrator by proposing vote-proposals; contract administrator can control ACL of one single contract's interfaces.
 
-![](../_static/develop/permission_layers.png)
+![](../_static/developer/permission_layers.png)
 
 #### 3.2.1 Contract Deployment Permission Control
 
@@ -243,17 +243,17 @@ After the contract deployment transaction is executed, the default administrator
 
 When the contract deployment creates the contract storage table, it will include the creation of a contract permission control appendix, as shown below. The contract administrator will change the contract interface permissions by changing this permission control appendix.
 
-![](../_static/develop/permission_bcos_layer.drawio.png)
+![](../_static/developer/permission_bcos_layer.drawio.png)
 
 #### 3.2.2 Contract Invocation Permission Control
 
 The contract administrator can fully control the permissions of the contract interface.
 
-![](../_static/develop/contract_admin.png)
+![](../_static/developer/contract_admin.png)
 
 When a normal user accesses a contract interface, the contract permission control table will be checked for any permission restrictions on ordinary users.
 
-![](../_static/develop/permission_user.png)
+![](../_static/developer/permission_user.png)
 
 #### 3.2.3 Contract Freezing, Thawing, and Decommissioning
 
@@ -263,7 +263,7 @@ Similarly, the contract administrator can fully control the status of the contra
 
 The data structure of the account is as follows, and the permissions regarding the account will be recorded in the `/usr/abc123` table, and the balance of the account will be recorded in the corresponding mapping table `/apps/abc123`.
 
-![](../_static/develop/account_data_struct.png)
+![](../_static/developer/account_data_struct.png)
 
 #### 3.3.1 Account Lifecycle
 

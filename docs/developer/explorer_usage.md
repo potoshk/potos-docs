@@ -2,7 +2,7 @@
 
 Explorer is blockchain explorer for FISCO BCOS. Explorer gives you an insight about the blockchain network by monitoring the network health and providing various statistics. You can also explore the block and transaction data and the list of smart contracts on the FISCO BCOS blockchain network.
 
-![](../_static/develop/WeCoScan-main.png)
+![](../_static/developer/WeCoScan-main.png)
 
 ## Major Features
 
@@ -19,7 +19,7 @@ In the subsequent sections, we will visit the major functions and screenshots of
 
 Network information is presented in the dashboard. The information includes transaction amount, last block committed, and the latest trends in transactions.
 
-![](../_static/develop/wecoscan-dashboard.png)
+![](../_static/developer/wecoscan-dashboard.png)
 
 * Transactions: Totoal transactions amount.
 * Last Block: The latest block height. It shows that how many blocks have been generated since the genesis.
@@ -29,11 +29,11 @@ Network information is presented in the dashboard. The information includes tran
 
 These lists show recently created blocks and transactions respectively.
 
-![](../_static/develop/wecoscan-recent.png)
+![](../_static/developer/wecoscan-recent.png)
 
 ## Block detail
 
-![](../_static/develop/wecoscan-block.png)
+![](../_static/developer/wecoscan-block.png)
 
 Overall information about the block.
 
@@ -48,7 +48,7 @@ Overall information about the block.
 
 ## Transaction detail
 
-![](../_static/develop/wecoscan-tx.png)
+![](../_static/developer/wecoscan-tx.png)
 
 Overall information about the transaction.
 
@@ -60,7 +60,7 @@ Overall information about the transaction.
 
 Through WeCoScan, you can search for the information about transactions and blocks. Entering a valid keyword will take you to the detail view of the entity.
 
-![](../_static/develop/wecoscan-search.png)
+![](../_static/developer/wecoscan-search.png)
 
 Searchable keywords are hash of block and transaction, and only supported in the following formats:
 
@@ -70,4 +70,4 @@ Searchable keywords are hash of block and transaction, and only supported in the
 
 If you search for a keyword that doesn't fit in the specified format or information hasn't yet been generated, no result page will appear.
 
-![](../_static/develop/wecoscan-search-error.png)
+![](../_static/developer/wecoscan-search-error.png)
