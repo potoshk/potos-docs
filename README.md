@@ -129,7 +129,7 @@ FISCO BCOS is a next-generation ope-source blockchain infrastructure optimized f
 
   [https://docs.potos.hk/en/latest/community/participate.html](https://docs.potos.hk/en/latest/community/participate.html)
 
-- ### Github
+- ### GitHub
   [https://github.com/FISCO-BCOS/FISCO-BCOS](https://github.com/FISCO-BCOS/FISCO-BCOS)
 
   [https://github.com/WeTechHK/bcos-dao](https://github.com/WeTechHK/bcos-dao)
