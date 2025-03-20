@@ -1,24 +1,16 @@
 ---
 myst:
   html_meta:
-    "description lang=en": "Joining part of POTOS community and as a validator or observator node"
+    "description lang=en": |
+      Community resources of FISCO BCOS.
 ---
 
-# Community Guide
-
-This page contains informatino on how to become a validator or observator node.
+# Community
 
 ```{toctree}
-:maxdepth: 2
-:caption: Validator
+:caption: Community
+:maxdepth: 1
 
-connect
+participate
 ```
-
-```{toctree}
-:caption: Observator Node
-:glob:
-observator/index
-```
-
 
