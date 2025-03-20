@@ -86,7 +86,7 @@ FISCO BCOS is a next-generation ope-source blockchain infrastructure optimized f
 - #### Consensus algorithm
     [https://docs.potos.hk/en/latest/glossary/consensus.html](https://docs.potos.hk/en/latest/glossary/consensus.html)
 
-- #### DAO ----无
+<!-- - #### DAO ----无 -->
 
 ## Developer
 
