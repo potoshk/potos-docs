@@ -86,7 +86,7 @@ FISCO BCOS is a next-generation ope-source blockchain infrastructure optimized f
 - #### Consensus algorithm
     [https://docs.potos.hk/en/latest/glossary/consensus.html](https://docs.potos.hk/en/latest/glossary/consensus.html)
 
-- #### DAO ----无
+<!-- - #### DAO ----无 -->
 
 ## Developer
 
@@ -119,16 +119,15 @@ FISCO BCOS is a next-generation ope-source blockchain infrastructure optimized f
 
 ## Community
 
-- ### DAO----无？
+<!-- - ### DAO----无？
   介绍一下Dao机制
 
 - ### Roles----无？
-  委员会机制，有什么角色 / 功能。。。。
+  委员会机制，有什么角色 / 功能。。。。 -->
 
 - ### Participate 
 
-  Observer Node / Validator Node 介绍加入条件、加入的流程
-[https://docs.potos.hk/en/latest/community/participate.html](https://docs.potos.hk/en/latest/community/participate.html)
+  [https://docs.potos.hk/en/latest/community/participate.html](https://docs.potos.hk/en/latest/community/participate.html)
 
 - ### Github
   [https://github.com/FISCO-BCOS/FISCO-BCOS](https://github.com/FISCO-BCOS/FISCO-BCOS)
@@ -136,7 +135,7 @@ FISCO BCOS is a next-generation ope-source blockchain infrastructure optimized f
   [https://github.com/WeTechHK/bcos-dao](https://github.com/WeTechHK/bcos-dao)
 
   [https://github.com/potoshk/blockscout](https://github.com/potoshk/blockscout)
-  
+
   [https://github.com/potoshk/blockscout-frontend](https://github.com/potoshk/blockscout-frontend)
   
 
