@@ -2,7 +2,7 @@
 
 https://potos.hk/#/potos
 
-POTOS(Portal of the Orient Symposium) is a cutting-edge Layer 1 blockchain platform built for the Web3 era.
+POTOS(Portal of the Orient Symposium) is a cutting-edge Layer 1 blockchain platform built for the Web3.0 era.
 ![](../_static/concepts/potos.png)
 
 

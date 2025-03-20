@@ -23,7 +23,7 @@ Before you start developing on the FISCO BCOS, you need to have the following pr
 - Understanding advanced concepts of the FISCO BCOS, see more in [](../glossary/index.md).
 - Learning Solidity smart contract language, see more in [Solidity](./solidity.md) chapter.
 
-## For Web3 developers
+## For Web3.0 developers
 
 If you are new to the FISCO BCOS, you can start with the following steps, which will help you get started with developing on the FISCO BCOS.
 
@@ -37,7 +37,7 @@ For more details: [Connecting Remix to FISCO BCOS](./remix_usage.md)
 
 Crypto wallet is the bridge between reality and the blockchain. It allows you to interact with the blockchain, such as sending transactions, deploying smart contracts, and so on.
 
-[MetaMask](https://metamask.io/) is a popular crypto wallet in Web3. And it is also compatible with the FISCO BCOS.
+[MetaMask](https://metamask.io/) is a popular crypto wallet in Web3.0. And it is also compatible with the FISCO BCOS.
 
 For more details: [Connecting MetaMask to FISCO BCOS](./wallet_usage.md)
 

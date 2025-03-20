@@ -2,7 +2,7 @@
 
 https://potos.hk/#/fisco-bcos
 
-FISCO BCOS is a next-generation ope-source blockchain infrastructure optimized for the Web3 economy. Built to financial-grade standards, FISCO BCOS features a highly open network with robust Web3 capabilities and seamless user experience, all of which are engineered for laying a solid foundation for the development of Hong Kong's Web3 ecosystem.
+FISCO BCOS is a next-generation ope-source blockchain infrastructure optimized for the Web3.0 economy. Built to financial-grade standards, FISCO BCOS features a highly open network with robust Web3.0 capabilities and seamless user experience, all of which are engineered for laying a solid foundation for the development of Hong Kong's Web3.0 ecosystem.
 FISCO BCOS offers several key advantages:
 
 ![](../_static/concepts/fisco-bcos.png)
@@ -16,6 +16,6 @@ FISCO BCOS offers several key advantages:
 
 **Regulation Friendly**: FISCO BCOS comes with integrated KYB (Know Your Business) and KYT (Know Your Transaction) functionalities, facilitating institution onboarding, contract approval, and transaction auditing. It provides versatilegovernance tools and a compliance monitoring platform, empowering businesses and developers to operate efficiently within regulatory frameworks.
 
-With its financial-grade capabilities, regulator friendly architecture, extensive developer support, and dynamic ecosystem, FISCO BCOS presents a reliable choice for Hong Kong's Web3 infrastructure.
+With its financial-grade capabilities, regulator friendly architecture, extensive developer support, and dynamic ecosystem, FISCO BCOS presents a reliable choice for Hong Kong's Web3.0 infrastructure.
 
 Built upon FISCO BCOS, POTOS offers developers a platform with limitless innovation potential and supports the digital transformation of enterprises. Together, this opens up possibilities for a wide range of applications such as stablecoins, NFTs, DePin, and RWA, nurturing a trusted and sustainable digital economy.

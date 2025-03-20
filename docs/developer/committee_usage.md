@@ -3,7 +3,7 @@
 Key to Permission Governance: Control of Keys
 
 - If the keys are in the hands of operators who can use the `console` to operate the blockchain, refer to Section 1 below.
-- If the keys are in the hands of individual users or there are no conditions to use the console to operate the blockchain, operations can be performed through `Web3 JSON RPC`, refer to Section 2 below.
+- If the keys are in the hands of individual users or there are no conditions to use the console to operate the blockchain, operations can be performed through `Web3.0 JSON RPC`, refer to Section 2 below.
 
 ## 1. Operator Chain Governance Operations
 
@@ -656,7 +656,7 @@ Initiate a proposal to upgrade the voting calculation logic. The process of upgr
    [group0]: /apps>
    ```
 
-   ## 2. Web3 Method for Chain Governance Operations
+   ## 2. Web3.0 Method for Chain Governance Operations
 
    Open Remix and use the git feature to pull the `bcos-auth` repository.
 
