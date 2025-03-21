@@ -11,7 +11,7 @@ myst:
 :caption: Community
 :maxdepth: 1
 
+committee
 participate
 github
 ```
-
