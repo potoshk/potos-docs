@@ -1,74 +1,63 @@
-# Wallet
+# Guide to MetaMask & Connecting to the Testnet
 
-This section will provide an example of connecting to local FISCO BCOS network using MetaMask. Local FISCO BCOS private chain is a private chain that you can deploy on your local machine. If you are using a local FISCO BCOS private chain, please make sure you have the chain ID and RPC URL. The chain ID is the ID of the chain you are connecting to, default chain ID for FISCO BCOS is 20200. The RPC URL is the URL of the node you are connecting to, default URL is http://127.0.0.1:8545.
+## Goal
 
-## Step 1. Create A Wallet
+This guide will walk you through the process of setting up MetaMask and connecting to the Testnet.
+This is a necessary step for developers who want to interact with Dapps or smart contracts on our network.
 
-If you do not have a wallet yet, create an account using MetaMask (choose any Ethereum-compatible account type) [here](https://metamask.io/download/). For more information on MetaMask, please refer [here](https://docs.metamask.io/).
+## Overview
 
-## Step 2. Connect MetaMask to the FISCO BCOS
+- Install MetaMask
+- Create a MetaMask account
+- Connect to the Testnet
+- Get Testnet tokens
 
-To access the FISCO BCOS network, follow steps below to configure MetaMask:
+### Step 1: Install MetaMask
 
-- Open the “Network” setting, click “Add a network”:
+1. Google "MetaMask" or go to the [MetaMask download page](https://metamask.io/download/) and click "Install MetaMask for Chrome". ![[image]](../_static/dev_guide/download_metamask.png)
+   Alternatively, get the mobile app for iOS or Android accordingly. ![[image]](../_static/dev_guide/download_metamask_mobile.png)
+2. Click **"Add to Chrome"**. ![[image]](../_static/dev_guide/add_to_chrome.png)
+3. A popup will appear. Click **"Add Extension"** to confirm.
+4. Once installed, the MetaMask fox icon will appear in your browser toolbar. ![[image]](../_static/dev_guide/metamask_toolbar.png)
 
-    ![](../_static/developer/connect_1.png)
+### Step 2: Create a MetaMask Account
 
-- Click “Add a network manually”:
+1. For Chrome extension, click on the MetaMask fox icon in the toolbar to open the extension; for mobile app, open the app and follow instructions.
+2. Check Terms of Use agreement & Select **"Create a new wallet"**. ![[image]](../_static/dev_guide/create_wallet.png)
+3. Agree or disagree to the MetaMask data collection option (this is optional and won't affect functionality).
+4. Set a strong password for your wallet and click **"Create a new wallet"**. ![[image]](../_static/dev_guide/set_password.png)
+5. MetaMask will give an option to set up secret recovery phrase:
+   - **"Remind me later"** will skip this step.
+   - **"Secure my wallet"** will take you to the next step.
+6. MetaMask will display a group 12 words as **Secret Recovery Phrase**:
+   - **Write down the phrase in order** and keep it safe.
+   - Never share this phrase with anyone. ![[image]](../_static/dev_guide/secret_recovery_phrase.png)
+7. Confirm your Secret Recovery Phrase by filling the missing words in the correct order. ![[image]](../_static/dev_guide/confirm_phrase.png)
+8. Click **"Done"** to complete account creation. ![[image]](../_static/dev_guide/done.png)
 
-    ![](../_static/developer/connect_2.png)
+### Step 3: Connect to the Testnet
 
-- Fill in required information for the FISCO BCOS network and click “Save”. If you are connecting to your local FISCO BCOS private chain, fill in the RPC URL with http://[IP]:[PORT] and Chain ID with the chain ID of your local FISCO BCOS private chain.
-  - The default chain ID for FISCO BCOS is `20200` and the default RPC URL is `http://127.0.0.1:8545`. The `Network name` and `Currency symbol` are not required, you can fill in any name you like.
+1. Open MetaMask on Chrome extension or mobile app and unlock it using your password.
+2. Click on the **Network Selector** (top-left dropdown that shows "Ethereum Mainnet" by default). ![[image]](../_static/dev_guide/select_network.png)
+3. Select **"+ Add a custom network"**. ![[image]](../_static/dev_guide/add_new_network.png)
+4. Fill in the details for our Testnet & Click **"Save"**:
 
-    ![](../_static/developer/connect_3.png)
+   | Entry Name         | Value                       | Note                         |
+   |--------------------|-----------------------------|------------------------------|
+   | Network name       | Testnet                     | Name of network              |
+   | Default RPC URL    | https://rpc.eightart.hk/    | RPC URL of network           |
+   | Chain ID           | 20200                       | blockchain's chain ID        |
+   | Currency symbol    | HKC                         | token symbol                 |
+   | Block explorer URL | https://scan.eight-art.com/ | URL of blockchain's explorer |
 
-- You will see the FISCO BCOS network added to the list.
+   ![[image]](../_static/dev_guide/network_detail.png)
 
-## Step 3. Get Utility Tokens
+### Step 4: Get Testnet Tokens
 
-Utility tokens are required to pay for gas fees when deploying contracts or interacting with contracts on the FISCO BCOS network.
+1. Log in and switch to Testnet in MetaMask app ![[image]](../_static/dev_guide/metamask_app_home.png) ![[image]](../_static/dev_guide/metamask_app_switch_testnet.png)
+2. Go to the [Faucet](https://faucet.eightart.hk).
+3. Click **"Connect Wallet"** and scan with MetaMask app. ![[image]](../_static/dev_guide/faucet_home.png)
+4. Information will be automatically filled in. Click **"Request tokens"**. ![[image]](../_static/dev_guide/request_tokens.png)
+5. Wait few moments and check wallet balance.
 
-Billing Model is not availible by default, you can check this [link](./management.md) to configure the billing model.
-
-Supply your wallet address to your local FISCO BCOS network operator to get free utility token funds.
-
-You may find your wallet address here:
-
-![](../_static/developer/wallet_address.png)
-
-## Step 4. Trading with MetaMask Wallet
-
-Once balance is updated, you can start trading on the FISCO BCOS network.
-
-![](../_static/developer/updated_balance.png)
-
-- To transfer tokens to another wallet address, make sure that you set a gas limit >= 210,000 WEI.
-
-![](../_static/developer/transfer.png)
-
-- Confirm the transaction:
-
-![](../_static/developer/transfer_confirm.png)
-
-- Details will be displayed confirmation:
-
-![](../_static/developer/transaction_info.png)
-
-## Explorer
-
-You can check activities taking place on the Explorer.
-
-For more details on how to use the explorer, please refer [here](./explorer_usage.md).
-
-## Interact with Remix
-
-Configure environment information in Deployment & Run Transactions tab [here](https://remix.ethereum.org/).
-
-Select `Injected Provider - MetaMask` for `Environment`:
-
-![](../_static/developer/remix_config.png)
-
-When initiating a deployment or calling on a contract, Remix will send the contract content to MetaMask. You will need to confirm transaction on MetaMask.
-
-For more steps on how to deploy a contract using Remix, please refer [here](./remix_usage.md).
+You are now ready to interact with Dapps and smart contracts on our network!
