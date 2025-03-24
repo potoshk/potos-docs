@@ -63,7 +63,6 @@ As globalization accelerates and enters a deeper phase, FISCO BCOS will continue
 Founded by 20+ financial institutions and technology companies including WeBank, Tencent, Shenzhen Fintech Association and Shenzhen Securities Communication in May 2016, FISCO is an NPO that commits to the mission of integrating R&D resources and form synergy in the industry to develop a series of financial-grade blockchain infrastructure and promote an application ecosystem built upon them. With over a hundred member institutions from six major sectors across the country including banking, securities, fund, insurance, equity exchange and technology, FISCO is now one of China’s largest blockchain organizations and also one of the most internationally influential fintech consortiums.
 
  
-
 ### Glossary
 
 - #### Accounts
