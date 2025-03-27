@@ -5,7 +5,7 @@ myst:
       Basic concepts of POTOS.
 ---
 
-# Introdction
+# Introduction
 
 ## What is POTOS?
 
