@@ -5,7 +5,7 @@ myst:
       Development steps on FISCO BCOS.
 ---
 
-# Developer
+# Usage
 
 ## Before you start
 
