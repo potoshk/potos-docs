@@ -148,7 +148,7 @@ html_theme_options = {
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
     # "twitter_url": "https://twitter.com/PyData",
     "logo": {
-        "text": "POTOS",
+        # "text": "POTOS",
         "image_dark": "_static/logo-dark.svg",
     },
     "use_edit_page_button": True,
