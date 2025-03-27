@@ -5,7 +5,7 @@ myst:
       Development steps on POTOS.
 ---
 
-# Developer
+# Usage
 
 ## Before you start
 
