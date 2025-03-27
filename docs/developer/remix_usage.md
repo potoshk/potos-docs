@@ -1,4 +1,4 @@
-# Connecting Remix to FISCO BCOS
+# Connecting Remix to POTOS
 
 Remix is a browser-based IDE (Integrated Development Environment) for developing Solidity contracts. In this guide, you will learn how to:
 
@@ -6,11 +6,11 @@ Remix is a browser-based IDE (Integrated Development Environment) for developing
 * Compile the smart contract.
 * Set up deployment environment
 * Import account
-* Connect FISCO BCOS to Remix using MetaMask
+* Connect POTOS to Remix using MetaMask
 * Deploy the smart contract.
 * Verify the smart contract.
 
-This will cover connecting Remix with FISCO BCOS. If you want to know more about how to use Remix, please refer to [Remix docs](https://remix-ide.readthedocs.io/en/latest/) or [Remix IDE](https://remix.ethereum.org/).
+This will cover connecting Remix with POTOS. If you want to know more about how to use Remix, please refer to [Remix docs](https://remix-ide.readthedocs.io/en/latest/) or [Remix IDE](https://remix.ethereum.org/).
 
 ## Creating a file on Remix
 

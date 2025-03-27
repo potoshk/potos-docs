@@ -2,13 +2,13 @@
 
 The Ethereum Virtual Machine (EVM) is a decentralized virtual environment that executes code consistently and securely across all Ethereum nodes.
 
-FISCO BCOS embraces the Ethereum development ecosystem, fully supporting the Solidity contract language up to version 0.8.26.
+POTOS embraces the Ethereum development ecosystem, fully supporting the Solidity contract language up to version 0.8.26.
 
-FISCO BCOS uses the EVM implementation called [evmone](https://github.com/ethereum/evmone), which is a C++ implementation and is the high-performing EVM implementation.
+POTOS uses the EVM implementation called [evmone](https://github.com/ethereum/evmone), which is a C++ implementation and is the high-performing EVM implementation.
 
 ## EVMC interface usage
 
-The EVMC interface is used to connect the EVM implementation to the FISCO BCOS node. The EVMC interface is a standard interface that allows the FISCO BCOS node to support multiple EVM implementations.
+The EVMC interface is used to connect the EVM implementation to the POTOS node. The EVMC interface is a standard interface that allows the POTOS node to support multiple EVM implementations.
 
 EVMC defines two main types of invocation interfaces:
 
