@@ -1,6 +1,6 @@
 # POTOS文档目录
 
-## Concepts
+## Introdction
 
 ### What is POTOS?
 
