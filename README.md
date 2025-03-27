@@ -56,7 +56,7 @@ The "Open Innovation" philosophy has invited numerous partners to join the formi
 
 **A Vision for the Future**
 
-As globalization accelerates and enters a deeper phase, FISCO BCOS will continue to break down barriers, transforming its best practices into global de facto standards, empowering digital transformation in more countries and regions, as an ardent commitment to promote the sustainable prosperity of the global digital econom
+As globalization accelerates and enters a deeper phase, FISCO BCOS will continue to break down barriers, transforming its best practices into global de facto standards, empowering digital transformation in more countries and regions, as an ardent commitment to promote the sustainable prosperity of the global digital econom.
 
 ### Glossary
 
