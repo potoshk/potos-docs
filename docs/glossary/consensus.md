@@ -2,9 +2,9 @@
 
 Blockchain system guarantees system consistency through consensus algorithm. In theory, consensus is a fundamental problem in distributed computing and multi-agent systems is to achieve overall system reliability in the presence of a number of faulty processes, which often requires coordinating processes to reach consensus, or agree on some data value that is needed during computation.
 
-In regard to the FISCO BCOS blockchain, the process is formalized, and reaching consensus means that most of the nodes on the network agree on the global state of the network.
+In regard to the POTOS blockchain, the process is formalized, and reaching consensus means that most of the nodes on the network agree on the global state of the network.
 
-FISCO BCOS currently supports PBFT(Practical Byzantine Fault Tolerance)and PoS-rPBFT algorithms.
+POTOS currently supports PBFT(Practical Byzantine Fault Tolerance)and PoS-rPBFT algorithms.
 
 ## Types of consensus mechanisms
 
@@ -38,7 +38,7 @@ In order to prevent nodes from doing evil, each consensus node in the PBFT conse
 
 **Node ID:** Consensus node signature public key and consensus node unique identifier, usually a 64-byte binary string, other nodes use the node ID of the message packet sender to verify the message packet
 
-Considering that the node ID is very long, including this field in the consensus message will consume part of the network bandwidth, FISCO BCOS introduces a node index, each consensus node maintains a public consensus node list, and the node index records the position of each consensus node ID in this list:
+Considering that the node ID is very long, including this field in the consensus message will consume part of the network bandwidth, POTOS introduces a node index, each consensus node maintains a public consensus node list, and the node index records the position of each consensus node ID in this list:
 
 **Node index:** The position of each consensus node ID in this list of common node IDs
 
@@ -48,7 +48,7 @@ The PBFT consensus algorithm uses views to record the consensus status of each n
 
 When the leader fails, a view switch occurs. If the view switch is successful(At least 2*f+1 node reaches the same view), select a new leader based on the new view, and the new leader starts to produce new block, otherwise continue to switch views until most of the nodes in the network(Greater than or equal to 2*f+1)Achieve consistent view.
 
-In the FISCO BCOS system, the formula for calculating the leader index is as follows:
+In the POTOS system, the formula for calculating the leader index is as follows:
 
 ```text
 leader_idx = (view + block_number) mod node_num
@@ -78,7 +78,7 @@ Consensus algorithms based on the principle of distributed consistency, such as 
 
 However, the complexity of communication in these algorithms is related to the size of the nodes. So the size of the network that can be supported is limited, which is greatly limits the scalability of the blockchain nodes。
 
-FISCO BCOS proposes the PoS-rPBFT consensus algorithm, which aims to minimize the impact of node size on the consensus algorithm while preserving the high performance, high throughput, high consistency, and security of BFT-like consensus algorithms.
+POTOS proposes the PoS-rPBFT consensus algorithm, which aims to minimize the impact of node size on the consensus algorithm while preserving the high performance, high throughput, high consistency, and security of BFT-like consensus algorithms.
 
 ### Node Type
 

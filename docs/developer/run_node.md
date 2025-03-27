@@ -1,6 +1,6 @@
 # Run a node
 
-FISCO BCOS provides three types of nodes: consensus nodes, observer nodes and light nodes.
+POTOS provides three types of nodes: consensus nodes, observer nodes and light nodes.
 
 - Consensus nodes are responsible for validating transactions and producing new blocks.
 - Observer nodes are full nodes that verify every block from genesis but do not have to participate producing new blocks.
@@ -10,7 +10,7 @@ In this section, you will learn how to run a consensus node, observer node and l
 
 ## Run a consensus node
 
-Running a consensus node is the most common way to participate in the FISCO BCOS network. As core components of the network, consensus nodes play a crucial role in the blockchain's governance by validating transactions and proposing new blocks. Running a consensus node can enhance your influence on FISCO BCOS network, and shape the future direction of the blockchain together.
+Running a consensus node is the most common way to participate in the POTOS network. As core components of the network, consensus nodes play a crucial role in the blockchain's governance by validating transactions and proposing new blocks. Running a consensus node can enhance your influence on POTOS network, and shape the future direction of the blockchain together.
 
 For more information, see [Run a consensus node](./run_consensus.md).
 
@@ -22,7 +22,7 @@ For more information, see [Run a observer node](./run_observer.md).
 
 ## Run a light node
 
-Running a light node is a lightweight way to participate in the FISCO BCOS network. It require minimal resources, making them suitable for users with limited computational power or those who wish to minimize their computation consumption.
+Running a light node is a lightweight way to participate in the POTOS network. It require minimal resources, making them suitable for users with limited computational power or those who wish to minimize their computation consumption.
 
 For more information, see [Run a light node](./run_lightnode.md).
 

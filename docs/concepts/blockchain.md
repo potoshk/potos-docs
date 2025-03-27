@@ -32,7 +32,7 @@ Examples include private blockchains like Hyperledger, designed for secure and p
 
 Consortium blockchains are also permissioned blockchains, but instead of being governed by a single entity, it’s a group of organizations responsible for its management.
 
-A good example of consortium blockchain is [FISCO-BCOS](https://github.com/FISCO-BCOS/FISCO-BCOS). FISCO BCOS has been created to serve as a trusted infrastructure for the digital economy.
+A good example of consortium blockchain is [FISCO-BCOS](https://github.com/FISCO-BCOS/FISCO-BCOS). POTOS has been created to serve as a trusted infrastructure for the digital economy.
 
 - Public and Permissionless Blockchains
 
