@@ -11,8 +11,8 @@ POTOS (Portal of the Orient Symposium)  is a next-generation blockchain solution
 
 
 ## [Introduction](https://docs.potos.hk/en/latest/concepts/index.html)
-- [What is POTOS?](https://docs.potos.hk/en/latest/concepts/index.html#what-is-potos)
-- [What is FISCO BCOS?](https://docs.potos.hk/en/latest/concepts/index.html#what-is-fisco-bcos)
+- [What is POTOS?](https://docs.potos.hk/en/latest/concepts/potos.html)
+- [What is FISCO BCOS?](https://docs.potos.hk/en/latest/concepts/fisco-bcos.html)
 
 ## [Technical Glossary](https://docs.potos.hk/en/latest/glossary/index.html)
 - [Accounts](https://docs.potos.hk/en/latest/glossary/accounts.html)
