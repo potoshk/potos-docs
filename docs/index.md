@@ -7,7 +7,7 @@ html_theme.sidebar_secondary.remove: true
 ---
 # POTOS
 
-POTOS (Portal of the Orient Symposium) ...
+POTOS (Portal of the Orient Symposium)  is a next-generation blockchain solution tailored for the Web 3.0 era. Built on the open-source FISCO BCOS framework, POTOS is designed to deliver a regulatory-friendly, high-performance, and cost-efficient blockchain platform. With its foundation in Hong Kong, POTOS is driving innovation and fostering sustainable growth in the Web 3.0 ecosystem, both locally and globally.
 
 
 ## [Introduction](https://docs.potos.hk/en/latest/concepts/index.html)
