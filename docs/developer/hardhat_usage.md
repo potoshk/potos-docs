@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This section will guide you through deploying an ERC20 to the FISCO BCOS Network using [Hardhat](https://hardhat.org/).
+This section will guide you through deploying an ERC20 to the POTOS Network using [Hardhat](https://hardhat.org/).
 
 Hardhat is a smart-contract development environment that will help you:
 
@@ -14,7 +14,7 @@ the same (in type and value) as another Token.
 
 By the end of this guide you will be able to:
 
-- Set up a Hardhat project on FISCO BCOS.
+- Set up a Hardhat project on POTOS.
 - Create a simple ERC20 token.
 - Compile your smart contract using Hardhat.
 - Test, deploy, and interact with your smart contract using Hardhat.

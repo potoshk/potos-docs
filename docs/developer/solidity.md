@@ -2,13 +2,13 @@
 
 This chapter outlines the fundamental concepts, development processes, and example code in Solidity. Solidity is already well documented on its official websites, so for any language details, please refer to [Solidity documentation](https://solidity.readthedocs.io/en/latest/index.html).
 
-FISCO BCOS is officially compatible with [**Cancun**](https://ethereum.org/en/history/#dencun) EVM version, and is compatible to Solidity version 0.8.26.
+POTOS is officially compatible with [**Cancun**](https://ethereum.org/en/history/#dencun) EVM version, and is compatible to Solidity version 0.8.26.
 
 ## Develoment tools
 
-Smart contract development for FISCO BCOS can be streamlined with tools like:
+Smart contract development for POTOS can be streamlined with tools like:
 
-- [Remix](https://remix.ethereum.org/), a browser-based IDE. For more information about connecting Remix to FISCO BCOS, refer to the [Remix usage guide](./remix_usage.md).
+- [Remix](https://remix.ethereum.org/), a browser-based IDE. For more information about connecting Remix to POTOS, refer to the [Remix usage guide](./remix_usage.md).
 - [Hardhat](https://hardhat.org/), a comprehensive development framework. For more information about deploying smart contracts using Hardhat, refer to the [Hardhat usage guide](./hardhat_usage.md).
 
 ## Solidity Compiler Installation

@@ -2,7 +2,7 @@
 myst:
   html_meta:
     "description lang=en": |
-      Deep dive into FISCO BCOS.
+      Deep dive into POTOS.
 ---
 
 # Research
