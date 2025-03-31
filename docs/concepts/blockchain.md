@@ -4,7 +4,7 @@ Blockchain technology has revolutionized digital transactions by introducing a d
 
 ## What is Blockchain?
 
-In simple words, a blockchain is a distributed and immutable digital ledger that records transactions and tracks the movement of digital assets across its network. Initially developed for financial assets, blockchains have expanded into various applications, embodying the concept of '[Web3.0](./web3.md)'.
+In simple words, a blockchain is a distributed and immutable digital ledger that records transactions and tracks the movement of digital assets across its network. Initially developed for financial assets, blockchains have expanded into various applications, embodying the concept of '[Web3](./web3.md)'.
 
 Blockchains are built upon these fundamental pillars:
 
@@ -12,7 +12,7 @@ Blockchains are built upon these fundamental pillars:
 2. **Immutability:** Once recorded, data on a blockchain cannot be altered or deleted. This feature ensures the integrity and trustworthiness of the ledger, making it tamper-proof.
 3. **Transparency:** All transactions on a blockchain are visible to network participants, promoting accountability and trust among users.
 
-Universal BCOS is a next-generation blockchain infrastructure tailored for the [Web3.0](./web3.md) economy, which features a highly open network with robust Web3.0 capabilities and seamless user experience.
+Universal BCOS is a next-generation blockchain infrastructure tailored for the [Web3](./web3.md) economy, which features a highly open network with robust Web3 capabilities and seamless user experience.
 
 ## Why Blockchain?
 

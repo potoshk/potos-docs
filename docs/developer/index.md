@@ -23,7 +23,7 @@ Before you start developing on the POTOS, you need to have the following prerequ
 - Understanding advanced concepts of the POTOS, see more in [](../glossary/index.md).
 - Learning Solidity smart contract language, see more in [Solidity](./solidity.md) chapter.
 
-## For Web3.0 developers
+## For Web3 developers
 
 If you are new to the POTOS, you can start with the following steps, which will help you get started with developing on the POTOS.
 
@@ -37,7 +37,7 @@ For more details: [Connecting Remix to POTOS](./remix_usage.md)
 
 Crypto wallet is the bridge between reality and the blockchain. It allows you to interact with the blockchain, such as sending transactions, deploying smart contracts, and so on.
 
-[MetaMask](https://metamask.io/) is a popular crypto wallet in Web3.0. And it is also compatible with the POTOS.
+[MetaMask](https://metamask.io/) is a popular crypto wallet in Web3. And it is also compatible with the POTOS.
 
 For more details: [Connecting MetaMask to POTOS](./wallet_usage.md)
 

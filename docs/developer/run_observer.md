@@ -261,7 +261,7 @@ The network settings in the `config.ini` file specify the IP address and port of
 [rpc] ; FISCO BCOS rpc configuration, used in console
     listen_ip=0.0.0.0
     listen_port=20200
-[web3_rpc] ; web3.0 standard rpc configuration, used in MetaMask
+[web3_rpc] ; Web3 standard rpc configuration, used in MetaMask
     enable=true
     listen_ip=0.0.0.0
     listen_port=8545

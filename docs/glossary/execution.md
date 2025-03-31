@@ -4,7 +4,7 @@ The execution of transactions is a vital function on blockchain nodes. Transacti
 
 With technological advancements, attention has turned to the performance and usability of executors. On one hand, there is a desire for smart contracts to execute more quickly on the blockchain to meet the demands of a large volume of transactions. On the other hand, there is a wish to develop using more familiar and user-friendly languages. This has led to the emergence of alternatives to the traditional executor Ethereum Virtual Machine (EVM), such as WASM. The traditional EVM is integrated within the node's code. The first step is to abstract the interface of the executor to be compatible with various virtual machine implementations. Hence, EVMC was designed.
 
-EVMC (Ethereum Client-VM Connector API) is the executor interface abstracted by Ethereum, aimed at interfacing with various types of executors. POTOS currently adopts mainstream smart contract language of Web3.0, Solidity, and therefore continues to use EVMC abstraction of the executor interface."
+EVMC (Ethereum Client-VM Connector API) is the executor interface abstracted by Ethereum, aimed at interfacing with various types of executors. POTOS currently adopts mainstream smart contract language of Web3, Solidity, and therefore continues to use EVMC abstraction of the executor interface."
 
 ![](../_static/glossary/evmc_frame.png)
 

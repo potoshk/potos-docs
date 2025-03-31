@@ -1,6 +1,6 @@
 # What is FISCO BCOS?
 
-Initiated in 2017 by FISCO (Financial Services Blockchain Consortium (Shenzhen)), FISCO BCOS is an open source blockchain platform created to serve as a trusted infrastructure for the digital economy. Delivering financial-grade performance and security, this open platform has immense potential in unleashing data value to empower industrial digitalization and the Web3.0 economy.
+Initiated in 2017 by FISCO (Financial Services Blockchain Consortium (Shenzhen)), FISCO BCOS is an open source blockchain platform created to serve as a trusted infrastructure for the digital economy. Delivering financial-grade performance and security, this open platform has immense potential in unleashing data value to empower industrial digitalization and the Web3 economy.
 
 
 - **Financial-Grade Capabilities, Beyond Underpinning Financial Applications**
