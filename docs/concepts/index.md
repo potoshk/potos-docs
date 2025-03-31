@@ -78,7 +78,7 @@ POTOS is built to embrace the rise of stablecoins and virtual assets. Our platfo
 POTOS is built with a flexible framework that keeps up with evolving digital asset regulations. By integrating core pillars, we offer a secure, transparent, and versatile blockchain solution for innovative enterprises and regulatory bodies in today’s fast-paced digital world.
 ## What is FISCO BCOS?
 
-Initiated in 2017 by FISCO (Financial Services Blockchain Consortium (Shenzhen)), FISCO BCOS is an open source blockchain platform created to serve as a trusted infrastructure for the digital economy. Delivering financial-grade performance and security, this open platform has immense potential in unleashing data value to empower industrial digitalization and the Web3.0 economy.
+Initiated in 2017 by FISCO (Financial Services Blockchain Consortium (Shenzhen)), FISCO BCOS is an open source blockchain platform created to serve as a trusted infrastructure for the digital economy. Delivering financial-grade performance and security, this open platform has immense potential in unleashing data value to empower industrial digitalization and the Web3 economy.
 
 
 **Financial-Grade Capabilities, Beyond Underpinning Financial Applications**
