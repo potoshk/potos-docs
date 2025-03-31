@@ -26,6 +26,6 @@ Dapps have several defining characteristics:
 
 ## References
 
-- [The Architecture of a Web 3.0 application](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - Preethi Kasireddy
+- [The Architecture of a Web3 application](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - Preethi Kasireddy
 
 - [A 2021 guide to decentralized applications](https://limechain.tech/blog/what-are-dapps-the-2021-guide/) - LimeChain

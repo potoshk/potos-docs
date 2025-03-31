@@ -1,6 +1,6 @@
 # What is POTOS?
 ### POTOS: Designed in Hong Kong, for Hong Kong and Beyond
-POTOS(Portal of the Orient Symposium)  is a next-generation blockchain solution tailored for the Web 3.0 era. Built on the open-source FISCO BCOS framework, POTOS is designed to deliver a regulatory-friendly, high-performance, and cost-efficient blockchain platform. With its foundation in Hong Kong, POTOS is driving innovation and fostering sustainable growth in the Web 3.0 ecosystem, both locally and globally.
+POTOS(Portal of the Orient Symposium)  is a next-generation blockchain solution tailored for the Web3 era. Built on the open-source FISCO BCOS framework, POTOS is designed to deliver a regulatory-friendly, high-performance, and cost-efficient blockchain platform. With its foundation in Hong Kong, POTOS is driving innovation and fostering sustainable growth in the Web3 ecosystem, both locally and globally.
 
 ---
 
@@ -33,7 +33,7 @@ POTOS is building a public-oriented Layer 1 blockchain to foster transparency, t
 ---
 
 ### Real-World Applications
-POTOS supports a wide range of use cases to drive innovation in the Web 3.0 era:
+POTOS supports a wide range of use cases to drive innovation in the Web3 era:
 1. Verifiable Data:
 A secure, auditable system ideal for finance, supply chain management, and industries requiring data integrity.
 2. Real-World Assets (RWA):
@@ -51,4 +51,4 @@ A secure and efficient platform for cross-asset trading, enabling seamless trans
 - **High Performance at Low Cost:** Optimized infrastructure provides efficient, cost-effective solutions.
 - **Regulatory Alignment:** Designed to meet the regulatory needs of Hong Kong and beyond without compromising scalability.
 
-POTOS bridges the gap between innovation and trust, creating a compliant, scalable foundation for businesses and individuals to thrive in the rapidly evolving Web 3.0 landscape.
+POTOS bridges the gap between innovation and trust, creating a compliant, scalable foundation for businesses and individuals to thrive in the rapidly evolving Web3 landscape.
