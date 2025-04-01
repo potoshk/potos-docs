@@ -4,6 +4,12 @@
 
 /* begin-custom-color/* <your static path>/custom.css */
 
+/* 修改链接默认颜色 */
+:root {
+  --pst-color-link: #222832;
+  --pst-color-link-hover: #2B67FA;
+}
+
 div.admonition.admonition-olive {
   border-color: hsl(60deg 100% 25%);
 }
