@@ -69,3 +69,11 @@ a:hover{
 a:active{
   color: #2B67FA !important;
 }
+
+.prev-next-title {
+  color: #222832 !important;
+}
+
+.prev-next-title:hover {
+  color: #2B67FA !important;
+}
