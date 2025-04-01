@@ -155,7 +155,6 @@ html_theme_options = {
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     # "show_nav_level": 2,
-    "announcement": "https://raw.githubusercontent.com/potoshk/potos-docs/main/docs/_templates/custom-template.html",
     "show_version_warning_banner": True,
     "navbar_center": ["version-switcher", "navbar-nav"],
     # "navbar_start": ["navbar-logo"],
