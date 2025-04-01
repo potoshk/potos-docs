@@ -251,3 +251,8 @@ def setup(app: Sphinx) -> Dict[str, Any]:
 html_css_files = [
     'custom.css',
 ]
+
+# 添加这个配置来禁用左侧导航
+html_sidebars = {
+    "**": ["search-field.html"]  # 只保留搜索框，移除其他左侧导航元素
+}
