@@ -25,4 +25,5 @@ transactions
 transaction-fees
 nodes
 consensus
+committee
 ```
