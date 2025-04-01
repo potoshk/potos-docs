@@ -174,6 +174,7 @@ html_theme_options = {
         "version_match": version_match,
     },
     # "back_to_top_button": False,
+    "announcement": None,
 }
 
 html_context = {
