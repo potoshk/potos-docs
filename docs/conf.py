@@ -156,7 +156,7 @@ html_theme_options = {
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     # "show_nav_level": 2,
     "show_version_warning_banner": True,
-    "navbar_center": ["version-switcher", "navbar-nav"],
+    "navbar_center": ["navbar-nav"],
     # "navbar_start": ["navbar-logo"],
     # "navbar_end": ["theme-switcher", "navbar-icon-links"],
     # "navbar_persistent": ["search-button"],
@@ -169,11 +169,6 @@ html_theme_options = {
         "**/*": ["page-toc", "edit-this-page", "sourcelink"],
         "examples/no-sidebar": [],
     },
-    "switcher": {
-        "json_url": json_url,
-        "version_match": version_match,
-    },
-    # "back_to_top_button": False,
     "announcement": False,
     "announcement_style": "display: none !important;",
 }
