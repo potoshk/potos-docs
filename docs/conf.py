@@ -155,6 +155,9 @@ html_theme_options = {
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     "show_nav_level": 0,
+    "navigation_depth": 0,  # 设置为0来禁用左侧导航
+    "collapse_navigation": True,
+    "navigation_with_keys": False,
     "show_version_warning_banner": True,
     "navbar_center": ["navbar-nav"],
     # "navbar_start": ["navbar-logo"],
