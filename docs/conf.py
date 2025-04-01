@@ -152,7 +152,7 @@ html_theme_options = {
         "image_dark": "_static/logo-dark.svg",
     },
     "use_edit_page_button": True,
-    "show_toc_level": 2,
+    "show_toc_level": 1,
     "navbar_align": "left",
     "show_nav_level": 0,
     "navigation_depth": 0,
@@ -173,6 +173,8 @@ html_theme_options = {
     },
     "announcement": False,
     "announcement_style": "display: none !important;",
+    "use_source_button": True,
+    "show_source": True,
 }
 
 html_context = {
