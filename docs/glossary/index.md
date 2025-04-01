@@ -5,7 +5,7 @@ myst:
       Advanced concepts and operations of POTOS.
 ---
 
-# Glossary
+# Technical Glossary
 
 This chapter provides a comprehensive advanced consensus of the POTOS blockchain ecosystem.
 
