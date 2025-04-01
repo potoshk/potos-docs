@@ -82,3 +82,23 @@ a:active{
     width: 100% !important;
 }
 
+/* 调整面包屑菜单对齐 */
+.bd-links-nav {
+    padding-left: 0 !important;
+}
+
+nav.bd-links {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.bd-links__title {
+    padding-left: 1rem !important;
+}
+
+.bd-page-width {
+    max-width: none !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
