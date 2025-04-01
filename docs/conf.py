@@ -153,9 +153,9 @@ html_theme_options = {
     },
     "use_edit_page_button": True,
     "show_toc_level": 1,
-    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
+    "navbar_align": "left",
     "show_nav_level": 0,
-    "navigation_depth": 0,  # 设置为0来禁用左侧导航
+    "navigation_depth": 0,
     "collapse_navigation": True,
     "navigation_with_keys": False,
     "show_version_warning_banner": True,
@@ -169,7 +169,7 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_center": ["sphinx-version"],
     "secondary_sidebar_items": {
-        "**/*": [],  # 对所有页面禁用二级侧边栏
+        "**/*": ["page-toc"],
     },
     "announcement": False,
     "announcement_style": "display: none !important;",
@@ -256,5 +256,5 @@ html_css_files = [
 
 # 添加这些全局配置
 html_sidebars = {
-    "**": []  # 对所有页面完全禁用侧边栏
+    "**": []  # 禁用左侧导航
 }
