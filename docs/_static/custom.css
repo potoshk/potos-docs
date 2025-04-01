@@ -52,3 +52,7 @@ div.downstream-project-links a {
   text-decoration: none !important;
   color: inherit !important;
 }
+
+.pst-async-banner-revealer {
+  display: none !important;
+}
