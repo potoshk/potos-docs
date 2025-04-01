@@ -155,7 +155,9 @@ html_theme_options = {
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     # "show_nav_level": 2,
-    "announcement": "https://raw.githubusercontent.com/potoshk/potos-docs/main/docs/_templates/custom-template.html",
+     # 添加这些配置来禁用公告
+    "announcement": "",
+    "announcement_style": "display: none !important; visibility: hidden !important;",
     "show_version_warning_banner": True,
     "navbar_center": ["version-switcher", "navbar-nav"],
     # "navbar_start": ["navbar-logo"],
@@ -250,3 +252,7 @@ def setup(app: Sphinx) -> Dict[str, Any]:
         "parallel_read_safe": True,
         "parallel_write_safe": True,
     }
+
+html_css_files = [
+    'custom.css',
+]
