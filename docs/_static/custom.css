@@ -60,12 +60,13 @@ div.downstream-project-links a {
 }
 
 a{
-  color:222832 !important;
+  color:#222832 !important;
 }
 
 a:hover{
   color: #2B67FA !important;
 }
+
 a:active{
   color: #2B67FA !important;
 }
