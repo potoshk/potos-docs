@@ -5,10 +5,6 @@
 /* begin-custom-color/* <your static path>/custom.css */
 
 /* 修改链接默认颜色 */
-:root {
-  --pst-color-link: #222832;
-  --pst-color-link-hover: #2B67FA;
-}
 
 div.admonition.admonition-olive {
   border-color: hsl(60deg 100% 25%);
@@ -62,3 +58,15 @@ div.downstream-project-links a {
 .pst-async-banner-revealer {
   display: none !important;
 }
+
+a{
+  color:222832 !important;
+}
+
+a:hover{
+  color: #2B67FA !important;
+}
+a:active{
+  color: #2B67FA !important;
+}
+
