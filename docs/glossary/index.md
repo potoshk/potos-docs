@@ -18,7 +18,8 @@ Additionally, it explores transaction fees, including gas prices, gas usage, gas
 The roles and operation of nodes within the network are discussed, along with consensus algorithms like PBFT and PoS-rPBFT.
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
+:caption: Contents
 
 accounts
 transactions
