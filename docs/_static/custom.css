@@ -71,3 +71,14 @@ a:active{
   color: #2B67FA !important;
 }
 
+/* 隐藏左侧导航栏 */
+#pst-primary-sidebar {
+    display: none !important;
+}
+
+/* 调整主内容区域宽度，因为侧边栏被隐藏 */
+.bd-main .bd-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
