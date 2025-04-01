@@ -153,11 +153,8 @@ html_theme_options = {
     },
     "use_edit_page_button": True,
     "show_toc_level": 1,
-    "navbar_align": "left",
+    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     "show_nav_level": 0,
-    "navigation_depth": 0,
-    "collapse_navigation": True,
-    "navigation_with_keys": False,
     "show_version_warning_banner": True,
     "navbar_center": ["navbar-nav"],
     # "navbar_start": ["navbar-logo"],
@@ -169,12 +166,11 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_center": ["sphinx-version"],
     "secondary_sidebar_items": {
-        "**/*": ["page-toc"],
+        "**/*": ["page-toc", "edit-this-page", "sourcelink"],
+        "examples/no-sidebar": [],
     },
     "announcement": False,
     "announcement_style": "display: none !important;",
-    "use_source_button": True,
-    "show_source": True,
 }
 
 html_context = {
@@ -255,11 +251,3 @@ def setup(app: Sphinx) -> Dict[str, Any]:
 html_css_files = [
     'custom.css',
 ]
-
-# 添加这些全局配置
-html_sidebars = {
-    "**": []  # 禁用左侧导航
-}
-
-# 添加这个配置
-html_show_sourcelink = True
