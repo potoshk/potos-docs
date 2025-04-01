@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-To help you better understand this page, we recommend you first read [Accounts](./accounts.md) and our [introduction to POTOS](https://docs.potos.hk/en/latest/concepts/index.html#what-is-fisco-bcos).
+To help you better understand this page, we recommend you first read [Accounts](./accounts.md) and our [introduction to POTOS](https://docs.potos.hk/en/latest/concepts/index.html#what-is-potos).
 
 ## What's a transaction?
 
