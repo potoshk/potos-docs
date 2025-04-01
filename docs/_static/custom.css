@@ -4,6 +4,11 @@
 
 /* begin-custom-color/* <your static path>/custom.css */
 
+/* Hide announcement banner */
+.pst-async-banner-revealer {
+    display: none !important;
+}
+
 div.admonition.admonition-olive {
   border-color: hsl(60deg 100% 25%);
 }
