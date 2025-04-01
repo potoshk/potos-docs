@@ -154,7 +154,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
-    # "show_nav_level": 2,
+    "show_nav_level": 0,
     "show_version_warning_banner": True,
     "navbar_center": ["navbar-nav"],
     # "navbar_start": ["navbar-logo"],
