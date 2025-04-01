@@ -250,3 +250,8 @@ def setup(app: Sphinx) -> Dict[str, Any]:
         "parallel_read_safe": True,
         "parallel_write_safe": True,
     }
+
+# 添加自定义 CSS
+html_css_files = [
+    'custom.css',
+]
