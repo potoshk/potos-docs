@@ -260,3 +260,6 @@ html_css_files = [
 html_sidebars = {
     "**": []  # 禁用左侧导航
 }
+
+# 添加这个配置
+html_show_sourcelink = True
