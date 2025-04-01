@@ -169,8 +169,7 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_center": ["sphinx-version"],
     "secondary_sidebar_items": {
-        "**/*": ["page-toc", "edit-this-page", "sourcelink"],
-        "examples/no-sidebar": [],
+        "**/*": [],  # 对所有页面禁用二级侧边栏
     },
     "announcement": False,
     "announcement_style": "display: none !important;",
@@ -254,3 +253,8 @@ def setup(app: Sphinx) -> Dict[str, Any]:
 html_css_files = [
     'custom.css',
 ]
+
+# 添加这些全局配置
+html_sidebars = {
+    "**": []  # 对所有页面完全禁用侧边栏
+}
