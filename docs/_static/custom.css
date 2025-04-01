@@ -69,3 +69,14 @@ a:hover{
 a:active{
   color: #2B67FA !important;
 }
+
+/* 修改上一页/下一页链接的颜色 */
+.prev-next-area a.left-prev .prev-next-title,
+.prev-next-area a.right-next .prev-next-title {
+  color: #222832 !important;
+}
+
+.prev-next-area a.left-prev:hover .prev-next-title,
+.prev-next-area a.right-next:hover .prev-next-title {
+  color: #2B67FA !important;
+}
