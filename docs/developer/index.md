@@ -92,6 +92,7 @@ For any contributors interested in developing new features for POTOS, your parti
 :maxdepth: 1
 
 config
+committee
 explorer_usage
 wallet_usage
 remix_usage
