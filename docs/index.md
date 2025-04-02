@@ -14,6 +14,7 @@ POTOS (Portal of the Orient Symposium)  is a next-generation blockchain solution
 - [What is POTOS?](./concepts/potos.md)
 - [What is FISCO BCOS?](./concepts/fisco-bcos.md)
 
+
 ## [Technical Glossary](./glossary/index.md)
 - [Accounts](./glossary/accounts.md)
 - [Transactions](./glossary/transactions.md)
@@ -24,6 +25,7 @@ POTOS (Portal of the Orient Symposium)  is a next-generation blockchain solution
 
 ## [Usage](./developer/index.md)
 - [Configuration](./developer/config.md)
+- [Governance](./developer/committee.html)
 - [Explorer](./developer/explorer_usage.md)
 - [Wallet](./developer/wallet_usage.md)
 - [Connecting Remix to POTOS](./developer/remix_usage.md)

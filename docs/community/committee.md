@@ -30,7 +30,6 @@ In the chain construction script, you can specify this account address; if not s
 
 ```ini
 [executor]
-    ; use the wasm virtual machine or not
     is_auth_check=true
     auth_admin_account=0x976fe0c250181c7ef68a17d3bc34916978da103a
 ```
