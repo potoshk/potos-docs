@@ -2,42 +2,42 @@
 
 ## What is account?
 
-An account in POTOS is an entity interacting with the blockchain network. These include initiating transactions, deploying smart contracts, and transferring funds to other accounts, among others.
+An account in POTOS is an entity interacting with the blockchain network. The main operations involved in an account include deploying smart contracts, calling deployed smart contracts and transferring funds to other accounts.
 
 ## Account data structure
 
-Accounts within the POTOS ecosystem are structured with specific fields designed to maintain the integrity and functionality of the network:
+An account consists of the following fields:
 
-- **nonce:** This is a sequential counter that records the number of transactions created by an externally-owned account or  the number of contracts created by a contract account. The nonce is crucial for preventing replay attacks, ensuring that each transaction is unique and can only be executed once per account.
-- **balance:** The number of native utility token owned by this address.
+- **nonce:** The sequential counter that records the number of transactions created by an **externally-owned account(EOA)** or the number of contracts created by a contract account. The nonce is crucial for preventing transaction replay attacks, ensuring that each transaction is unique and can only be executed once per account.
+- **balance:** The number of native utility token owned by this account.
 - **code:** Each account has a code field that contains the EVM bytecode of the account. For contract accounts, this is the code that gets executed when the account receives a message call. For externally owned accounts, this field is empty.
-- **codeHash:** This is a cryptographic hash that references the `code` field.
+- **codeHash:** The cryptographic hash that references the `code` field.
 
 ## Types of Accounts
 
-The POTOS platform distinguishes between two primary types of accounts:
+POTOS mainly includes two types of accounts:
 
 - **Externally-Owned Account (EOA):** These accounts are controlled by individuals holding the corresponding private keys.
-- **Contract Account:** A smart contract deployed to the network, controlled by code.
+- **Contract Account:** A smart contract deployed to the blockchain network, controlled by the contract code.
 
 Both account types have the ability to:
 
 - Receive, hold and send tokens
 - Interact with deployed smart contracts
 
-Here's a concise table summarizing the differences between Externally-Owned Accounts (EOAs) and Contract Accounts within the POTOS framework:
+Here's a concise table summarizing the differences between Externally-Owned Accounts (EOAs) and Contract Accounts:
 
 |                            | EOA                                                  | Contract Account                                          |
 |----------------------------|------------------------------------------------------|-----------------------------------------------------------|
-| **Control**                | Controlled by private key holders                    | Controlled by smart contract code                         |
-| **Creation Cost**          | No cost                                              | Incurs cost due to network storage usage                  |
+| **Controller**                | Controlled by private key holders                    | Controlled by smart contract code                         |
+| **Creation Cost**          | No cost                                              | Incurs cost caused by utilizing the blockchain resources                  |
 | **Transaction Initiation** | Can initiate transactions                            | Can not initiate transactions                             |
 | **Key Pair**               | Consists of public and private keys                  | Does not possess private keys; governed by contract logic |
 | **Example Use Case**       | Personal or organizational accounts for transactions | Deploying and interacting with smart contracts            |
 
 ## EOA and key pairs
 
-An EOA account is constituted by a pair of cryptographic keys, which are public key and private key.
+EOA accounts hold key pairs consisting of a public keys and a private keys.
 
 The private key is used to sign transactions, so it grants you custody over the funds associated with your account. It is important to note that you do not own cryptocurrency; instead, you own private keys, with the funds residing on the POTOS's ledger.
 
@@ -91,7 +91,7 @@ You can check this [link](../developer/wallet_usage.md) to use MetaMask to creat
 
 Contract accounts also have a 42 character hexadecimal address:
 
-The contract address is usually given when a contract is deployed to the POTOS Blockchain. It is generated from the creator's address and the number of transactions initiated from that address (the "nonce").
+The contract address is usually given when a contract is deployed to the POTOS Blockchain. It is generated from the creator's address and the number of transactions initiated from that address (namely the "nonce").
 
 ## Accout usage
 
@@ -101,8 +101,8 @@ To send a transaction, you need to sign it with your private key. The transactio
 
 ### Interacting with smart contracts
 
-You can interact with smart contracts by sending transactions to them. These transactions can trigger functions within the smart contract, which can modify the contract's state or return data.
+You can interact with smart contracts by sending transactions. These transactions invoke methods in the smart contract, these methods modify the contract state and return the results as needed.
 
-### Account balance
+### Account balance Management
 
-Your account balance is the number of native utility tokens you own. This balance can be used to pay for transaction fees.
+Your account balance is the number of native utility tokens you own. This balance can be used to pay for transaction fees. 
