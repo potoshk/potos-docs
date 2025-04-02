@@ -1,33 +1,29 @@
 # Explorer
 
-Explorer is blockchain explorer for POTOS. Explorer gives you an insight about the blockchain network by monitoring the network health and providing various statistics. You can also explore the block and transaction data and the list of smart contracts on the POTOS blockchain network.
-
-![](../_static/developer/WeCoScan-main.png)
-
-## Major Features
-
-Please note that some of the features are under development.
+Explorer gives you an insight about the blockchain network by monitoring the network health and providing various statistics. You can also explore the block and transaction data and the list of smart contracts on the POTOS blockchain network. POTOS blockchain Explorer has the following major features:
 
 * Overview of the network
 * Block search
 * Transaction search
 * Block proposer information
 
-In the subsequent sections, we will visit the major functions and screenshots of Explorer.
+Please note that some of the features are under development.
+
+![](../_static/developer/WeCoScan-main.png)
 
 ## Dashboard
 
-Network information is presented in the dashboard. The information includes transaction amount, last block committed, and the latest trends in transactions.
+Network information is presented in the dashboard. The information includes the transaction amount, the height of last block committed, and the latest trends in transactions.
 
 ![](../_static/developer/wecoscan-dashboard.png)
 
-* Transactions: Totoal transactions amount.
-* Last Block: The latest block height. It shows that how many blocks have been generated since the genesis.
+* Transactions: The number of total transactions that have been committed.
+* Last Block: The height of latest block. It shows that how many blocks have been generated since the genesis.
 * Transaction History: The graphs show the number of daily transactions over the last 14 days. You can see the trend in the transaction volume over the last two weeks.
 
 ## Recent Blocks & Transactions
 
-These lists show recently created blocks and transactions respectively.
+These lists show the information about recently created blocks and transactions respectively.
 
 ![](../_static/developer/wecoscan-recent.png)
 
@@ -35,14 +31,14 @@ These lists show recently created blocks and transactions respectively.
 
 ![](../_static/developer/wecoscan-block.png)
 
-Overall information about the block.
+Click on a block height to get overall information about the block:
 
-* Block Hash: The unique identifier of the block. By pressing the copy button, you can easily copy the hash.
+* Block Hash: The unique identifier of the block. By pressing the copy button, you can easily copy the hash value.
 * Parent Hash: The unique identifier of the previous block. Clicking on the hash takes you to the detail view of the parent hash.
 * Transaction Root: The root hash of the transaction trie.
 * State Root: The root hash of the state trie.
 * Receipt Root: The root hash of the receipt trie.
-* Time: Elapsed time since the block generation. Exact datetime is also displayed next to it.
+* Timestamp: Elapsed time since the block generation. Exact datetime is also displayed next to it.
 * Signature List: The list of signatures of validators who validated the block.
 * Transactions List: The list of transactions included in the block.
 
@@ -50,9 +46,9 @@ Overall information about the block.
 
 ![](../_static/developer/wecoscan-tx.png)
 
-Overall information about the transaction.
+Click on a transaction hash to get overall information about the transaction:
 
-* From -&gt; To: The addresses of sender and receiver. By clicking the address, you can go to the detail view of the account. If a file icon displays next to the address, it means that address is contract.
+* From -&gt; To: The addresses of sender and receiver. By clicking the address, you can go to the detail view of the account. If a file icon appears next to an address, it indicates that the address belongs to a smart contract.
 * Time: Elapsed time since the transaction was executed.
 * Input Data: Extra data provided by the sender or contract.
 
