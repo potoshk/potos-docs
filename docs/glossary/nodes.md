@@ -16,28 +16,26 @@ Consensus nodes are responsible for proposing and validating new blocks
 
 - Store the complete blockchain data
 - Actively participate in block validation by verifying all blocks and states
-- Respond to client requests
+- Provide services such as transaction submission, contract invocation, and ledger queries
 
 
 ### Observer node
 
-Observer nodes 
-Observer nodes are full nodes that verify every block from genesis but do not have to participate producing new blocks.
+Observer nodes only do not participate in the consensus process but can pull full blocks from consensus nodes.
 
-- Stores full blockchain data as Consensus node
-- Sync blocks from Consensus node and verifies all blocks and states.
-- Serves the network and provides data on request
+- Similar to the consensus nodes, the observer nodes store all the blockchain data 
+- Pull blocks from consensus nodes, execute and validate locally. Only blocks, transactions, and states that pass validation can be committed.
+- Provide services such as transaction submission, contract invocation, and ledger queries.
 
 ### Light node
 
-The light node can then independently verify the data they receive against the state roots in the block headers. Light nodes enable users to participate in the POTOS network without the powerful hardware or high bandwidth required to run full nodes.
+Light nodes sync block headers, Merkle proofs, and other information from consensus/observer nodes. Mainly used to verify the existence of transactions and receipts.
 
-- Stores block headers only
-- Sync block headers from Consensus node and verifies merkle proof
-- Serves the network and retransmission request to full nodes
+- Sync and store block headers only
+- Provide services such as transaction submission, contract invocation, and ledger queries(for data such as transactions, blocks, and states that are not stored locally, retrieve them from full nodes via the P2P network.).
 
 ## Running your own node
 
-Interested in running your own POTOS node?
+Interested in running your own POTOS node? 
 
-For a beginner-friendly introduction visit our [How to run POTOS observer nodes](../developer/run_observer.md) page to learn more.
+Please visit [How to run POTOS observer nodes](../developer/run_observer.md) for more details.
