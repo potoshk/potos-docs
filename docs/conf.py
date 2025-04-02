@@ -10,6 +10,7 @@ import os
 import sys
 from pathlib import Path
 from typing import Any, Dict
+from datetime import datetime
 
 from sphinx.application import Sphinx
 from sphinx.locale import _
@@ -19,8 +20,16 @@ sys.path.append(str(Path(".").resolve()))
 # -- Project information -----------------------------------------------------
 
 project = "POTOS"
-copyright = "2024, POTOS Community"
+copyright = f"{datetime.now().year}, POTOS Community"
 author = "POTOS Community"
+
+# 添加这些配置来控制标题显示
+html_title = project  # 只显示项目名称
+html_short_title = project  # 短标题也只显示项目名称
+
+# 设置版本为空字符串
+version = ""
+release = ""
 
 # -- General configuration ---------------------------------------------------
 
@@ -116,23 +125,7 @@ html_last_updated_fmt = ""  # to reveal the build date in the pages meta
 # Define the json_url for our version switcher.
 json_url = "_static/switcher.json"
 
-# Define the version we use for matching in the version switcher.
 version_match = os.environ.get("READTHEDOCS_VERSION")
-release = "0.0.1"
-# If READTHEDOCS_VERSION doesn't exist, we're not on RTD
-# If it is an integer, we're in a PR build and the version isn't correct.
-# If it's "latest" → change to "dev" (that's what we want the switcher to call it)
-if not version_match or version_match.isdigit() or version_match == "latest":
-    # For local development, infer the version to match from the package.
-    if "dev" in release or "rc" in release:
-        version_match = "dev"
-        # We want to keep the relative reference if we are in dev mode
-        # but we want the whole url if we are effectively in a released version
-        json_url = "_static/switcher.json"
-    else:
-        version_match = f"v{release}"
-elif version_match == "stable":
-    version_match = f"v{release}"
 
 html_theme_options = {
     "external_links": [],
