@@ -59,15 +59,22 @@ div.downstream-project-links a {
   display: none !important;
 }
 
-a{
-  color:#222832 !important;
+/* 链接颜色设置 */
+[data-theme="light"] a {
+  color: #222832 !important;
 }
 
-a:hover{
+[data-theme="light"] a:hover,
+[data-theme="light"] a:active {
   color: #2B67FA !important;
 }
 
-a:active{
+[data-theme="dark"] a {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] a:hover,
+[data-theme="dark"] a:active {
   color: #2B67FA !important;
 }
 
