@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any, Dict
 from datetime import datetime
 
+import pydata_sphinx_theme
 from sphinx.application import Sphinx
 from sphinx.locale import _
 
@@ -24,12 +25,12 @@ copyright = f"{datetime.now().year}, POTOS Community"
 author = "POTOS Community"
 
 # 添加这些配置来控制标题显示
-html_title = project  # 只显示项目名称
-html_short_title = project  # 短标题也只显示项目名称
+#html_title = project  # 只显示项目名称
+#html_short_title = project  # 短标题也只显示项目名称
 
 # 设置版本为空字符串
-version = ""
-release = ""
+#version = ""
+#release = ""
 
 # -- General configuration ---------------------------------------------------
 
@@ -123,7 +124,7 @@ html_sourcelink_suffix = ""
 html_last_updated_fmt = ""  # to reveal the build date in the pages meta
 
 # Define the json_url for our version switcher.
-json_url = "_static/switcher.json"
+#json_url = "_static/switcher.json"
 
 version_match = os.environ.get("READTHEDOCS_VERSION")
 
@@ -147,7 +148,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
-    # "show_nav_level": 2,
+    "show_nav_level": 2,
     "show_version_warning_banner": True,
     "navbar_center": ["navbar-nav"],
     # "navbar_start": ["navbar-logo"],
@@ -162,8 +163,9 @@ html_theme_options = {
         "**/*": ["page-toc", "edit-this-page", "sourcelink"],
         "examples/no-sidebar": [],
     },
-    "announcement": False,
-    "announcement_style": "display: none !important;",
+    "check_switcher": False
+    #"announcement": False,
+    #"announcement_style": "display: none !important;",
 }
 
 html_context = {

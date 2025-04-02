@@ -4,8 +4,6 @@
 
 /* begin-custom-color/* <your static path>/custom.css */
 
-/* 修改链接默认颜色 */
-
 div.admonition.admonition-olive {
   border-color: hsl(60deg 100% 25%);
 }
@@ -54,42 +52,3 @@ div.downstream-project-links a {
   text-decoration: none !important;
   color: inherit !important;
 }
-
-.pst-async-banner-revealer {
-  display: none !important;
-}
-
-/* 链接颜色设置 */
-[data-theme="light"] a {
-  color: #222832 !important;
-}
-
-[data-theme="light"] a:hover,
-[data-theme="light"] a:active {
-  color: #2B67FA !important;
-}
-
-[data-theme="dark"] a {
-  color: #ffffff !important;
-}
-
-[data-theme="dark"] a:hover,
-[data-theme="dark"] a:active {
-  color: #2B67FA !important;
-}
-
-/* 隐藏左侧导航栏 */
-#pst-primary-sidebar {
-    display: none !important;
-}
-
-/* 调整主内容区域宽度，因为侧边栏被隐藏 */
-.bd-main .bd-content {
-    margin-left: 0 !important;
-    width: 100% !important;
-}
-
-.breadcrumb-home{
-  transform: translateY(-3px);
-}
-
