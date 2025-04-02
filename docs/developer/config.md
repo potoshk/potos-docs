@@ -5,14 +5,14 @@ FISCO BCOS configuration encompasses both on-chain and off-chain settings.
 - **On-chain configuration** is the unified configuration of the blockchain network. Modification of it requires administrators to send transactions to the chain, and all consensus nodes reach an agreement.
 - **Off-chain configuration** refers to individual node configuration options that can be modified by simply updating the operator's configuration files itself without sending transactions.
 
-## 1. On-Chain Configuration Instructions
+## On-Chain Configuration Instructions
 
 On-chain configuration includes the genesis block and system settings.
 
 - The genesis block configuration file must be **consistent across all nodes within the group** and **cannot be altered after the chain is initialized**. Even if the genesis block configuration is changed after the chain initialization, the new settings will not take effect. The system must use the fixed genesis configuration after chain initialization.
 - System configurations in FISCO BCOS are managed within the built-in precompiled contracts, including system parameter management, consensus node management, permission management, and balance management.
 
-### 1.1 Genesis Block Configuration
+### Genesis Block Configuration
 
 Genesis block configurations are located in the configuration file `config.genesis`.
 
@@ -20,7 +20,7 @@ Genesis block configurations are located in the configuration file `config.genes
 - **The genesis block configuration file cannot be changed after chain initialization.**
 - Any changes to the genesis block configuration after chain initialization will not take effect; the system will still use the genesis configuration from the time of chain initialization.
 
-#### 1.1.1 Chain Information Configuration
+#### Chain Information Configuration
 
 The `[chain]` configuration section covers node chain information. **Fields under this configuration should not be changed once set**:
 
@@ -38,7 +38,7 @@ The `[chain]` configuration section covers node chain information. **Fields unde
     chain_id=chain0
 ```
 
-#### 1.1.2 Consensus Configuration
+#### Consensus Configuration
 
 The `[consensus]` section covers consensus-related configurations, including:
 
@@ -59,7 +59,7 @@ node.0 = 94172c95917fbf47b4b98aba0cc68f83f61a06b0bc373695590f343464b52c9b40d5f4d
 node.1 = 74034fb43f75c63bb2259a63f71d9d1c658945409889d3028d257914be1612d1f2e80c4a777cb3e7929a0f0d671eac2fb9a99fa45d39f5451b6357b00c389a84:1
 ```
 
-#### 1.1.3 Data Compatibility Configuration
+#### Data Compatibility Configuration
 
 FISCO BCOS supports data version upgrade dynamically. This configuration item is located under `[version]`:
 
@@ -67,7 +67,7 @@ FISCO BCOS supports data version upgrade dynamically. This configuration item is
 
 **Special Note:** Since modifying this item will affect the overall behavior of the chain, ensure to back up before proceeding. Confirm that the modification is necessary before making changes.
 
-#### 1.1.4 Gas Configuration
+#### Gas Configuration
 
 To prevent DOS attacks on EVM/WASM, the concept of gas is introduced to measure the consumption of computing and storage resources during the execution of smart contracts. This includes the maximum gas limit for transactions. If the gas consumed by a transaction or block exceeds the limit (gas limit), the transaction is discarded. The `[tx].gas_limit` in the genesis block can configure the maximum gas limit for transactions, defaulting to 3000000000. After the chain is initialized, the gas limit can be dynamically adjusted by sending transactions to modify system configurations.
 
@@ -82,7 +82,7 @@ A sample `[tx].gas_limit` configuration is as follows:
 gas_limit = 3000000000
 ```
 
-#### 1.1.5 Executor Module Configuration
+#### Executor Module Configuration
 
 The `[executor]` configuration items involve executor-related genesis block configurations, including:
 
@@ -91,11 +91,11 @@ The `[executor]` configuration items involve executor-related genesis block conf
 - `[executor].is_serial_execute`: The configuration switch for serial and parallel execution modes of transactions, `true` indicates serial execution mode, `false` indicates DMC parallel execution mode. This configuration option cannot be dynamically adjusted and defaults to `true`.
 - `[executor].auth_admin_account`: The initial account address of the governance committee, used only in scenarios with access control.
 
-### 1.2 On-Chain System Configuration
+### On-Chain System Configuration
 
-On-Chain System Configuration includes system parameter management, consensus node management, permission management, and balance management. These management features are implemented through built-in precompiled contracts in FISCO BCOS. For more information on the principles of precompiled contracts, please refer to: [Precompiled C++ engine — FISCO BCOS documentation](https://universal-bcos.readthedocs.io/en/latest/glossary/precompiled.html).
+On-Chain System Configuration includes system parameter management, consensus node management, permission management, and balance management. These management features are implemented through built-in precompiled contracts in FISCO BCOS. For more information on the principles of precompiled contracts, please refer to: [Precompiled C++ engine — FISCO BCOS documentation](../glossary/precompiled.md).
 
-#### 1.2.1 System Parameter Management
+#### System Parameter Management
 
 System parameter management is implemented by the precompiled contract `SystemConfig` with the contract address `0x1000`. The interface is as follows:
 
@@ -139,7 +139,7 @@ Currently supported system parameters are:
 
 After enabling permission control, all write interfaces of the system configuration can only be called by address 0x10001, i.e., the governance committee contract address. Therefore, modifications must be made through governance committee voting. For details, please refer to the "Permission Management" section.
 
-#### 1.2.2 Consensus Node Management
+#### Consensus Node Management
 
 Consensus node management is implemented by the precompiled contract `ConsensusPrecompiled` with the contract address `0x1003`. The interface is as follows:
 
@@ -166,13 +166,13 @@ This precompiled contract holds a data table with the following structure:
 
 After enabling permission control, all write interfaces of consensus node management can only be called by address 0x10001, i.e., the governance committee contract address. Therefore, modifications must be made through governance committee voting. For details, please refer to the "Permission Management" section.
 
-#### 1.2.3 Permission Management
+#### Permission Management
 
 The on-chain governance committee contract is a pre-deployed Solidity contract in FISCO BCOS. Its main functions include governance of the governance committee, governance of on-chain configuration management, governance of consensus node management, account management, deployment permission management, and contract permission management.
 
 For detailed design, please see the link: [Committee Design](./committee.md); for specific operational steps, please see the link: [Committee Usage](./committee.md).
 
-#### 1.2.4 Balance Management
+#### Balance Management
 
 Balance management is implemented by the precompiled contract `BalancePrecompiled` with the contract address `0x1011`. The interface is as follows:
 
@@ -192,7 +192,7 @@ abstract contract BalancePrecompiled {
 
 In the initial stage, only the governance committee can call the write interfaces of this contract. The governance committee can authorize other users to call by calling the `registerCaller` of this contract, and only the governance committee can call the `unregisterCaller` interface to revoke authorization.
 
-## 2. Off-Chain Configuration Instructions
+## Off-Chain Configuration Instructions
 
 This section including configure file `config.ini`、p2p peer connection config `nodes.json` and certs of connections and consensus in `conf`:
 
@@ -200,7 +200,7 @@ This section including configure file `config.ini`、p2p peer connection config 
 - `nodes.json`: The list of peer node URLs that the node actively connects to.
 - `conf`: Node consensus and network connection certificates.
 
-### 2.1 Node Configuration File
+### Node Configuration File
 
 The `config.ini` file uses the `ini` format and includes configuration items for **P2P, RPC, cert, chain, security, consensus, storage, txpool, and log**.
 
@@ -208,7 +208,7 @@ The `config.ini` file uses the `ini` format and includes configuration items for
 - RPC/P2P listening ports must be within the range of1024-65535 and should not conflict with other applicationlistening ports on the machine.
 - For development and experience convenience, the reference configuration for `listen_ip` is `0.0.0.0`. For security considerations, please modify it to a secure listening address according to the actual business network situation, such as an internal IP or a specific external IP.
 
-#### 2.1.1 Configuring P2P
+#### Configuring P2P
 
 P2P-related configurations include:
 
@@ -253,7 +253,7 @@ kill -USR1 node_pid
 
 The service will reload the `P2P` connection information.
 
-#### 2.1.2 Configuring RPC
+#### Configuring RPC
 
 RPC configuration options are located in the `[rpc]` section and include:
 
@@ -276,7 +276,7 @@ A sample RPC configuration is as follows:
     ;disable_ssl=true
 ```
 
-#### 2.1.3 Configuring Certificate Information
+#### Configuring Certificate Information
 
 For security considerations, FISCO BCOS nodes use SSL encrypted communication. The `[cert]` configuration sets the SSL connection certificate information:
 
@@ -306,7 +306,7 @@ The `[security]` configuration sets the private key path, which is mainly used f
     private_key_path=conf/node.pem
 ```
 
-#### 2.1.4 Configuring Consensus Information
+#### Configuring Consensus Information
 
 Considering that PBFT module packaging too quickly can result in some blocks containing only 1 to 2 very few transactions, wasting storage space, FISCO BCOS introduces the `min_seal_time` configuration item under the variable configuration `config.ini` of `[consensus]` to control the minimum time for PBFT consensus packaging. That is: The consensus node will start the consensus process only if the packaging time exceeds `min_seal_time` and the number of packaged transactions is greater than 0, processing the newly packaged block.
 
@@ -319,7 +319,7 @@ Considering that PBFT module packaging too quickly can result in some blocks con
     min_seal_time=500
 ```
 
-#### 2.1.5 Configuring Storage Information
+#### Configuring Storage Information
 
 Storage configurations are located in the `[storage]` section and include:
 
@@ -356,7 +356,7 @@ Storage configurations are located in the `[storage]` section and include:
     ;sync_archived_blocks=false
 ```
 
-#### 2.1.6 Configuring Disk Encryption
+#### Configuring Disk Encryption
 
 Disk encryption configuration options are located in the `[storage_security]` section:
 
@@ -373,7 +373,7 @@ Disk encryption configuration options are located in the `[storage_security]` se
     cipher_data_key=
 ```
 
-#### 2.1.7 Configuring Transaction Pool Information
+#### Configuring Transaction Pool Information
 
 Transaction pool configuration options are located in the `[txpool]` section:
 
@@ -394,7 +394,7 @@ notify_worker_num = 2
 txs_expiration_time = 600
 ```
 
-#### 2.1.8 Configuring Log Information
+#### Configuring Log Information
 
 Log configurations are primarily located in the `[log]` configuration item of `config.ini`.
 
@@ -425,7 +425,7 @@ A sample log configuration is as follows:
     max_log_file_size=200
 ```
 
-#### 2.1.9 Gateway Module Rate Limiting
+#### Gateway Module Rate Limiting
 
 The gateway module supports configuring traffic rate limiting in `config.ini`. When traffic exceeds the limit, it achieves rate limiting by discarding data packets.
 
@@ -496,7 +496,7 @@ The configuration in the process-dependent `config.ini` is as follows (please un
 
 ```
 
-### 2.2 Node Consensus and Network Connection Certificates
+### Node Consensus and Network Connection Certificates
 
 Each node is configured with two types of certificates and their corresponding keys:
 

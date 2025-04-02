@@ -4,7 +4,7 @@ Welcome to our open-source community! We are excited to have you here. This guid
 
 ## Code of Conduct
 
-We are committed to creating a welcoming and inclusive environment for all participants. Please review our [Code of Conduct](https://github.com/WeTechHK/Universal-BCOS/blob/main/CODE_OF_CONDUCT.md) to understand our expectations regarding behavior and communication within the community. Adhering to these guidelines helps ensure a positive experience for everyone.
+We are committed to creating a welcoming and inclusive environment for all participants. Adhering to these guidelines helps ensure a positive experience for everyone.
 
 ## Join Us
 
@@ -23,8 +23,6 @@ If you have **questions or need help**, feel free to ask on **Discord**, where o
 If you want to **stay updated with the latest news**, follow us on **Twitter** for announcements, updates, and highlights.
 
 If you have **ideas or feedback**, share them on **Discord** to discuss with the community and maintainers.
-
-If you’d like to **submit a proposal for improvements**, visit our [RFC repository](https://github.com/WeTechHK/Universal-BCOS-RFCs) to contribute your suggestions.
 
 If you’re ready to **participate in development**, refer to the **Contributing** section of this document for guidelines on how to get started.
 

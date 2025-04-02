@@ -84,7 +84,7 @@ And you can also follow the [Management of chain](./management.md) guide to mana
 
 Thank you for considering making POTOS even better! Your contributions are most welcome and appreciated.
 
-To get started, refer to our [CONTRIBUTING](https://github.com/WeTechHK/Universal-BCOS/blob/i18n/CONTRIBUTING.md) guide for a detailed walk-through of the contribution process.
+To get started, refer to our [CONTRIBUTING](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/docs/README_EN.md#contributing-code) guide for a detailed walk-through of the contribution process.
 
 For any contributors interested in developing new features for POTOS, your participation is highly welcome. You can refer to this document for compiling the source code: [Compile POTOS from source code](./compile_from_source.md).
 

@@ -1,6 +1,6 @@
 # Governance
 
-## 1. Overall Overview
+## Overview
 
 The on-chain governance system includes a governance committee and permission management.
 
@@ -34,9 +34,9 @@ In the chain construction script, you can specify this account address; if not s
     auth_admin_account=0x976fe0c250181c7ef68a17d3bc34916978da103a
 ```
 
-## 2. Governance System Design
+## Governance System Design
 
-### 2.1 Role Division
+### Role Division
 
 On-chain roles can be divided into three categories based on different responsibilities: `governance roles`, `contract administrator roles`, and `user roles`, with the three roles managing and being managed in turn.
 
@@ -58,11 +58,11 @@ Based on the above role division, the basic governance rules are as follows:
 - Contract administrator roles deploy business contracts and set permissions for related interfaces of business contracts;
 - User roles complete business operations by calling contract interfaces.
 
-### 2.2 Governance Committee Design
+### Governance Committee Design
 
 The governance committee includes committee member management, committee voting decision management, and proposal management.
 
-#### 2.2.1 Member Management
+#### Member Management
 
 Committee members all have weights, which will be reflected in the calculation of proposal voting thresholds.
 
@@ -77,7 +77,7 @@ uint8 public _participatesRate;
 uint8 public _winRate;
 ```
 
-#### 2.2.2 Voting Decision Management
+#### Voting Decision Management
 
 Decision-making rules are based on three dimensions of data: governance voting weight, voting rate, and participation rate. When there is only one governance committee member, **it degenerates into administrator mode**, and all proposals will be passed. If there are multiple governance committee members, the following rules will be used for judgment.
 
@@ -105,7 +105,7 @@ The calculation rule is determined by a logic contract, which can be replaced. G
 
 Each proposal will have a block number interval when initiated. If the proposal has not been voted on after the block number interval, it will expire. The block number interval defaults to 7\*24\*3600.
 
-#### 2.2.3 Proposal Management
+#### Proposal Management
 
 Each time the committee proposes a proposal, there will be a unique auto-incrementing proposal id as the identifier, and the specific information of the proposal can be obtained through the id.
 
@@ -137,7 +137,7 @@ Proposals currently support the following types:
   - 51 - Set the weight of a certain node, if the weight greater than 0 and this node does not exist in consensus node list then add this new node, if weight is set to 0 then change the consensus node to an observer node
   - 52 - Remove a node from the consensus network
 
-### 2.3 Governance Committee Execution Steps
+### Governance Committee Execution Steps
 
 The permission governance contract address can refer to: https://github.com/WeTechHK/bcos-auth
 
@@ -163,7 +163,7 @@ The steps for permission governance execution are as follows:
 
 ![](../_static/developer/bcos-auth.png)
 
-## 3. Permission Management Design
+## Permission Management Design
 
 On-chain permissions are divided into three major parts: on-chain system configuration permission control, contract permission control, and account permission control.
 
@@ -209,7 +209,7 @@ Account Permission Control Operations
 | Account balance operation                              | Balance manager caller, initialized as all governance committee members | **No**          |
 | Register/Remove balance manager caller                 | Governance committee member                                             | **No**          |
 
-### 3.1 On-Chain System Configuration Permission Control
+### On-Chain System Configuration Permission Control
 
 As can be seen from Section 2, the permission control of on-chain system configuration mainly includes the permission control of two important precompiled contracts:
 
@@ -220,13 +220,13 @@ From Section 2, it is known that all on-chain system configurations can be chang
 
 **Except for one new interface:** `setTermWeight(string,uint256)`, this interface can be called as long as the caller is a member of the committee.
 
-### 3.2 Contract Permission Control
+### Contract Permission Control
 
 As shown above, permission control is organized into three levels: governance committee members can control every contract administrator by proposing vote-proposals; contract administrator can control ACL of one single contract's interfaces.
 
 ![](../_static/developer/permission_layers.png)
 
-#### 3.2.1 Contract Deployment Permission Control
+#### Contract Deployment Permission Control
 
 From Section 2, it is known that the permission control of contract deployment can only be changed by the governance committee contract, and members need to initiate proposals and pass votes to change.
 
@@ -244,7 +244,7 @@ When the contract deployment creates the contract storage table, it will include
 
 ![](../_static/developer/permission_bcos_layer.drawio.png)
 
-#### 3.2.2 Contract Interface Permission Control
+#### Contract Interface Permission Control
 
 The contract administrator can fully control the permissions of the contract interface.
 
@@ -254,21 +254,21 @@ When a normal user accesses a contract interface, the contract permission contro
 
 ![](../_static/developer/permission_user.png)
 
-#### 3.2.3 Contract Freezing, Thawing, and Decommissioning
+#### Contract Freezing, Thawing, and Decommissioning
 
 Similarly, the contract administrator can fully control the status of the contract. It is worth noting that once a contract is in a decommissioned state, there is no chance to modify or normally call it.
 
-### 3.3 Account Permission Control
+### Account Permission Control
 
 The data structure of the account is as follows, and the permissions regarding the account will be recorded in the `/usr/abc123` table, and the balance of the account will be recorded in the corresponding mapping table `/apps/abc123`.
 
 ![](../_static/developer/account_data_struct.png)
 
-#### 3.3.1 Account Lifecycle
+#### Account Lifecycle
 
 Account status settings (freezing, thawing, decommissioning) can be changed by any committee member.
 
-#### 3.3.2 Account Balance Permission Control
+#### Account Balance Permission Control
 
 `balancePrecompiled` maintains a separate caller list: `s_balance_caller`, which records all usable account addresses.
 

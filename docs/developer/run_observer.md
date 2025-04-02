@@ -33,7 +33,7 @@ To address storage expansion, the requirement is determined by both the block si
 
 ### Step 1. Download FISCO BCOS binaries
 
-Download the FISCO BCOS binaries from the [github release](https://github.com/WeTechHK/Universal-BCOS/releases).
+Download the FISCO BCOS binaries from the [github release](https://github.com/FISCO-BCOS/FISCO-BCOS/releases).
 
 ### Step 2. Build an empty node directory
 
@@ -43,17 +43,13 @@ Create a directory to store the FISCO BCOS binaries and configuration files, and
 mkdir -p ~/path/to/FISCO BCOS
 cd ~/path/to/FISCO BCOS
 
-# Copy the downloaded FISCO BCOS binaries to the node directory
-cp ~/path/to/downloaded/universal-bcos-linux-x86_64.tar.gz .
-tar -xvf universal-bcos-linux-x86_64.tar.gz
-
 # Build an empty node directory
-bash build_chain.sh -C expand -o nodes/127.0.0.1/node4 -e ./universal-bcos
+bash build_chain.sh -C expand -o nodes/127.0.0.1/node4 -e ./fisco-bcos-bcos
 
 tree ./nodes
 ./nodes
 └─── 127.0.0.1
-    ├── universal-bcos
+    ├── fisco-bcos
     ├── node0
     │   ├── conf
     │   ├── config.ini
@@ -126,7 +122,7 @@ cd ~/path/to/FISCO BCOS/nodes/
 tree ./nodes
 ./nodes
 └─── 127.0.0.1
-    ├── universal-bcos
+    ├── fisco-bcos
     ├── node0
     │   ├── conf
     │   │   ├── ca.crt
@@ -159,7 +155,7 @@ bash start_all.sh
  node0 start successfully pid=98622
 
 ps -ef | grep bcos
-501 98622     1   0 10:36下午 ttys019   13:33.97 /path/to/observer/observer_node/node0/../universal-bcos -c config.ini -g config.genesis
+501 98622     1   0 10:36下午 ttys019   13:33.97 /path/to/observer/observer_node/node0/../fisco-bcos -c config.ini -g config.genesis
 ```
 
 After starting the observer node, it will start to synchronize the block data. You can grep the log file to check the synchronization status.
