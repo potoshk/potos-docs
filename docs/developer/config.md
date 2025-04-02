@@ -2,27 +2,27 @@
 
 FISCO BCOS configuration encompasses both on-chain and off-chain settings.
 
-- **On-chain configuration** requires administrators to send transactions to the chain, where all consensus nodes reach an agreement, unifying the network's configuration.
-- **Off-chain configuration** refers to individual node configuration options that can be modified by operators without sending transactions by simply updating the configuration files.
+- **On-chain configuration** is the unified configuration of the blockchain network. Modification of it requires administrators to send transactions to the chain, and all consensus nodes reach an agreement.
+- **Off-chain configuration** refers to individual node configuration options that can be modified by simply updating the operator's configuration files itself without sending transactions.
 
 ## 1. On-Chain Configuration Instructions
 
 On-chain configuration includes the genesis block and system settings.
 
-- `config.genesis`: The genesis block configuration file must be **consistent across all nodes within the group** and **cannot be altered after the chain is initialized**. Even if the genesis block configuration is changed after the chain initialization, the new settings will not take effect; the system will continue to use the genesis configuration from the time of chain initialization.
+- The genesis block configuration file must be **consistent across all nodes within the group** and **cannot be altered after the chain is initialized**. Even if the genesis block configuration is changed after the chain initialization, the new settings will not take effect. The system must use the fixed genesis configuration after chain initialization.
 - System configurations in FISCO BCOS are managed within the built-in precompiled contracts, including system parameter management, consensus node management, permission management, and balance management.
 
 ### 1.1 Genesis Block Configuration
 
-Node genesis block configurations are located in the configuration file `config.genesis`.
+Genesis block configurations are located in the configuration file `config.genesis`.
 
 - **Consistency of the genesis block configuration acrossall nodes in the group is mandatory.**
-- **The genesis block configuration file cannot be changedafter chain initialization.**
+- **The genesis block configuration file cannot be changed after chain initialization.**
 - Any changes to the genesis block configuration after chain initialization will not take effect; the system will still use the genesis configuration from the time of chain initialization.
 
-#### 1.1.1 Configuring Chain Information
+#### 1.1.1 Chain Information Configuration
 
-The `[chain]` configuration section node chain information, **fields under this configuration should not be changed once set**:
+The `[chain]` configuration section covers node chain information. **Fields under this configuration should not be changed once set**:
 
 - `[chain].sm_crypto`: Whether the node uses SM crypto for the ledger, default is `false`;
 - `[chain].group_id`: Group ID, default is `group0`;
@@ -61,7 +61,7 @@ node.1 = 74034fb43f75c63bb2259a63f71d9d1c658945409889d3028d257914be1612d1f2e80c4
 
 #### 1.1.3 Data Compatibility Configuration
 
-Supports data version upgrade dynamically. This configuration item is located under `[version]`:
+FISCO BCOS supports data version upgrade dynamically. This configuration item is located under `[version]`:
 
 - `[version].compatibility_version`: Data compatibility version number, default is `v3.10.0`. When a new version upgrade is initiated, all binaries are replaced, and the data version can be dynamically upgraded by sending a transaction to modify the system configuration.
 
@@ -71,7 +71,7 @@ Supports data version upgrade dynamically. This configuration item is located un
 
 To prevent DOS attacks on EVM/WASM, the concept of gas is introduced to measure the consumption of computing and storage resources during the execution of smart contracts. This includes the maximum gas limit for transactions. If the gas consumed by a transaction or block exceeds the limit (gas limit), the transaction is discarded. The `[tx].gas_limit` in the genesis block can configure the maximum gas limit for transactions, defaulting to 3000000000. After the chain is initialized, the gas limit can be dynamically adjusted by sending transactions to modify system configurations.
 
-In actual production, please adjust the configuration according to machine costs, transaction throughput, and actual business scenarios.
+In actual production, the configuration can be adjust according to machine costs, transaction throughput, and actual business scenarios.
 
 - `[tx].gas_limit`: The gas limit for a single transaction execution, default is set to 3,000,000,000.
 
@@ -109,7 +109,7 @@ abstract contract SystemConfigPrecompiled
 
 ##### System Parameters
 
-The currently supported system parameters are:
+Currently supported system parameters are:
 
 | System Parameter Name          | Parameter Explanation                                                       | Default Value | Special Notes                                                                                                                                                                                                                                                                                                                                                                                               |
 |--------------------------------|-----------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

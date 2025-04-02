@@ -2,15 +2,15 @@
 
 ## Introduction
 
-This section will guide you through deploying an ERC20 to the POTOS Network using [Hardhat](https://hardhat.org/).
+This section will guide you through deploying an [ERC20](https://eips.ethereum.org/EIPS/eip-20) to the POTOS Network using [Hardhat](https://hardhat.org/).
 
-Hardhat is a smart-contract development environment that will help you:
+*ERC-20* defines a standard for Fungible Tokens, meaning that each Token has a property that makes it be exactly
+the same (in type and value) as any other Token.
 
-- Develop and compile smart contracts.
+*Hardhat* is a smart-contract development environment that will help you:
+
+- Develop and compile smart contracts and DApp.
 - Debug, test, and deploy smart contracts and DApps.
-
-The ERC-20 introduces a standard for Fungible Tokens, in other words, they have a property that makes each Token be exactly
-the same (in type and value) as another Token.
 
 By the end of this guide you will be able to:
 
@@ -25,10 +25,12 @@ By the end of this guide you will be able to:
 To follow this tutorial, the following are the prerequisites:
 
 - Code editor: a source-code editor such [VSCode](https://code.visualstudio.com/download).
-- [Metamask](./wallet_usage.md): used to deploy the contracts, sign transactions and interact with the ontracts.
+- [Metamask](./wallet_usage.md): used to deploy the contracts, sign transactions and interact with the contracts.
 - [Hardhat Requirements](https://hardhat.org/tutorial/setting-up-the-environment): environment required in Hardhat.
 
 ## Step 1: Initialize an Hardhat project
+
+Copy and paste the following code into Terminal to create a project: 
 
 ```bash
 mkdir bcos-hardhat-erc20
@@ -77,23 +79,23 @@ After initializing a hardhat project, your current directory should include:
 
 **contracts/** – this folder contains smart contract code.
 
-**scripts/** – this folder contains code that deploys your contracts on the blockchain network.
+**scripts/** – this folder contains code that is responsible for deploying your contracts onto the blockchain network.
 
-**test/** – this folder contains all unit tests that test your smart contract.
+**test/** – this folder contains all unit tests for your smart contract.
 
-**hardhat.config.js** – this file contains configurations important for the work of Hardhat and the deployment of the soul-bound token.
+**hardhat.config.js** – this file contains configurations necessary for the work of Hardhat and the deployment of the soul-bound token.
 
 ## Step 2: Setup Hardhat Configs
 
-Now create your .env file in the project folder. This file helps us load environment variables from an .env file into process.env.
+Next, create your *.env* file in the project folder to load environment variables into *process.env*.
 
-Paste this command in your terminal to create a .env file
+Paste this command in your terminal to create the *.env* file:
 
 ```bash
 touch .env
 ```
 
-After creating our file, let's configure our .env file to look like this:
+Configure your *.env* file to look like this:
 
 ```bash
  BCOS_URL= "Your BCOS URL"
@@ -120,11 +122,11 @@ module.exports = {
 };
 ```
 
-Now that we have our development environment all set, let's get into writing our ERC20 token smart contract.
+Now that you have your development environment all set, let's get into writing an ERC20 token smart contract.
 
 ## Step 3: Create ERC20 Contract
 
-Create `MyToken.sol` in `contracts/` directory:
+Create a contract code file `MyToken.sol` in `contracts/` directory:
 
 ```solidity
 // SPDX-License-Identifier: Apache 2.0
@@ -144,7 +146,7 @@ contract MyToken is ERC20, ERC20Permit {
 
 ## Step 4: Compile your contract
 
-To compile the contract run `npx hardhat compile` in your terminal. The compile task is one of the built-in tasks.
+Run `npx hardhat compile` in your terminal to compile the contract. The compile task is one of the built-in tasks.
 
 ```bash
 $ npx hardhat compile
@@ -155,7 +157,7 @@ Compiled 19 Solidity files successfully (evm target: paris).
 
 ## Step 5: Testing contracts
 
-Create a new directory called `test` inside our project root directory and create a new file in there called `MyToken.js`.
+Create a new directory called `test` within your project's root directory, and then create a new file called `MyToken.js` in the directory.
 
 ```bash
 mkdir -p test
@@ -163,7 +165,7 @@ cd test
 touch MyToken.js
 ```
 
-Let's start with the code below. We'll explain it next, but for now paste this into Token.js:
+Paste the following code into `MyToken.js`. We'll explain this code in more detail later.
 
 ```js
 const { expect } = require("chai");
@@ -182,7 +184,7 @@ describe("Token contract", function () {
 
 ```
 
-In your terminal run `npx hardhat test`. You should see the following output:
+Run `npx hardhat test` in Terminal. You should see the following output:
 
 ```bash
 $ npx hardhat test
@@ -195,9 +197,8 @@ $ npx hardhat test
 
 ## Step 6: Deploy contracts
 
-Scripts are JavaScript/Typescript files that help you deploy contracts to the blockchain network. In this section, you will create a script for the smart contract.
-
-In the Explorer pane, select the "scripts" folder and click the New File button to create a new file named deploy.js
+In the Explorer pane, select the "scripts" folder and click the New File button to create a new file named `deploy.js` that contains the following code. 
+Scripts are JavaScript/Typescript files that help you deploy contracts to the blockchain network.
 
 ```js
 const { ethers } = require("hardhat");
@@ -224,7 +225,7 @@ main().catch((error) => {
 });
 ```
 
-In the terminal, run the following command which tells Hardhat to deploy your ERC20 token on the BCOS Network.
+Run the following command in Terminal, which tells Hardhat to deploy your ERC20 token on the BCOS Network.
 
 ```bash
 npx hardhat run scripts/deploy.js --network bcos
@@ -234,3 +235,4 @@ Account balance: 100000000000000000000000
 Congratulations! You have just successfully deployed your ERC20 tokens.
 ERC20 contract address is 0xAd384DC5c3aE98460A8969770373001783963c13.
 ```
+
