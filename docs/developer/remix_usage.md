@@ -50,7 +50,7 @@ To compile your contract, do the following:
 
 ## Set up the deployment environment
 
-Open the **Depoly and send transaction** tab and select **Environment** to *Injected Provider - MetaMask*
+Open the **Depoly and run transactions** tab and select **Environment** to *Injected Provider - MetaMask*
 
 ![](../_static/developer/remix-deploy-env.png)
 
