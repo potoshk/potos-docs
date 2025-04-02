@@ -66,7 +66,7 @@ You first need to use Metamask to create a new account or import exist account. 
 On the premise that `MyToken.sol` has been compiled, follow the deployment process below:
 
 * Go to the **Deploy & run transactions** tab.
-* Make sure **ENVIRONMENT**  `Injected Provider -  Metamask`.
+* Make sure **ENVIRONMENT** is `Injected Provider -  Metamask`.
 * Select the contract you want to deploy in the **CONTRACT** field.
 * Click on the **Deploy** button. This would generate a Metamask popup that requires transaction confirmation. Simply confirm the transaction!
 
