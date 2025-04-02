@@ -80,7 +80,7 @@ uint8 public _winRate;
 
 #### 2.2.2 Voting Decision Management
 
-Decision-making rules are based on three dimensions of data: governance voting weight, voting rate, and participation rate. When there is only one governance committee member, **it degenerates into an administrator mode**, and all proposals will be passed. If there are multiple governance committee members, the following rules will be used for judgment.
+Decision-making rules are based on three dimensions of data: governance voting weight, voting rate, and participation rate. When there is only one governance committee member, **it degenerates into administrator mode**, and all proposals will be passed. If there are multiple governance committee members, the following rules will be used for judgment.
 
 - **When there is a change in the governance member, all undecided proposals will be decided according to the new governance member parameters.**
 - Each type of proposal can only be proposed once. If a proposal of the same type has not yet been voted on, it is not allowed to propose the same type of proposal again.
@@ -100,7 +100,7 @@ For the weight passing rate threshold, the value range is 0-100. When the weight
 
 **(3) Calculation Rule Change**
 
-The calculation rule is determined by a logic contract, which can be replaced. Governance committee members can initiate a proposal vote to change the "calculation rule," and other governance committee members can verify whether the new calculation rule is valid.
+The calculation rule is determined by a logic contract, which can be replaced. Governance committee members can initiate a proposal vote to change the "calculation rule", and other governance committee members can verify whether the new calculation rule is valid.
 
 **(4) Proposal Validity Period**
 
@@ -160,7 +160,7 @@ The steps for permission governance execution are as follows:
 6. `ProposalManager` collects the voting results of the proposal and calls the `Committee` interface to confirm whether the proposal threshold is reached.
 7. `Committee` returns the confirmation result.
 8. `CommitteeManager` confirms the status of the proposal, and after reaching an executable state, initiates a call to `SystemConfigPrecompiled` or `ConsensusPrecompiled`.
-9. The system precompiled contract will first confirm whether the caller of the call starts with /sys/, and if confirmed, execute. (CommitteeManager is a contract built into the chain and has a fixed address /sys/10001)
+9. The system precompiled contract will first confirm whether the caller's address starts with /sys/, and if confirmed, execute. (CommitteeManager is a contract built into the chain and has a fixed address /sys/10001)
 
 ![](../_static/developer/bcos-auth.png)
 
@@ -223,7 +223,7 @@ From Section 2, it is known that all on-chain system configurations can be chang
 
 ### 3.2 Contract Permission Control
 
-From the above, permission control contains three levels: governance committee members can control every contract administrator by proposing vote-proposals; contract administrator can control ACL of one single contract's interfaces.
+As shown above, permission control is organized into three levels: governance committee members can control every contract administrator by proposing vote-proposals; contract administrator can control ACL of one single contract's interfaces.
 
 ![](../_static/developer/permission_layers.png)
 
@@ -245,7 +245,7 @@ When the contract deployment creates the contract storage table, it will include
 
 ![](../_static/developer/permission_bcos_layer.drawio.png)
 
-#### 3.2.2 Contract Invocation Permission Control
+#### 3.2.2 Contract Interface Permission Control
 
 The contract administrator can fully control the permissions of the contract interface.
 
@@ -267,11 +267,11 @@ The data structure of the account is as follows, and the permissions regarding t
 
 #### 3.3.1 Account Lifecycle
 
-The status setting of the account (freezing, thawing, decommissioning) can be changed by any member of the committee.
+Account status settings (freezing, thawing, decommissioning) can be changed by any committee member.
 
 #### 3.3.2 Account Balance Permission Control
 
-balancePrecompiled maintains a separate caller list: `s_balance_caller`, which records all usable account addresses.
+`balancePrecompiled` maintains a separate caller list: `s_balance_caller`, which records all usable account addresses.
 
 This list will obtain all `governance committee member` addresses during initialization and write them into the list.
 
