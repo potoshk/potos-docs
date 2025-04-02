@@ -36,7 +36,7 @@ In 2022, it was listed in the CIC Approved Blockchain Programs (Professional Gra
 
 In the international arena, 2 out of 4 Chinese use cases in the Blockchain and Distributed Ledger Technologies – Use Cases (ISO/TR 3242:2022) were based on FISCO BCOS.
 
-Alongside, [an architecture research paper](https://sc23.supercomputing.org/proceedings/tech_paper/tech_paper_pages/pap261.html) of FISCO BCOS was accepted by **Supercomputing Conference 2023**, which is **the first paper on blockchain performance optimization at the conference series**.
+Alongside, [an architecture research paper](https://dl.acm.org/doi/10.1145/3581784.3607053) of FISCO BCOS was accepted by **Supercomputing Conference 2023**, which is **the first paper on blockchain performance optimization at the conference series**.
 
 --------
 

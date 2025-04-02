@@ -1,4 +1,4 @@
-# Run an observer node
+# How to run POTOS observer nodes
 
 This section provides a step-by-step guide to running an observer node on your own environment.
 

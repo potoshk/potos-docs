@@ -1,30 +1,32 @@
 # Nodes
 
-POTOS is a distributed network of computers (known as nodes) running software that can verify blocks and transaction data. The software must be run on your own environment to turn it into an POTOS node.
+POTOS is a distributed network of computers running software that can verify blocks and transaction data (known as nodes).
 
 ## Node types
 
 There are three types of nodes:
 
-- Consensus Node
-- Observer Node
-- Light Node
+- **Consensus Node**: Nodes participate in validation of transactions and blocks
+- **Observer Node**: Nodes that sync and store all ledger data, including transactions, blocks and states
+- **Light Node**: Nodes only sync block headers and support SPV functions
 
 ### Consensus node
 
-Consensus nodes are responsible for validating transactions and producing new blocks. Also, consensus nodes do a block-by-block validation of the blockchain, including downloading and verifying the block body and state data for each block.
+Consensus nodes are responsible for proposing and validating new blocks
 
-- Stores full blockchain data (although this is periodically pruned so a full node does not store all state data back to genesis)
-- Participates in block validation, verifies all blocks and states.
-- Serves the network and provides data on request.
+- Store the complete blockchain data
+- Actively participate in block validation by verifying all blocks and states
+- Respond to client requests
+
 
 ### Observer node
 
+Observer nodes 
 Observer nodes are full nodes that verify every block from genesis but do not have to participate producing new blocks.
 
 - Stores full blockchain data as Consensus node
 - Sync blocks from Consensus node and verifies all blocks and states.
-- Serves the network and provides data on request.
+- Serves the network and provides data on request
 
 ### Light node
 
@@ -38,4 +40,4 @@ The light node can then independently verify the data they receive against the s
 
 Interested in running your own POTOS node?
 
-For a beginner-friendly introduction visit our [run a node](../developer/run_node.md) page to learn more.
+For a beginner-friendly introduction visit our [How to run POTOS observer nodes](../developer/run_observer.md) page to learn more.
