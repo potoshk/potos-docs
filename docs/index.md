@@ -20,10 +20,10 @@ POTOS (Portal of the Orient Symposium)  is a next-generation blockchain solution
 - [Transaction fees](https://docs.potos.hk/en/latest/glossary/transaction-fees.html)
 - [Nodes](https://docs.potos.hk/en/latest/glossary/nodes.html)
 - [Consensus algorithm](https://docs.potos.hk/en/latest/glossary/consensus.html)
-- [On-Chain Governance System Design](https://docs.potos.hk/en/latest/glossary/committee.html)
 
 ## [Usage](https://docs.potos.hk/en/latest/developer/index.html)
 - [Configuration](https://docs.potos.hk/en/latest/developer/config.html)
+- [Governance](https://docs.potos.hk/en/latest/developer/committee.html)
 - [Explorer](https://docs.potos.hk/en/latest/developer/explorer_usage.html)
 - [Wallet](https://docs.potos.hk/en/latest/developer/wallet_usage.html)
 - [Connecting Remix to POTOS](https://docs.potos.hk/en/latest/developer/remix_usage.html)
