@@ -38,7 +38,7 @@ brew install openssl@1.1 curl wget
 cd ~ && mkdir -p bcos && cd bcos
 
 # Download the chain building script
-curl -#LO https://raw.githubusercontent.com/WeTechHK/Universal-BCOS/refs/heads/i18n/tools/BcosAirBuilder/build_chain.sh && chmod u+x build_chain.sh
+curl -#LO https://github.com/FISCO-BCOS/FISCO-BCOS/releases/download/v3.14.0/build_chain.sh && chmod u+x build_chain.sh
 ```
 
 ## Step 3. Build a 4-node private chain
@@ -81,7 +81,7 @@ writing RSA key
 ==============================================================
 [INFO] GroupID              : group0
 [INFO] ChainID              : chain0
-[INFO] bcos path            : bin/universal-bcos
+[INFO] bcos path            : bin/fisco-bcos
 [INFO] Auth mode            : false
 [INFO] Start port           : 30300 20200
 [INFO] Server IP            : 127.0.0.1:4

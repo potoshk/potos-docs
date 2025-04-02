@@ -12,7 +12,7 @@ Blockchains are built upon these fundamental pillars:
 2. **Immutability:** Once recorded, data on a blockchain cannot be altered or deleted. This feature ensures the integrity and trustworthiness of the ledger, making it tamper-proof.
 3. **Transparency:** All transactions on a blockchain are visible to network participants, promoting accountability and trust among users.
 
-Universal BCOS is a next-generation blockchain infrastructure tailored for the [Web3](./web3.md) economy, which features a highly open network with robust Web3 capabilities and seamless user experience.
+FISCO BCOS is a next-generation blockchain infrastructure tailored for the [Web3](./web3.md) economy, which features a highly open network with robust Web3 capabilities and seamless user experience.
 
 ## Why Blockchain?
 
@@ -56,7 +56,7 @@ Smart contracts are self-executing contracts with the terms of the agreement dir
 
 ### Origin and Concept
 
-The term "smart contract" was first introduced by Nick Szabo in 1994, envisioning a digital marketplace where transactions could occur without intermediaries. These contracts are now a reality on platforms like Universal BCOS.
+The term "smart contract" was first introduced by Nick Szabo in 1994, envisioning a digital marketplace where transactions could occur without intermediaries. These contracts are now a reality on platforms like FISCO BCOS.
 
 ### Execution and Deployment
 

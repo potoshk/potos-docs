@@ -53,8 +53,8 @@ source $HOME/.cargo/env
 Compile FISCO BCOS with the following steps:
 
 ```bash
-# Into the Universal-BCOS directory
-cd Universal-BCOS
+# Into the FISCO-BCOS directory
+cd FISCO-BCOS
 # Create a build directory
 mkdir build
 # Enter the build directory
@@ -73,7 +73,7 @@ After compiling, you can use `build_chain.sh` script to specify executable binar
 # Into the tool directory
 cd tools/BcosAirBuilder
 # Build a local chain, and it will generate a directory named nodes/
-bash build_chain.sh -l "127.0.0.1:4" -p 20200,30300 -e ../../build/universal-bcos-air/universal-bcos
+bash build_chain.sh -l "127.0.0.1:4" -p 20200,30300 -e ../../build/fisco-bcos-air/fisco-bcos
 # Start the local chain
 cd nodes/127.0.0.1/
 bash start_all.sh

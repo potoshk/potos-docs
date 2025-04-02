@@ -4,14 +4,6 @@ Thank you for your interest in contributing to POTOS! Your efforts to improve th
 
 ## If You Want To
 
-**Discuss Technical Issues**
-
-If you encounter a technical issue or have questions, please submit an issue on our [GitHub Issues page](https://github.com/WeTechHK/Universal-BCOS/issues). You can also join the community discussion on our designated platforms.
-
-**Propose Ideas to Improve POTOS**
-
-Have an idea to enhance POTOS? Submit a proposal in the [RFC repository](https://github.com/WeTechHK/Universal-BCOS-RFCs) following the RFC process. Once your proposal reaches the **Accepted** status, it can be implemented by the community.
-
 **Participate in Development**
 
 If you'd like to contribute to development, check the proposals in the  [RFC repository](https://github.com/WeTechHK/Universal-BCOS-RFCs). Express your interest in the community, and collaborate with others to bring the idea to life.
@@ -24,7 +16,7 @@ Found a bug? Help us fix it by submitting a pull request (PR). Follow the steps 
 
 ### Submitting Issues
 
-1. Go to the [GitHub Issues page](https://github.com/WeTechHK/Universal-BCOS/issues).
+1. Go to the [GitHub Issues page](https://github.com/FISCO-BCOS/FISCO-BCOS/issues).
 2. Provide a clear and concise description of the issue.
 3. Include steps to reproduce the problem, if applicable.
 
@@ -71,7 +63,7 @@ Our branching strategy is based on [git-flow](https://jeffkreeftmeijer.com/git-f
 
 To ensure consistency and maintainability, please follow these guidelines:
 
-- Adhere to the coding standards defined in the [.clang-format](https://github.com/WeTechHK/Universal-BCOS/blob/i18n/.clang-format) file.
+- Adhere to the coding standards defined in the [.clang-format](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/.clang-format) file.
 - Write well-documented and thoroughly tested code.
 - Use descriptive commit messages in the format:
   - `<type>(scope): <subject>`
@@ -83,4 +75,4 @@ To ensure consistency and maintainability, please follow these guidelines:
 **Code Formatting**
 
 - Use the [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) tool (version 17.0 or higher recommended) to format your code.
-- Refer to the [.clang-format](https://github.com/WeTechHK/Universal-BCOS/blob/i18n/.clang-format) file for formatting rules.
+- Refer to the [.clang-format](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/.clang-format) file for formatting rules.

@@ -1,6 +1,6 @@
 # Intro to crypto wallet
 
-If you don’t have one yet, check out our [How to create an Universal BCOS account](../advance/accounts.md).
+If you don’t have one yet, check out our [How to create an FISCO BCOS account](../advance/accounts.md).
 
 ## What Is a Crypto Wallet?
 
