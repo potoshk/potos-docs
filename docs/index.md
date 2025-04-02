@@ -5,6 +5,16 @@ myst:
       POTOS level 1 blockchain documentation for testnet and mainnet connectivity.
 html_theme.sidebar_secondary.remove: true
 ---
+
+```{toctree}
+:glob:
+:hidden:
+
+concepts/index
+glossary/index
+developer/index
+```
+
 # POTOS
 
 POTOS (Portal of the Orient Symposium)  is a next-generation blockchain solution tailored for the Web3 era. Built on the open-source [FISCO BCOS](https://github.com/FISCO-BCOS/FISCO-BCOS) framework, POTOS is designed to deliver a regulatory-friendly, high-performance, and cost-efficient blockchain platform. With its foundation in Hong Kong, POTOS is driving innovation and fostering sustainable growth in the Web3 ecosystem, both locally and globally.

@@ -4,10 +4,6 @@ Thank you for your interest in contributing to POTOS! Your efforts to improve th
 
 ## If You Want To
 
-**Participate in Development**
-
-If you'd like to contribute to development, check the proposals in the  [RFC repository](https://github.com/WeTechHK/Universal-BCOS-RFCs). Express your interest in the community, and collaborate with others to bring the idea to life.
-
 **Fix Bugs**
 
 Found a bug? Help us fix it by submitting a pull request (PR). Follow the steps outlined in the **Operation Guide** section below.

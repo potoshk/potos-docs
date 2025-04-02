@@ -2,7 +2,7 @@
 myst:
   html_meta:
     "description lang=en": |
-      Advanced concepts and operations of POTOS.
+      The technical glossary of POTOS.
 ---
 
 # Technical Glossary
@@ -19,7 +19,6 @@ The roles and operation of nodes within the network are discussed, along with co
 
 ```{toctree}
 :maxdepth: 1
-:caption: Contents
 
 accounts
 transactions
