@@ -17,5 +17,5 @@ explorer_usage
 wallet_usage
 remix_usage
 hardhat_usage
+run_observer
 ```
-

@@ -25,12 +25,3 @@ For more information, see [Run a observer node](./run_observer.md).
 Running a light node is a lightweight way to participate in the POTOS network. It require minimal resources, making them suitable for users with limited computational power or those who wish to minimize their computation consumption.
 
 For more information, see [Run a light node](./run_lightnode.md).
-
-```{toctree}
-:maxdepth: 1
-:hidden:
-
-run_consensus
-run_observer
-run_lightnode
-```

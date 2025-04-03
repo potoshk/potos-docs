@@ -29,8 +29,8 @@ author = "POTOS Community"
 #html_short_title = project  # 短标题也只显示项目名称
 
 # 设置版本为空字符串
-#version = ""
-#release = ""
+version = "1.0.0"
+release = "v1.0.0"
 
 # -- General configuration ---------------------------------------------------
 
