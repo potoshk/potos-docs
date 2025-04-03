@@ -1,119 +1,70 @@
 # Consensus algorithm
 
-Blockchain system guarantees system consistency through consensus algorithm. In theory, consensus is a fundamental problem in distributed computing and multi-agent systems is to achieve overall system reliability in the presence of a number of faulty processes, which often requires coordinating processes to reach consensus, or agree on some data value that is needed during computation.
+Consensus algorithms are used to ensure the consistency of blockchain systems. The current mainstream consensus algorithms include POW (Proof of Work), POS (Proof of Stake), BFT (Byzantine Fault Tolerance), POA (Proof of Authority), and others.
 
-In regard to the POTOS blockchain, the process is formalized, and reaching consensus means that most of the nodes on the network agree on the global state of the network.
+To improve system throughput and reduce transaction confirmation latency, POTOS adopts the high-performance PBFT algorithm and enhances block sealing fairness by allowing all consensus nodes to seal blocks in turns. In addition, considering the scalability of blockchain systems, POTOS will switch to the PoS-rPBFT algorithm in the near future. This document focuses on introducing these two types of consensus algorithms.
 
-POTOS currently supports PBFT(Practical Byzantine Fault Tolerance)and PoS-rPBFT algorithms.
+### Concepts
 
-## Types of consensus mechanisms
-
-According to whether or not to tolerate [Byzantine fault](https://en.wikipedia.org/wiki/Byzantine_fault), consensus algorithms can be classified as Crash Fault Tolerance(CFT) algorithms and Byzantine Fault Tolerance(BFT) algorithm:
-
-- CFT class algorithm is common fault-tolerant algorithm. When the system failure, server crash and other common failures, can still reach a consensus on a proposal. The classic algorithm includes Paxos, Raft, etc. This kind of algorithm has better performance, faster processing speed, can tolerate no more than half of the failed nodes.
-
-- BFT class algorithm : In addition to tolerating ordinary failures in the system consensus process of CFT, but also tolerating deliberate deception by some nodes(such as falsifying transaction execution results)Such as Byzantine errors, classical algorithms include PBFT, etc. which have poor performance and can tolerate no more than one-third of faulty nodes。
-
-## PBFT
-
-PBFT consensus algorithms uses cryptographic algorithms such as signature, signature verification, and hash to ensure tamper-proof, forgery-proof, and non-repudiation in the messaging process, and reduce the complexity of the Byzantine fault-tolerant algorithm from the exponential level to the polynomial level.
-
-### Important concepts of PBFT
-
-Node type, node ID, node index and view are key concepts of PBFT consensus algorithm。For basic concepts of blockchain systems, please refer to Key Concepts.
+Node types, node IDs, node indices, and views are key concepts in the BFT based consensus algorithm. 
 
 #### Node type
 
-- Leader/Primary: Consensus node, responsible for packaging transactions into blocks and block consensus, each round of consensus process has and only one leader, in order to prevent the leader from forging blocks, after each round of PBFT consensus, will switch the leader；
+- **Leader**: Responsible for sealing transactions into blocks and advancing the consensus process. There is one and only one leader in each round of consensus. To prevent the leader from forging blocks, the leader is switched after each round of BFT consensus
 
-- Replica: Replica node, which is responsible for block consensus. There are multiple Replica nodes in each round of consensus. The process of each Replica node is similar；
+- **Replica**: Responsible for block consensus, each round of consensus involves multiple Replica nodes, and the processing of each Replica node is similar.
 
-- Observer: The observer node, which is responsible for obtaining the latest block from the consensus node or the replica node, and after executing and verifying the block execution result, the resulting block is on the chain.
+- Observer: Responsible for obtaining the latest block from consensus nodes or replica nodes, executing and verifying the block execution results, and then storing the block locally.
 
 Leader and Replica are collectively referred to as consensus nodes.
 
 #### Node ID & & Node Index
 
-In order to prevent nodes from doing evil, each consensus node in the PBFT consensus process signs the messages it sends and checks the signatures of the received message packets, so each node maintains a key pair, the private key is used to sign the messages it sends, and the public key is used as the node ID to identify and check the signatures.
+To prevent malicious behavior by nodes, during the BFT consensus process, each consensus node signs the messages it sends and verifies the signatures of the received message packets. Therefore, each node maintains a pair of public and private keys. The private key is used to sign the messages sent, while the public key serves as the node ID, used for identification and signature verification.
 
-**Node ID:** Consensus node signature public key and consensus node unique identifier, usually a 64-byte binary string, other nodes use the node ID of the message packet sender to verify the message packet
+- **Node ID:** The consensus node's public key and unique identifier are typically 64-byte binary data. Other nodes use the sender's node ID in the message packet to verify the signature of the message packet. 
 
-Considering that the node ID is very long, including this field in the consensus message will consume part of the network bandwidth, POTOS introduces a node index, each consensus node maintains a public consensus node list, and the node index records the position of each consensus node ID in this list:
+- **Node index:** Considering that Node ID are long, including this field in consensus messages would consume network bandwidth. POTOS introduces a node index, where each consensus node maintains a shared consensus node list. The node index records the position of each consensus node ID in this list. When sending network message packets, it only needs to include the node index, and other nodes can retrieve the node ID from the shared consensus node list to verify the message signature.
 
-**Node index:** The position of each consensus node ID in this list of common node IDs
 
 #### Consensus View
 
-The PBFT consensus algorithm uses views to record the consensus status of each node, and the same view node maintains the same list of Leader and Replicas nodes.
+The BFT consensus algorithm uses a view to record the consensus state of each node. Nodes in the same view maintain the same list of Leader and Replica nodes. When the Leader fails, a view-change occurs. If the view-change succeeds (at least 2f+1 nodes reach the same view), a new Leader is elected based on the new view, and the new Leader starts generating blocks. Otherwise, the view-change continues until the majority of nodes in the network (at least 2f+1) reach a consistent view.
 
-When the leader fails, a view switch occurs. If the view switch is successful(At least 2*f+1 node reaches the same view), select a new leader based on the new view, and the new leader starts to produce new block, otherwise continue to switch views until most of the nodes in the network(Greater than or equal to 2*f+1)Achieve consistent view.
-
-In the POTOS system, the formula for calculating the leader index is as follows:
+In the POTOS system, the formula for calculating the leader Node index is as follows:
 
 ```text
-leader_idx = (view + block_number) mod node_num
+leader_idx = (view + block_number) % node_num
 ```
 
-### Core processes
+## POTOS PBFT
 
-PBFT consensus mainly includes three stages: Pre-prepare, Prepare, and Commit:
+The PBFT (Practical Byzantine Fault Tolerance) consensus algorithm achieves consensus in scenarios where a minority of nodes act maliciously (e.g., forging messages). The algorithm utilizes cryptographic algorithms such as signatures, signature verification, and hashing to ensure tamper-proof, forgery-resistant, and non-repudiable properties during message transmission. The PBFT algorithm improves upon previous work by reducing the complexity of Byzantine fault tolerance algorithms from exponential to polynomial. In a system composed of (3f+1) nodes, as long as no fewer than (2f+1) non-malicious nodes are functioning properly, the system can achieve consensus.
 
-- **Pre-prepare:** Responsible for executing blocks, generating signature packets, and broadcasting the signature packets to all consensus nodes;
+In addition, to address the performance issues of serial consensus in most of the current blockchain systems, POTOS proposes a **multi-stage parallel Byzantine consensus algorithm**. 
 
-- **Prepare:** responsible for collecting signature packages, a node collects full '2*f+1' after the signature package, indicating that it has reached the state of being able to submit blocks, start broadcasting the Commit package;
+This algorithm divides the blockchain system's consensus process into multiple stages: **block batch parallel ordering consensus** and **pipeline consensus of block execution results**, with both stages able to execute in parallel. Both the block batch parallel ordering consensus and the pipeline consensus of block execution results support parallel consensus for multiple blocks.
 
-- **Commit:** responsible for collecting Commit packages, a node collects full '2*f+1' Commit packages the latest locally commit block to the database。
+- **The block batch parallel ordering consensus** is responsible for sorting the transactions received in the transaction pool and generating unexecuted but sorted blocks in parallel. 
+- **The pipeline consensus of block execution results** performs pipeline consensus on the execution results of the blocks and commits the blocks that successfully reach consensus.
 
-![](../images/consensus/pbft_process.png)
+![](../_static/concepts/consensus_stage.png)
 
-### View change processes
-
-The following figure simply view change process where blockchain contains 4(3*f+1, f=1)’ nodes, and the third node(node3) is the Byzantine node.
-
-![](../images/consensus/pbft_view.png)
 
 ## PoS-rPBFT
 
-Consensus algorithms based on the principle of distributed consistency, such as BFT and CFT consensus algorithms, have the advantages of low transaction confirmation delay, final consistency, high throughput, and no power consumption.
+To further enhance the scalability of blockchain systems, POTOS proposes the PoS-rPBFT consensus algorithm. The algorithm aims to maximize the scale of nodes while ensuring the security of the system.
 
-However, the complexity of communication in these algorithms is related to the size of the nodes. So the size of the network that can be supported is limited, which is greatly limits the scalability of the blockchain nodes。
+The PoS-rPBFT algorithm divides consensus nodes into two categories:
 
-POTOS proposes the PoS-rPBFT consensus algorithm, which aims to minimize the impact of node size on the consensus algorithm while preserving the high performance, high throughput, high consistency, and security of BFT-like consensus algorithms.
+- **Consensus committee**: The node executes the PBFT consensus process. Committee nodes are rotated after a certain block height based on the VRF random number and the staking weight of each consensus node.
 
-### Node Type
+- **Candidate consensus committee**: Verify blocks and check whether the consensus node is legal. After a certain block height, may be elected as the consensus committee nodes. The probability of rotating into a consensus committee node is determined by the node's staking weight.
 
-- Consensus committee nodes: the node executes the PBFT consensus process. Committee nodes will be rotated after a certain block height.
 
-- Candidate consensus node: do not paticipates the consensus process, verify blocks and check whether the consensus node is legal. After a certain block height, the consensus committee nodes will be rotated based on the election weight.
+The POS-rPBFT algorithm selects a specified amount of consensus committee nodes to generate blocks during each round of the consensus process. It periodically rotate the consensus nodes based on block height and the VRF random number to ensure system security. It primarily involves two system parameters:
 
-### Core process
 
-![](../images/consensus/rpbft.png)
+- **feature_rpbft_epoch_sealer_num**: The number of consensus committee nodes in each round of consensus. This parameter can be dynamically configured by the system administrator using tools such as the console. 
 
-The rPBFT algorithm selects only a number of consensus nodes for each round of consensus process, and periodically replaces the consensus nodes according to the block height to ensure system security, including two system parameters:
-
-- 'epoch_sealer_num': the number of nodes participating in the consensus process in each round of consensus. You can dynamically configure this parameter by sending transactions on the console.
-
-- 'epoch_block_num': The consensus node replacement cycle. To prevent the selected consensus nodes from being associated with each other, the rPBFT replaces a consensus node for each epoch_block_num block. You can dynamically configure this parameter by issuing transactions on the console
-
-These two configuration items are recorded in the system configuration table. The configuration table mainly includes three fields: configuration keyword, configuration corresponding value, and effective block height. The effective block height records the latest effective block height of the latest configuration value. For example, set ‘epoch_sealer_num’ and ‘epoch_block_num’ to 4 and 10000 respectively in a 100-block transaction.
-
-#### Blockchain initialization
-
-During blockchain initialization, rPBFT needs to select 'epoch_sealer_num' consensus nodes to participate in consensus among consensus members. Currently, the initial implementation is to select nodes with indexes from 0 to 'epoch_sealer_num'-1 to participate in the consensus of the previous 'epoch_block_num' blocks.
-
-#### PBFT runs in consensus committee
-
-The selected 'epoch_sealer_num' consensus member nodes run the PBFT consensus algorithm to verify node synchronization and verify the blocks generated by the consensus of these consensus member nodes.
-
-- Checked list of block signatures: each block must contain the signatures of at least two-thirds of the consensus members.
-
-- Check the execution result of the block: the execution result of the local block must be consistent with the execution result recorded by the consensus committee in the block header.
-
-#### Dynamic rotating of consensus committee
-
-To ensure system security, the rPBFT algorithm removes a node from the consensus member list as a validation node and adds a validation node to the consensus member list after each 'epoch_block_num' block, as shown in the following figure:
-
-![](../images/consensus/epoch_rotating.png)
-
-In the current implementation of the rPBFT algorithm, the consensus member list nodes are replaced by validation nodes in turn. If the current ordered consensus committee node list is `CommitteeSealersList` and the total number of consensus nodes is `N`, then after the consensus `epoch_block_num` blocks, the `CommitteeSealersList [0]` will be removed from the consensus member list and added to the index `(CommitteeSealersList[0].IDX + epoch_sealer_num) % N` to consensus member list。Round `i` replacement cycle, remove `CommitteeSealersList [i% epoch _ sealer _ num]` from the list of consensus members and add the index as `(CommitteeSealersList[i%epoch_sealer_num].IDX + epoch_sealer_num) % N` to consensus member list。
+- **feature_rpbft_epoch_block_num**: Consensus committee node rotation period. The algorithm triggers a round of consensus committee node rotation after every feature_rpbft_epoch_block_num blocks. Similarly, this parameter can be dynamically configured and modified.
