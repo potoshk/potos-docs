@@ -106,7 +106,7 @@ $ bash start_all.sh
  node0 start successfully pid=98622
 
 $ ps -aux | grep bcos
-501 98622     1   0 10:36下午 ttys019   13:33.97 ~/fisco/self-observer-node/node0/../fisco-bcos -c config.ini -g config.genesis
+501 98622     1   0 10:36 ttys019   13:33.97 ~/fisco/self-observer-node/node0/../fisco-bcos -c config.ini -g config.genesis
 ```
 
 After starting the observer node, it will start to synchronize the block data. You can grep the log file to check the synchronization status.
