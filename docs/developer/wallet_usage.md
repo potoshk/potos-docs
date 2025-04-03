@@ -40,22 +40,24 @@ This guide consists of four clear steps:
 3. Select **''+ Add a custom network''**. ![[image]](../_static/dev_guide/add_new_network.png)
 4. Fill in the details for our Testnet & Click **''Save''**:
 
-   | Entry Name         | Value                       | Note                         |
-   |--------------------|-----------------------------|------------------------------|
-   | Network name       | Testnet                     | Name of network              |
-   | Default RPC URL    | https://rpc.eightart.hk/    | RPC URL of network           |
-   | Chain ID           | 20200                       | blockchain's chain ID        |
-   | Currency symbol    | HKC                         | token symbol                 |
-   | Block explorer URL | https://scan.eight-art.com/ | URL of blockchain's explorer |
+   | Entry Name         | Value                          | Note                         |
+   |--------------------|--------------------------------|------------------------------|
+   | Network name       | POTOS Testnet                  | Name of network              |
+   | Default RPC URL    | https://rpc-testnet.potos.hk/  | RPC URL of network           |
+   | Chain ID           | 60600                          | blockchain's chain ID        |
+   | Currency symbol    | POT                            | token symbol                 |
+   | Block explorer URL | https://scan-testnet.potos.hk/ | URL of blockchain's explorer |
 
    ![[image]](../_static/dev_guide/network_detail.png)
 
 ## Step 4: Get Testnet Tokens
 
 1. Log in and switch to Testnet in MetaMask app.
-   
-    ![[image]](../_static/dev_guide/metamask_app_home.png) ![[image]](../_static/dev_guide/metamask_app_switch_testnet.png)
-2. Go to the [Faucet](https://faucet.eightart.hk).
+
+    ![[image]](../_static/dev_guide/metamask_app_home.png)
+
+    ![[image]](../_static/dev_guide/metamask_app_switch_testnet.jpeg)
+2. Go to the [Faucet](https://faucet-testnet.potos.hk).
 3. Click **"Connect Wallet"** and scan with MetaMask app. ![[image]](../_static/dev_guide/faucet_home.png)
 4. Information will be automatically filled in. Click **"Request tokens"**. ![[image]](../_static/dev_guide/request_tokens.png)
 5. Wait few moments and check wallet balance.
