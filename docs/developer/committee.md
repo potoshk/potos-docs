@@ -240,9 +240,7 @@ During execution, it will verify whether the EOA account address of `tx.origin` 
 
 After the contract deployment transaction is executed, the default administrator of the contract is the EOA account address of the contract deployer, i.e., `tx.origin`. If a contract interface is called to deploy a contract, then the default contract administrator for that deployed contract is the tx.origin EOA account address.
 
-When the contract deployment creates the contract storage table, it will include the creation of a contract permission control appendix, as shown below. The contract administrator will change the contract interface permissions by changing this permission control appendix.
-
-![](../_static/developer/permission_bcos_layer.drawio.png)
+When the contract deployment creates the contract storage table, it will include the creation of a contract permission control appendix. The contract administrator will change the contract interface permissions by changing this permission control appendix.
 
 #### Contract Interface Permission Control
 
