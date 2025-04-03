@@ -123,21 +123,4 @@ info|2025-4-6 22:36:31.415281|[CONSENSUS][PBFT][METRIC]^^^^^^^^Report,sealer=2,t
 
 After the observer node is started, it will start a JSON-RPC service on port `8545`. You can connect MetaMask to the observer node by adding a custom RPC.
 
-If you do not have a wallet yet, create an account using MetaMask (choose any Ethereum-compatible account type) [here](https://metamask.io/download/). For more information on MetaMask, please refer [here](https://docs.metamask.io/).
-
-To access the observer node network, follow steps below to configure MetaMask:
-
-- Open the “Network” setting, click “Add a network”:
-
-    ![](../_static/developer/connect_1.png)
-
-- Click “Add a network manually”:
-
-    ![](../_static/developer/connect_2.png)
-
-- Fill in required information for the local observer node network and click “Save”.
-  - The default chain ID for FISCO BCOS is `20200` and the default RPC URL is `http://127.0.0.1:8545`. The `Network name` and `Currency symbol` are not required, you can fill in any name you like.
-
-    ![](../_static/developer/connect_3.png)
-
-- You will see the observer node network added to the list.
+Please refer to [Guide to MetaMask & Connecting to the Testnet](./wallet_usage.md) and [Connect Remix to POTOS](./remix_usage.md) to learn how to use a wallet and Remix to connect to the POTOS testnet.
