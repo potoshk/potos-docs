@@ -2,68 +2,49 @@
 
 Explorer gives you an insight about the blockchain network by monitoring the network health and providing various statistics. You can also explore the block and transaction data and the list of smart contracts on the POTOS blockchain network. POTOS blockchain Explorer has the following major features:
 
-* Overview of the network
-* Block search
-* Transaction search
-* Block proposer information
+* Overview of the blockchain network
+* Blockchain search
+* Blocks and transactions information
+* Account information
 
-Please note that some of the features are under development.
+This guide will demonstrate how to use BlockScout to explore our Testnet.
 
-![](../_static/developer/WeCoScan-main.png)
+## Accessing Testnet Explorer
+
+You can access the Testnet Explorer at the following URL: https://scan-testnet.potos.hk
+
+You will see the BlockScout homepage, with statistics on live blocks, transactions, and addresses.
 
 ## Dashboard
 
 Network information is presented in the dashboard. The information includes the transaction amount, the height of last block committed, and the latest trends in transactions.
 
-![](../_static/developer/wecoscan-dashboard.png)
+![](../_static/developer/blockscout.png)
 
-* Transactions: The number of total transactions that have been committed.
-* Last Block: The height of latest block. It shows that how many blocks have been generated since the genesis.
-* Transaction History: The graphs show the number of daily transactions over the last 14 days. You can see the trend in the transaction volume over the last two weeks.
-
-## Recent Blocks & Transactions
-
-These lists show the information about recently created blocks and transactions respectively.
-
-![](../_static/developer/wecoscan-recent.png)
+* Total Blocks: The number of total blocks that have been generated.
+* Total Transactions: The number of total transactions that have been committed.
+* Wallet Addresses: The number of total EOA addresses that have interacted with the network.
+* Last Blocks: The list of the last some blocks that have been generated. You can click on the block height to get the detail view of the block.
+* Last Transactions: The list of the last some transactions that have been committed. You can click on the transaction hash to get the detail view of the transaction.
 
 ## Block detail
 
-![](../_static/developer/wecoscan-block.png)
-
 Click on a block height to get overall information about the block:
 
-* Block Hash: The unique identifier of the block. By pressing the copy button, you can easily copy the hash value.
-* Parent Hash: The unique identifier of the previous block. Clicking on the hash takes you to the detail view of the parent hash.
-* Transaction Root: The root hash of the transaction trie.
-* State Root: The root hash of the state trie.
-* Receipt Root: The root hash of the receipt trie.
-* Timestamp: Elapsed time since the block generation. Exact datetime is also displayed next to it.
-* Signature List: The list of signatures of validators who validated the block.
-* Transactions List: The list of transactions included in the block.
+![](../_static/developer/blockscout-block.png)
 
 ## Transaction detail
 
-![](../_static/developer/wecoscan-tx.png)
-
 Click on a transaction hash to get overall information about the transaction:
 
+![](../_static/developer/blockscout-tx.png)
+
 * From -&gt; To: The addresses of sender and receiver. By clicking the address, you can go to the detail view of the account. If a file icon appears next to an address, it indicates that the address belongs to a smart contract.
-* Time: Elapsed time since the transaction was executed.
-* Input Data: Extra data provided by the sender or contract.
+* Timestamp: Elapsed time since the transaction was executed.
 
 ## Search
 
-Through WeCoScan, you can search for the information about transactions and blocks. Entering a valid keyword will take you to the detail view of the entity.
+Through POTOS Explore, you can search for the information about transactions, blocks, address or token. Entering a valid keyword will take you to the detail view of the entity.
 
-![](../_static/developer/wecoscan-search.png)
+![](../_static/developer/blockscout-search.png)
 
-Searchable keywords are hash of block and transaction, and only supported in the following formats:
-
-* 66 characters long
-* Starts with a prefix `0x`
-* Hexadecimal number only [0~9, a~f]
-
-If you search for a keyword that doesn't fit in the specified format or information hasn't yet been generated, no result page will appear.
-
-![](../_static/developer/wecoscan-search-error.png)
