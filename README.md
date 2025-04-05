@@ -21,5 +21,4 @@ POTOS (Portal of the Orient Symposium)  is a next-generation blockchain solution
 - [Wallet](https://docs.potos.hk/en/latest/developer/wallet_usage.html)
 - [Connecting Remix to POTOS](https://docs.potos.hk/en/latest/developer/remix_usage.html)
 - [Deploy smart contract using Hardhat](https://docs.potos.hk/en/latest/developer/hardhat_usage.html)
-- [How to run POTOS observer nodes](https://docs.potos.hk/en/latest/developer/run_observer.html)
 - [GitHub](https://github.com/FISCO-BCOS/FISCO-BCOS)
