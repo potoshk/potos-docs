@@ -72,3 +72,12 @@ To ensure consistency and maintainability, please follow these guidelines:
 
 - Use the [Clang-Format](https://clang.llvm.org/docs/ClangFormat.html) tool (version 17.0 or higher recommended) to format your code.
 - Refer to the [.clang-format](https://github.com/FISCO-BCOS/FISCO-BCOS/blob/master/.clang-format) file for formatting rules.
+
+## Development Environment Setup
+
+To start contributing to POTOS node development, you'll need to set up your development environment. Please refer to the [Contributor Guide](../contributor/index.md) for detailed instructions on:
+
+- [Building FISCO BCOS from source](../contributor/compile_from_source.md) - Learn how to compile the codebase
+- [Building a local chain](../contributor/build_chain.md) - Set up a local blockchain network for testing
+
+These technical guides will help you get started with node development and testing your contributions.
