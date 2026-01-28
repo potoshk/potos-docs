@@ -28,6 +28,8 @@ Before using the faucet, you need to:
    - The "POTOS Faucet" title and wallet connection status at the top
    - A central white card containing all faucet information
 
+![POTOS Faucet](../_static/builder/faucet_home.png)
+
 ### Step 2: Connect Your Wallet
 
 1. If your wallet is not yet connected, click the wallet connect button in the top-right corner
@@ -54,6 +56,8 @@ If you are using the faucet for the first time and your wallet has no POT tokens
 4. Wait for transaction confirmation
 5. Upon successful transaction, you will see a "Transaction Successful!" message
 
+![POTOS Faucet](../_static/builder/faucet_free_claim.png)
+
 #### Scenario B: User With Existing POT Tokens
 
 If your wallet already contains POT tokens:
@@ -67,6 +71,8 @@ If your wallet already contains POT tokens:
    - Wait for transaction confirmation
    - Upon successful transaction, you will see a success message and transaction hash
 
+![POTOS Faucet](../_static/builder/faucet_claim.png)
+
 ### Step 5: View Transaction Details
 
 After a successful transaction:
@@ -74,6 +80,8 @@ After a successful transaction:
 1. In the "Transaction Successful!" section, you will see the transaction hash (e.g., `0x3a1453aa...e28edd`)
 2. Click the link icon next to the transaction hash to view complete transaction details on the blockchain explorer
 3. You can also view transaction history in MetaMask
+
+![POTOS Faucet](../_static/builder/faucet_claimed.png)
 
 ## Important Notes
 
