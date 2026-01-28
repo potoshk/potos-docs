@@ -28,22 +28,22 @@ POTOS (Portal of the Orient Symposium)  is a next-generation blockchain solution
 
 ## Technical Glossary
 
-- [Accounts](./glossary/accounts.md)
-- [Transactions](./glossary/transactions.md)
-- [Transaction fees](./glossary/transaction-fees.md)
-- [Nodes](./glossary/nodes.md)
-- [Consensus algorithm](./glossary/consensus.md)
+- [Accounts](./glossary/accounts.md) - Introduction to blockchain accounts and wallets.
+- [Transactions](./glossary/transactions.md) - Explanation of how transactions work on the blockchain.
+- [Transaction fees](./glossary/transaction-fees.md) - Overview of transaction fees and their significance.
+- [Nodes](./glossary/nodes.md) - Description of node types and their responsibilities.
+- [Consensus algorithm](./glossary/consensus.md) - Overview of consensus mechanisms and their role in blockchain.
 
 ## For Developers
 
 - [Foundation Setup](./developer/foundation_setup.md) - Setup your development environment for POTOS.
-- [Connect to the Network](./developer/connect_network.md) - Connect to the POTOS network.
-- [Get POT(Gas Token) from Faucet](./developer/faucet.md) - Get POT(Gas Token) from Faucet.
-- [Deploy smart contract with Remix](./developer/deploy_with_remix.md) - Deploy smart contract with Remix.
-- [Deploy smart contract with Hardhat](./developer/deploy_with_hardhat.md) - Deploy smart contract with Hardhat.
-- [Build Your First dApp using Scaffold-ETH 2](./developer/build_dapp_with_scaffold.md) - Build Your First dApp using Scaffold-ETH 2.
-- [Participate in DAO Governance](./developer/participate_dao.md) - Participate in DAO Governance.
-- [Blockchain Explorer](./developer/explorer_usage.md) - Blockchain Explorer.
+- [Connect to the Network](./developer/connect_network.md) - Learn how to set up your wallet (such as MetaMask) and connect to the POTOS Testnet or mainnet. Step-by-step instructions are provided for both automatic and manual configuration methods.
+- [Get POT(Gas Token) from Faucet](./developer/faucet.md) - Discover how to obtain free POT tokens (Gas Token) from our faucet service so you can deploy and test contracts on the testnet.
+- [Deploy smart contract with Remix](./developer/deploy_with_remix.md) - Use the Remix online IDE to quickly write, compile, and deploy smart contracts onto POTOS, ideal for beginners and fast prototypes.
+- [Deploy smart contract with Hardhat](./developer/deploy_with_hardhat.md) - Set up a powerful local development workflow using Hardhat, enabling automated testing, deployment scripts, and advanced smart contract management on POTOS.
+- [Build Your First dApp using Scaffold-ETH 2](./developer/build_dapp_with_scaffold.md) - Follow a hands-on guide to build and connect your first full-stack decentralized application (dApp) using Scaffold-ETH 2 on POTOS.
+- [Participate in DAO Governance](./developer/participate_dao.md) - Learn how to join and contribute to on-chain governance via DAOs on the POTOS blockchain, including proposal creation and voting.
+- [Blockchain Explorer](./developer/explorer_usage.md) - Get familiar with using the POTOS blockchain explorer to view transactions, smart contracts, accounts, and real-time network activity.
 
 ## For Validators
 
