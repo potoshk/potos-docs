@@ -1,6 +1,6 @@
-# Guide to MetaMask & Connecting to the Testnet
+# Set up MetaMask Account and Connect to POTOS Network
 
-This guide will walk you through the process of setting up MetaMask and connecting to the Testnet.
+This guide will walk you through the process of setting up MetaMask and connecting to the POTOS Testnet.
 This is a necessary step for developers who want to deploy and interact with Dapps or smart contracts on our network.
 
 This guide consists of four clear steps:
@@ -33,7 +33,16 @@ This guide consists of four clear steps:
 7. Confirm your Secret Recovery Phrase by filling the missing words in the correct order. ![[image]](../_static/dev_guide/confirm_phrase.png)
 8. Click **"Done"** to complete the account creation. ![[image]](../_static/dev_guide/done.png)
 
-## Step 3: Connect to the Testnet
+## Step 3: Connect to the Testnet via Chainlist
+
+1. Visit https://chainlist.org/chain/60600 ![](../_static/builder/chainlist_info.png)
+2. Click on **"Connect Wallet"** and select your wallet. ![](../_static/builder/chainlist_connect.png)
+3. Click on **"Add MetaMask"** and fill in the details for our Testnet. ![](../_static/builder/chainlist_add_metamask.png)
+4. Click on **"Save"** to complete the network addition.
+
+## Optional: Connect to the Testnet manually
+
+If you want to connect to the Testnet manually, you can follow the steps below:
 
 1. Open MetaMask on Chrome extension or mobile app and unlock it using your password.
 2. Click on the **Network Selector** (top-left dropdown that shows "Ethereum Mainnet" by default). ![[image]](../_static/dev_guide/select_network.png)
@@ -49,17 +58,3 @@ This guide consists of four clear steps:
    | Block explorer URL | https://scan-testnet.potos.hk/ | URL of blockchain's explorer |
 
    ![[image]](../_static/dev_guide/network_detail.png)
-
-## Step 4: Get Testnet Tokens
-
-1. Log in and switch to Testnet in MetaMask app.
-
-    ![[image]](../_static/dev_guide/metamask_app_home.png)
-
-    ![[image]](../_static/dev_guide/metamask_app_switch_testnet.jpeg)
-2. Go to the [Faucet](https://faucet-testnet.potos.hk).
-3. Click **"Connect Wallet"** and scan with MetaMask app. ![[image]](../_static/dev_guide/faucet_home.png)
-4. Information will be automatically filled in. Click **"Request tokens"**. ![[image]](../_static/dev_guide/request_tokens.png)
-5. Wait few moments and check wallet balance.
-
-You are now ready to interact with Dapps and smart contracts on our network!
