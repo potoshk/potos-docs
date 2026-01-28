@@ -34,4 +34,4 @@ The gas limit is the maximum gas units one is willing to spend on a transaction.
 
 ## POTOS specific configuration on gas
 
-The gas price is controlled by POTOS system configuration, and it can be adjusted by the system administrator.  For more details on POTOS system configuration, refer to the [POTOS System Config](../developer/config.html#gas-configuration).
+The gas price is controlled by POTOS system configuration, and it can be adjusted by the system administrator.  For more details on POTOS system configuration, refer to the [POTOS System Config](../nodes/configure_node.md#system-parameters).

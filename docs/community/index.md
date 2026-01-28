@@ -15,6 +15,7 @@ committee
 participate
 contribute
 github
+happenings
 ```
 
 ## For Contributors

@@ -13,5 +13,4 @@ This section provides reference information including JSON RPC endpoints, RPC AP
 :maxdepth: 1
 
 rpc_endpoints
-rpc_api
 ```

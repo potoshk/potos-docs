@@ -12,11 +12,8 @@ html_theme.sidebar_secondary.remove: true
 
 concepts/index
 glossary/index
-builder/index
-nodes/index
+developer/index
 references/index
-contributor/index
-community/index
 ```
 
 # POTOS
@@ -39,14 +36,14 @@ POTOS (Portal of the Orient Symposium)  is a next-generation blockchain solution
 
 ## For Developers
 
-- [Foundation Setup](./builder/foundation_setup.md) - Setup your development environment for POTOS.
-- [Connect to the Network](./builder/connect_network.md) - Connect to the POTOS network.
-- [Get POT(Gas Token) from Faucet](./builder/faucet.md) - Get POT(Gas Token) from Faucet.
-- [Deploy smart contract with Remix](./builder/deploy_with_remix.md) - Deploy smart contract with Remix.
-- [Deploy smart contract with Hardhat](./builder/deploy_with_hardhat.md) - Deploy smart contract with Hardhat.
-- [Build Your First dApp using Scaffold-ETH 2](./builder/build_dapp_with_scaffold.md) - Build Your First dApp using Scaffold-ETH 2.
-- [Participate in DAO Governance](./builder/participate_dao.md) - Participate in DAO Governance.
-- [Blockchain Explorer](./builder/explorer_usage.md) - Blockchain Explorer.
+- [Foundation Setup](./developer/foundation_setup.md) - Setup your development environment for POTOS.
+- [Connect to the Network](./developer/connect_network.md) - Connect to the POTOS network.
+- [Get POT(Gas Token) from Faucet](./developer/faucet.md) - Get POT(Gas Token) from Faucet.
+- [Deploy smart contract with Remix](./developer/deploy_with_remix.md) - Deploy smart contract with Remix.
+- [Deploy smart contract with Hardhat](./developer/deploy_with_hardhat.md) - Deploy smart contract with Hardhat.
+- [Build Your First dApp using Scaffold-ETH 2](./developer/build_dapp_with_scaffold.md) - Build Your First dApp using Scaffold-ETH 2.
+- [Participate in DAO Governance](./developer/participate_dao.md) - Participate in DAO Governance.
+- [Blockchain Explorer](./developer/explorer_usage.md) - Blockchain Explorer.
 
 ## For Validators
 
