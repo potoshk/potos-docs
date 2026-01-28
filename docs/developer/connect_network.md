@@ -1,4 +1,4 @@
-# Set up MetaMask Account and Connect to POTOS Network
+# Set up Account and Connect Network
 
 This guide will walk you through the process of setting up MetaMask and connecting to the POTOS Testnet.
 This is a necessary step for developers who want to deploy and interact with Dapps or smart contracts on our network.
