@@ -48,7 +48,7 @@ Nodes use cryptographic hashes to secure transaction data, converting it into a 
 
 The consensus mechanism is crucial for blockchain networks as it allows nodes to agree on the validity of new blocks. This mechanism ensures data consistency across the network, preventing unauthorized modifications.
 
-[More on Consensus](../advance/consensus.md)
+[More on Consensus](../glossary/consensus.md)
 
 ## Smart Contracts
 
@@ -80,13 +80,13 @@ The EVM is a global virtual computer that maintains the state of the blockchain.
 
 Nodes are the physical machines that store and communicate the state of the EVM. They ensure that all participants have synchronized information and validate new state changes.
 
-[More on nodes](../advance/nodes.md)
+[More on nodes](../glossary/nodes.md)
 
 ### Accounts
 
 Accounts are the storage locations for utility tokens. They can be initialized, credited, and used to transfer tokens, with balances recorded in the EVM's state.
 
-[More on accounts](../advance/accounts.md)
+[More on accounts](../glossary/accounts.md)
 
 ### Transactions
 
@@ -94,7 +94,7 @@ Transactions are requests for code execution on the EVM. Once validated and exec
 
 Transactions are batched into blocks for efficient processing. Blocks typically contain multiple transactions, ensuring the scalability of the blockchain network.
 
-[More on transactions](../advance/transactions.md)
+[More on transactions](../glossary/transactions.md)
 
 ## References
 

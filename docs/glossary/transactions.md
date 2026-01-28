@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-To help you better understand this page, we recommend you first read [Accounts](./accounts.md) and our [introduction to POTOS](../concepts/index.html#what-is-potos).
+To help you better understand this page, we recommend you first read [Accounts](./accounts.md) and our [introduction to POTOS](../concepts/potos.md).
 
 ## What's a transaction?
 

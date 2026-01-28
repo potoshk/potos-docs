@@ -123,4 +123,4 @@ info|2025-4-6 22:36:31.415281|[CONSENSUS][PBFT][METRIC]^^^^^^^^Report,sealer=2,t
 
 After the observer node is started, it will start a JSON-RPC service on port `8545`. You can connect MetaMask to the observer node by adding a custom RPC.
 
-Please refer to [Guide to MetaMask & Connecting to the Testnet](../build/connect_network.md) to learn how to use a wallet to connect to the POTOS testnet.
+Please refer to [Guide to MetaMask & Connecting to the Testnet](../developer/connect_network.md) to learn how to use a wallet to connect to the POTOS testnet.

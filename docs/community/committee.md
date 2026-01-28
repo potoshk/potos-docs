@@ -246,17 +246,17 @@ After the contract deployment transaction is executed, the default administrator
 
 When the contract deployment creates the contract storage table, it will include the creation of a contract permission control appendix, as shown below. The contract administrator will change the contract interface permissions by changing this permission control appendix.
 
-![](../_static/developer/_images/permission_bcos_layer.drawio.png)
+![](../_static/developer/permission_bcos_layer.drawio.png)
 
 #### 3.2.2 Contract Invocation Permission Control
 
 The contract administrator can fully control the permissions of the contract interface.
 
-![](../_static/developer/_images/contract_admin.png)
+![](../_static/developer/contract_admin.png)
 
 When a normal user accesses a contract interface, the contract permission control table will be checked for any permission restrictions on ordinary users.
 
-![](../_static/developer/_images/permission_user.png)
+![](../_static/developer/permission_user.png)
 
 #### 3.2.3 Contract Freezing, Thawing, and Decommissioning
 
@@ -266,7 +266,7 @@ Similarly, the contract administrator can fully control the status of the contra
 
 The data structure of the account is as follows, and the permissions regarding the account will be recorded in the `/usr/abc123` table, and the balance of the account will be recorded in the corresponding mapping table `/apps/abc123`.
 
-![](../_static/developer/_images/account_data_struct.png)
+![](../_static/developer/account_data_struct.png)
 
 #### 3.3.1 Account Lifecycle
 
