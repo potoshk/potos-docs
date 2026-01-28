@@ -1,3 +1,0 @@
-# Build a first DApp
-
-Coming soon...
