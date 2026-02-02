@@ -46,7 +46,7 @@ If you want to connect to the Testnet manually, you can follow the steps below:
 
 1. Open MetaMask on Chrome extension or mobile app and unlock it using your password.
 2. Click on the **Network Selector** (top-left dropdown that shows "Ethereum Mainnet" by default). ![[image]](../_static/dev_guide/select_network.png)
-3. Select **“+ Add a custom network”**. ![[image]](../_static/dev_guide/add_new_network.png)
+3. Select **"+ Add a custom network"**. ![[image]](../_static/dev_guide/add_new_network.png)
 4. Fill in the details for our Testnet and Click **“Save”**:
 
    | Entry Name         | Value                          | Note                         |
