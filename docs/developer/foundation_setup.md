@@ -2,7 +2,7 @@
 
 ## Overview
 
-POTOS is full integration with Ethereum-based applications for seamless interoperability. If you are comming from Ethereum, you'll find the transition smooth and easy.
+POTOS integrates with Ethereum-based applications for seamless interoperability. If you are coming from Ethereum, you'll find the transition smooth and easy.
 
 For more details on POTOS's architecture, please refer to [What is POTOS?](../concepts/potos.md).
 
@@ -23,12 +23,12 @@ POTOS has two networks: Testnet and Mainnet.
 
 You can find the details of the networks in [JSON RPC Endpoints](../references/rpc_endpoints.md).
 
-## Develoment Tools
+## Development Tools
 
-POTOS supports popular development tools for Ethereum-based applications, Key resources:
+POTOS supports popular development tools for Ethereum-based applications. Key resources:
 
 - [Public RPC Endpoints](../references/rpc_endpoints.md): RPC endpoints for public access.
 - [Solidity](https://github.com/ethereum/solidity): Solidity is the programming language of the Ethereum Virtual Machine (EVM).
-- [Remix](https://remix.ethereum.org/): A web based IDE for Solidity development.
+- [Remix](https://remix.ethereum.org/): A web-based IDE for Solidity development.
 - [Hardhat](https://hardhat.org/): A development environment for Ethereum-based applications.
 - [MetaMask](https://metamask.io/): A wallet for Ethereum-based applications.
