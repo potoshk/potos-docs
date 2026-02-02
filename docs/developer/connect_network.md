@@ -12,7 +12,7 @@ This guide consists of four clear steps:
 
 ## Step 1: Install MetaMask
 
-1. Google "MetaMask" or visit the [MetaMask download page](https://metamask.io/download/) and click "Install MetaMask for Chrome". Alternatively, you can get the mobile app for iOS or Android accordingly.  ![[image]](../_static/dev_guide/download_metamask.png)
+1. Google "MetaMask" or visit the [MetaMask download page](https://metamask.io/download/) and click "Install MetaMask for Chrome". Alternatively, you can get the mobile app for iOS or Android.  ![[image]](../_static/dev_guide/download_metamask.png)
    ![[image]](../_static/dev_guide/download_metamask_mobile.png)
 2. Click **"Add to Chrome"**. ![[image]](../_static/dev_guide/add_to_chrome.png)
 3. A popup will appear. Click **"Add Extension"** to confirm.
@@ -37,7 +37,7 @@ This guide consists of four clear steps:
 
 1. Visit https://chainlist.org/chain/60600 ![](../_static/builder/chainlist_info.png)
 2. Click on **"Connect Wallet"** and select your wallet. ![](../_static/builder/chainlist_connect.png)
-3. Click on **"Add MetaMask"** and fill in the details for our Testnet. ![](../_static/builder/chainlist_add_metamask.png)
+3. Click on **"Add MetaMask"** and approve the request in the wallet popup. ![](../_static/builder/chainlist_add_metamask.png)
 4. Click on **"Save"** to complete the network addition.
 
 ## Optional: Connect to the Testnet manually
@@ -46,8 +46,8 @@ If you want to connect to the Testnet manually, you can follow the steps below:
 
 1. Open MetaMask on Chrome extension or mobile app and unlock it using your password.
 2. Click on the **Network Selector** (top-left dropdown that shows "Ethereum Mainnet" by default). ![[image]](../_static/dev_guide/select_network.png)
-3. Select **''+ Add a custom network''**. ![[image]](../_static/dev_guide/add_new_network.png)
-4. Fill in the details for our Testnet & Click **''Save''**:
+3. Select **“+ Add a custom network”**. ![[image]](../_static/dev_guide/add_new_network.png)
+4. Fill in the details for our Testnet and Click **“Save”**:
 
    | Entry Name         | Value                          | Note                         |
    |--------------------|--------------------------------|------------------------------|
